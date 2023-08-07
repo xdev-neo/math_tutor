@@ -574,8 +574,12 @@
             document.querySelectorAll('.playlist__wrapper__item__body__bottom__sources').forEach(it => {
                 links += '\n ===== \n ' + it.parentElement.previousElementSibling.previousElementSibling.children[0].innerText + '\n ===== \n'
                 links += [...it.children].map((item, index) => {
-                    if (item.innerText.toLowerCase().includes('container_mp4')) {
-                        if (item.value.replaceAll(/https\:\/\/|http\:\/\//ig, '') != it.children[index - 1].value.replaceAll(/https\:\/\/|http\:\/\//ig, '')) {
+                    // if (item.innerText.toLowerCase().includes('container_mp4')) {
+                    // console.log(item)
+                    // console.log((item.getAttribute('streaming')) === 'false')
+                    if (item.getAttribute('streaming') == "false") {
+                        console.log(item)
+                        if (item.value.replaceAll(/https\:\/\/|http\:\/\//ig, '') != it.children[index + 1].value.replaceAll(/https\:\/\/|http\:\/\//ig, '')) {
                             return item.value
                         } else {
                             return ''
@@ -665,11 +669,12 @@
 
                         if (source['container'] != undefined) {
                             title = source['container'] + ' ' + source['width'] + 'X' + source['height']
+                            return `<option streaming="false" value="${source.src}">${title}</option>`
                         } else {
-                            title = source['codecs'] +' streaming'
+                            title = source['codecs'] + ' streaming'
+                            return `<option streaming="true" value="${source.src}">${title}</option>`
                         }
 
-                        return `<option value="${source.src}">${title}</option>`
                     }, {})//.join('  ')
 
                     let optsHTML = ''
