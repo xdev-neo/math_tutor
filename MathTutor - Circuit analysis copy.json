@@ -1,0 +1,3072 @@
+{
+  "account_id": "61991422001",
+  "created_at": "2017-06-02T01:13:24.217Z",
+  "description": "Voltage, current, resistance, ohm's law, kirchhoff's laws, circuit analysis techniques, voltage dividers, more.",
+  "id": "5455901781001",
+  "name": "Engineering Circuit Analysis (DC) - Vol 1",
+  "reference_id": null,
+  "type": "ALPHABETICAL",
+  "updated_at": "2017-07-07T02:27:25.994Z",
+  "videos": [
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/b2993597-f86f-408e-903a-9ed5bfff58e0/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/9b8818b9-80ed-41f5-989d-a8f00bbc6597/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/b2993597-f86f-408e-903a-9ed5bfff58e0/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/9b8818b9-80ed-41f5-989d-a8f00bbc6597/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol 1 - sect1 - voltage, current, resistance",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "false"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/10s/master.m3u8?fastly_token=NjRiNmMwOWNfNTVhYzhhYmQ2NDcyOWYwMGIyNjEyM2Q4MWNiMDU3MDUwMDRjYjJiMjFiZTc1NTU1ODMxZTQ4YzY5YWE2OTdmZQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/10s/master.m3u8?fastly_token=NjRiNmMwOWNfNTVhYzhhYmQ2NDcyOWYwMGIyNjEyM2Q4MWNiMDU3MDUwMDRjYjJiMjFiZTc1NTU1ODMxZTQ4YzY5YWE2OTdmZQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/6s/manifest.mpd?fastly_token=NjRiNmMwOWNfMzYyNDQwMWZlMDZjMTE2MzA4YThhNWJhMWY5NmZiNGI4NTdjZGU3OGRmYzYwOWQyMGUzOGVjYWVmMWI0M2M0ZQ%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/6s/manifest.mpd?fastly_token=NjRiNmMwOWNfMzYyNDQwMWZlMDZjMTE2MzA4YThhNWJhMWY5NmZiNGI4NTdjZGU3OGRmYzYwOWQyMGUzOGVjYWVmMWI0M2M0ZQ%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 2484180,
+          "height": 480,
+          "size": 390868381,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/high.mp4?akamai_token=exp=1689698460~acl=/media/v1/pmp4/static/clear/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/high.mp4*~hmac=fe29e690a99bc5a81f41c37db9e704d871c6278b8606a9f56932db4100001864",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 2484180,
+          "height": 480,
+          "size": 390868381,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/high.mp4?akamai_token=exp=1689698460~acl=/media/v1/pmp4/static/clear/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/high.mp4*~hmac=fe29e690a99bc5a81f41c37db9e704d871c6278b8606a9f56932db4100001864",
+          "width": 640
+        }
+      ],
+      "name": "01 - Voltage, Current, Resistance",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 2484048,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "051b18f6-469d-4fe5-8f8d-386206a50c8a",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/3757/61991422001_e07c69d8-5e4f-4c6d-96e0-c6dd246b1e41.vtt?pubId=61991422001&videoId=774154524001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "e07c69d8-5e4f-4c6d-96e0-c6dd246b1e41",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/3757/61991422001_e07c69d8-5e4f-4c6d-96e0-c6dd246b1e41.vtt?pubId=61991422001&videoId=774154524001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/3757/61991422001_e07c69d8-5e4f-4c6d-96e0-c6dd246b1e41.vtt?pubId=61991422001&videoId=774154524001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "f7fbd0fe-bf99-4112-8a6b-444158a36e2b",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/f7fbd0fe-bf99-4112-8a6b-444158a36e2b/text.vtt?akamai_token=exp=1689698460~acl=/media/v1/text/vtt/clear/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/f7fbd0fe-bf99-4112-8a6b-444158a36e2b/text.vtt*~hmac=188cee3f34016ee12741500be5fa41c191b83d76cffccb19f4f332294b7ab2fe",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/f7fbd0fe-bf99-4112-8a6b-444158a36e2b/text.vtt?akamai_token=exp=1689698460~acl=/media/v1/text/vtt/clear/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/f7fbd0fe-bf99-4112-8a6b-444158a36e2b/text.vtt*~hmac=188cee3f34016ee12741500be5fa41c191b83d76cffccb19f4f332294b7ab2fe"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/f7fbd0fe-bf99-4112-8a6b-444158a36e2b/text.vtt?akamai_token=exp=1689698460~acl=/media/v1/text/vtt/clear/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/f7fbd0fe-bf99-4112-8a6b-444158a36e2b/text.vtt*~hmac=188cee3f34016ee12741500be5fa41c191b83d76cffccb19f4f332294b7ab2fe"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/27c63871-cb8e-40a3-bc09-bb0d041bfec5/thumbnail.webvtt?fastly_token=NjRiNmMwOWNfZTU3M2Y5YjY5NGQxNjA3Yjk2MDJjZDE4NDYxMWUxMmVkNTUyMDIyOWEwZmYzNTRmM2Y3ZDBhYzRhYWRhY2RjMg%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 490
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/5fcf8704-a0fe-44d5-99c5-838799643148/27c63871-cb8e-40a3-bc09-bb0d041bfec5/thumbnail.webvtt?fastly_token=NjRiNmMwOWNfZTU3M2Y5YjY5NGQxNjA3Yjk2MDJjZDE4NDYxMWUxMmVkNTUyMDIyOWEwZmYzNTRmM2Y3ZDBhYzRhYWRhY2RjMg%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 490
+        }
+      ],
+      "published_at": "2011-02-02T14:41:03.818Z",
+      "created_at": "2011-02-02T14:41:03.818Z",
+      "updated_at": "2020-04-17T02:27:36.838Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "774154524001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/176bf1df-6d2f-4830-bcfa-846d5d4a0131/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/b5a048ff-b4fa-4cbd-84f1-af41babd7e00/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/176bf1df-6d2f-4830-bcfa-846d5d4a0131/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/b5a048ff-b4fa-4cbd-84f1-af41babd7e00/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol 1 - sect2 - overview of circuit components",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "false"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/10s/master.m3u8?fastly_token=NjRiNmM4NDNfOWNiOTg5ZDQ3ZWMzYjI1MzM5ZDM0YjE4ZTY4NDZhMzM0ZWIzZWNlNzdlZTA3NzA5MmM3Zjg3ZGNiNTc1N2JhNg%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/10s/master.m3u8?fastly_token=NjRiNmM4NDNfOWNiOTg5ZDQ3ZWMzYjI1MzM5ZDM0YjE4ZTY4NDZhMzM0ZWIzZWNlNzdlZTA3NzA5MmM3Zjg3ZGNiNTc1N2JhNg%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/6s/manifest.mpd?fastly_token=NjRiNmM4NDNfOTRlMzhlNWUzOTg3Y2U2YTgxOGJkZTQzYzE5MWRlMWYwZWQzYmM3MDg0YjY3NzBjNjQxZDEyYWY2M2M5ZWNkNw%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/6s/manifest.mpd?fastly_token=NjRiNmM4NDNfOTRlMzhlNWUzOTg3Y2U2YTgxOGJkZTQzYzE5MWRlMWYwZWQzYmM3MDg0YjY3NzBjNjQxZDEyYWY2M2M5ZWNkNw%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 2700393,
+          "height": 480,
+          "size": 424862308,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/high.mp4?akamai_token=exp=1689700419~acl=/media/v1/pmp4/static/clear/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/high.mp4*~hmac=843d9b5a3f3761da491f89b7e9f43fa04df7e15c5bcaaccd60322bc52fe5e45d",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 2700393,
+          "height": 480,
+          "size": 424862308,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/high.mp4?akamai_token=exp=1689700419~acl=/media/v1/pmp4/static/clear/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/high.mp4*~hmac=843d9b5a3f3761da491f89b7e9f43fa04df7e15c5bcaaccd60322bc52fe5e45d",
+          "width": 640
+        }
+      ],
+      "name": "02 - Overview of Circuit Components",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 2700264,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "bd12129b-d0ff-4da6-9f99-42d27a906cb9",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/2356/61991422001_c22bb7e1-65dc-4bfd-975b-52bf1e0dc28d.vtt?pubId=61991422001&videoId=779763128001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "c22bb7e1-65dc-4bfd-975b-52bf1e0dc28d",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/2356/61991422001_c22bb7e1-65dc-4bfd-975b-52bf1e0dc28d.vtt?pubId=61991422001&videoId=779763128001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/2356/61991422001_c22bb7e1-65dc-4bfd-975b-52bf1e0dc28d.vtt?pubId=61991422001&videoId=779763128001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "854053d4-4f84-4c5d-8042-b064e315119b",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/854053d4-4f84-4c5d-8042-b064e315119b/text.vtt?akamai_token=exp=1689700419~acl=/media/v1/text/vtt/clear/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/854053d4-4f84-4c5d-8042-b064e315119b/text.vtt*~hmac=d45a6896518a36cf6b095fa199c0bd41137058f7cf26cd0bf6e8a68e0182a15b",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/854053d4-4f84-4c5d-8042-b064e315119b/text.vtt?akamai_token=exp=1689700419~acl=/media/v1/text/vtt/clear/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/854053d4-4f84-4c5d-8042-b064e315119b/text.vtt*~hmac=d45a6896518a36cf6b095fa199c0bd41137058f7cf26cd0bf6e8a68e0182a15b"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/854053d4-4f84-4c5d-8042-b064e315119b/text.vtt?akamai_token=exp=1689700419~acl=/media/v1/text/vtt/clear/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/854053d4-4f84-4c5d-8042-b064e315119b/text.vtt*~hmac=d45a6896518a36cf6b095fa199c0bd41137058f7cf26cd0bf6e8a68e0182a15b"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/c64daa04-eab2-4843-8ed6-341087ed1f91/thumbnail.webvtt?fastly_token=NjRiNmM4NDNfZTRjMzk3YjU4ZmMyOTM5Y2JiZmM4MTc3MzM1NTQ5YTUxNGU2ZTFjOTY4Yzg3YjIzOGY2NGU1MDgyZmYzMzNjOQ%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 490
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/00310b3d-f3bc-435c-93ae-27ea8338850a/c64daa04-eab2-4843-8ed6-341087ed1f91/thumbnail.webvtt?fastly_token=NjRiNmM4NDNfZTRjMzk3YjU4ZmMyOTM5Y2JiZmM4MTc3MzM1NTQ5YTUxNGU2ZTFjOTY4Yzg3YjIzOGY2NGU1MDgyZmYzMzNjOQ%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 490
+        }
+      ],
+      "published_at": "2011-02-06T22:51:32.501Z",
+      "created_at": "2011-02-06T22:51:32.501Z",
+      "updated_at": "2020-04-16T12:06:02.502Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "779763128001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/5716e1ad-dfad-458f-9a5a-22c312896c9d/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/d452b1fd-dda2-4927-9282-888b988dd64f/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/5716e1ad-dfad-458f-9a5a-22c312896c9d/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/d452b1fd-dda2-4927-9282-888b988dd64f/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect3 - ohms law ",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "false"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/10s/master.m3u8?fastly_token=NjRiNmQ0OTZfNjQ3ZDMwMWUzMDVmYzY5Y2NkOWEzNjIyZTZjZGU2OWE1N2RlZDFjNGQ3NTliN2MyNmNmZTUyNWRkMzVmN2ZlMQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/10s/master.m3u8?fastly_token=NjRiNmQ0OTZfNjQ3ZDMwMWUzMDVmYzY5Y2NkOWEzNjIyZTZjZGU2OWE1N2RlZDFjNGQ3NTliN2MyNmNmZTUyNWRkMzVmN2ZlMQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/6s/manifest.mpd?fastly_token=NjRiNmQ0OTZfMGFjMTljNGI5MmRjYTQwNzc2YzEyMGI5MTdkYzAwYTY1MWVhMWM1ZDA4NWZjZjM0OTY3MmE4ODJjMzdmN2E3Mg%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/6s/manifest.mpd?fastly_token=NjRiNmQ0OTZfMGFjMTljNGI5MmRjYTQwNzc2YzEyMGI5MTdkYzAwYTY1MWVhMWM1ZDA4NWZjZjM0OTY3MmE4ODJjMzdmN2E3Mg%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 2379947,
+          "height": 480,
+          "size": 374407137,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/high.mp4?akamai_token=exp=1689703574~acl=/media/v1/pmp4/static/clear/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/high.mp4*~hmac=8b1b1f96c1168a3fe8580508180153385d45bfb5cb91c55e53ac1947d247fd07",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 2379947,
+          "height": 480,
+          "size": 374407137,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/high.mp4?akamai_token=exp=1689703574~acl=/media/v1/pmp4/static/clear/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/high.mp4*~hmac=8b1b1f96c1168a3fe8580508180153385d45bfb5cb91c55e53ac1947d247fd07",
+          "width": 640
+        }
+      ],
+      "name": "03 - Ohm's Law",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 2379878,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "5395fa79-1772-49a5-a1dd-6ba5881f0e1a",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/3455/61991422001_18ec56bd-2c7f-49c4-bced-d12808b6d634.vtt?pubId=61991422001&videoId=790293867001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "18ec56bd-2c7f-49c4-bced-d12808b6d634",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/3455/61991422001_18ec56bd-2c7f-49c4-bced-d12808b6d634.vtt?pubId=61991422001&videoId=790293867001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/3455/61991422001_18ec56bd-2c7f-49c4-bced-d12808b6d634.vtt?pubId=61991422001&videoId=790293867001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "1b0c857f-e9c4-47ba-96c1-f4b09f299b0b",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/1b0c857f-e9c4-47ba-96c1-f4b09f299b0b/text.vtt?akamai_token=exp=1689703574~acl=/media/v1/text/vtt/clear/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/1b0c857f-e9c4-47ba-96c1-f4b09f299b0b/text.vtt*~hmac=07b8b671d30f90b15e7528dd03a6e686fe7c71f9f5fd9e104e23458924aac35a",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/1b0c857f-e9c4-47ba-96c1-f4b09f299b0b/text.vtt?akamai_token=exp=1689703574~acl=/media/v1/text/vtt/clear/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/1b0c857f-e9c4-47ba-96c1-f4b09f299b0b/text.vtt*~hmac=07b8b671d30f90b15e7528dd03a6e686fe7c71f9f5fd9e104e23458924aac35a"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/1b0c857f-e9c4-47ba-96c1-f4b09f299b0b/text.vtt?akamai_token=exp=1689703574~acl=/media/v1/text/vtt/clear/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/1b0c857f-e9c4-47ba-96c1-f4b09f299b0b/text.vtt*~hmac=07b8b671d30f90b15e7528dd03a6e686fe7c71f9f5fd9e104e23458924aac35a"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/175b390d-08b2-4a6d-9bc7-f0f81e1bc062/thumbnail.webvtt?fastly_token=NjRiNmQ0OTZfNGE1ZTMyZmNkNmU1OTA5ZGRhYjA5MGY3NzRmMmZmNGY0MGM1NjAzMDg0YWMyYzUxMmI0MDg3YjUwZjI4Yjk5OQ%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/84d3f1b0-185f-4170-8aac-a90e1cea26e6/175b390d-08b2-4a6d-9bc7-f0f81e1bc062/thumbnail.webvtt?fastly_token=NjRiNmQ0OTZfNGE1ZTMyZmNkNmU1OTA5ZGRhYjA5MGY3NzRmMmZmNGY0MGM1NjAzMDg0YWMyYzUxMmI0MDg3YjUwZjI4Yjk5OQ%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        }
+      ],
+      "published_at": "2011-02-15T09:52:06.378Z",
+      "created_at": "2011-02-15T09:52:06.378Z",
+      "updated_at": "2020-04-16T20:18:35.627Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "790293867001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/67762a9e-09fa-4f71-bbcd-a4f539c49f73/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/3283fe42-21ae-4846-995c-43a7bd448e88/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/67762a9e-09fa-4f71-bbcd-a4f539c49f73/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/3283fe42-21ae-4846-995c-43a7bd448e88/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect4 - power calculations in circuits",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "false"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/10s/master.m3u8?fastly_token=NjRiNmJmNGJfN2IzMjQ4ZmJjNjgyZjkyMTM2ZDA5MmZiZGNlOTk1NzMzMTkzYjhiMmIwZjMwYWNhYjI5YzllNzJjMWUwZmE1Mg%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/10s/master.m3u8?fastly_token=NjRiNmJmNGJfN2IzMjQ4ZmJjNjgyZjkyMTM2ZDA5MmZiZGNlOTk1NzMzMTkzYjhiMmIwZjMwYWNhYjI5YzllNzJjMWUwZmE1Mg%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/6s/manifest.mpd?fastly_token=NjRiNmJmNGJfYzc3MjY3YWRkYThjYjIxMWRmZTUyODc1ZWUwMGY5NTY0ZWNmNTM4Nzk5MWI2ZjY1MzQyMGRjMmU4MWE1OTg5Yg%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/6s/manifest.mpd?fastly_token=NjRiNmJmNGJfYzc3MjY3YWRkYThjYjIxMWRmZTUyODc1ZWUwMGY5NTY0ZWNmNTM4Nzk5MWI2ZjY1MzQyMGRjMmU4MWE1OTg5Yg%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 2514667,
+          "height": 480,
+          "size": 395583914,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/high.mp4?akamai_token=exp=1689698123~acl=/media/v1/pmp4/static/clear/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/high.mp4*~hmac=c0c7affbe99ea8ba9a6cbba39ec3359ccb4fd3b58a4faf4ed570f2ceb7453a2d",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 2514667,
+          "height": 480,
+          "size": 395583914,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/high.mp4?akamai_token=exp=1689698123~acl=/media/v1/pmp4/static/clear/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/high.mp4*~hmac=c0c7affbe99ea8ba9a6cbba39ec3359ccb4fd3b58a4faf4ed570f2ceb7453a2d",
+          "width": 640
+        }
+      ],
+      "name": "04 - Power Calculations in Circuits",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 2514546,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "87aae172-1c71-49f7-828d-c00532070b1d",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/2902/61991422001_216f0f4a-9cb5-4335-983d-cdcd743b7e07.vtt?pubId=61991422001&videoId=960210893001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "216f0f4a-9cb5-4335-983d-cdcd743b7e07",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/2902/61991422001_216f0f4a-9cb5-4335-983d-cdcd743b7e07.vtt?pubId=61991422001&videoId=960210893001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/2902/61991422001_216f0f4a-9cb5-4335-983d-cdcd743b7e07.vtt?pubId=61991422001&videoId=960210893001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "6bb2cb47-d771-4aab-9e15-f144b017ce31",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/6bb2cb47-d771-4aab-9e15-f144b017ce31/text.vtt?akamai_token=exp=1689698123~acl=/media/v1/text/vtt/clear/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/6bb2cb47-d771-4aab-9e15-f144b017ce31/text.vtt*~hmac=384f063d1a05a23e412bebe19a6b42b6191b2dfd1e949df773777286fcc60b25",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/6bb2cb47-d771-4aab-9e15-f144b017ce31/text.vtt?akamai_token=exp=1689698123~acl=/media/v1/text/vtt/clear/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/6bb2cb47-d771-4aab-9e15-f144b017ce31/text.vtt*~hmac=384f063d1a05a23e412bebe19a6b42b6191b2dfd1e949df773777286fcc60b25"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/6bb2cb47-d771-4aab-9e15-f144b017ce31/text.vtt?akamai_token=exp=1689698123~acl=/media/v1/text/vtt/clear/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/6bb2cb47-d771-4aab-9e15-f144b017ce31/text.vtt*~hmac=384f063d1a05a23e412bebe19a6b42b6191b2dfd1e949df773777286fcc60b25"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/afa774fa-d612-49fc-b61a-8fd7f0732b5d/thumbnail.webvtt?fastly_token=NjRiNmJmNGJfMGU0MWRjMTJkYTQzZDY4MzQzMTIxNjRiMjZhNzRmZjFjZmRlMTM4MTYwNWU3MjFkM2U1OWZjODhmOThjNWZmNA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/e1b1b092-239e-4579-8d4c-6d1e67f93ff4/afa774fa-d612-49fc-b61a-8fd7f0732b5d/thumbnail.webvtt?fastly_token=NjRiNmJmNGJfMGU0MWRjMTJkYTQzZDY4MzQzMTIxNjRiMjZhNzRmZjFjZmRlMTM4MTYwNWU3MjFkM2U1OWZjODhmOThjNWZmNA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        }
+      ],
+      "published_at": "2011-05-26T07:12:51.626Z",
+      "created_at": "2011-05-26T07:12:51.626Z",
+      "updated_at": "2020-04-16T13:28:50.087Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "960210893001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/3c87f634-e0c7-4a6c-89e4-c8c961a50e47/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/a182f341-beef-4be0-aef9-eff2a72c3535/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/3c87f634-e0c7-4a6c-89e4-c8c961a50e47/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/a182f341-beef-4be0-aef9-eff2a72c3535/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect5 - kirchhoff's current law",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "false"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/10s/master.m3u8?fastly_token=NjRiNmM1OGVfZDI2NjIzYTZkMTI1M2Q5ZjBiMTQ5NGQxNjAzNmYxNTI2NmZiOTYzNzYyNGVkYjdlZWRmODJlNjkzZDdjOGNiYg%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/10s/master.m3u8?fastly_token=NjRiNmM1OGVfZDI2NjIzYTZkMTI1M2Q5ZjBiMTQ5NGQxNjAzNmYxNTI2NmZiOTYzNzYyNGVkYjdlZWRmODJlNjkzZDdjOGNiYg%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/6s/manifest.mpd?fastly_token=NjRiNmM1OGVfNGY0YTliNTkyZjlkZWJlOTRmODE1YzcxNzMyN2NkN2JlN2Q2NDlmOTNhZjY2MDM5NjRmM2MzZDkyYmQ0MjM1OA%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/6s/manifest.mpd?fastly_token=NjRiNmM1OGVfNGY0YTliNTkyZjlkZWJlOTRmODE1YzcxNzMyN2NkN2JlN2Q2NDlmOTNhZjY2MDM5NjRmM2MzZDkyYmQ0MjM1OA%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 2105898,
+          "height": 480,
+          "size": 331335114,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/high.mp4?akamai_token=exp=1689699726~acl=/media/v1/pmp4/static/clear/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/high.mp4*~hmac=9bf1a0084560a04ca075cfd842799756eafe33653f143bf6ac844cf8f5aac2d0",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 2105898,
+          "height": 480,
+          "size": 331335114,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/high.mp4?akamai_token=exp=1689699726~acl=/media/v1/pmp4/static/clear/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/high.mp4*~hmac=9bf1a0084560a04ca075cfd842799756eafe33653f143bf6ac844cf8f5aac2d0",
+          "width": 640
+        }
+      ],
+      "name": "05 - Kirchhoff's Current Law",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 2105770,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "2c25ab94-5072-4135-8d59-b28398d61f21",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/3513/61991422001_7e234597-a1a3-4e4e-a6c8-dffdabe7bb10.vtt?pubId=61991422001&videoId=962239579001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "7e234597-a1a3-4e4e-a6c8-dffdabe7bb10",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/3513/61991422001_7e234597-a1a3-4e4e-a6c8-dffdabe7bb10.vtt?pubId=61991422001&videoId=962239579001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/3513/61991422001_7e234597-a1a3-4e4e-a6c8-dffdabe7bb10.vtt?pubId=61991422001&videoId=962239579001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "97e9a8ff-05b3-42fe-becb-04918e2b69bb",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/97e9a8ff-05b3-42fe-becb-04918e2b69bb/text.vtt?akamai_token=exp=1689699726~acl=/media/v1/text/vtt/clear/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/97e9a8ff-05b3-42fe-becb-04918e2b69bb/text.vtt*~hmac=18ead26aefca1aac4ba58e0885792053cb717ac5e06435b4fd223709e78c46f5",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/97e9a8ff-05b3-42fe-becb-04918e2b69bb/text.vtt?akamai_token=exp=1689699726~acl=/media/v1/text/vtt/clear/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/97e9a8ff-05b3-42fe-becb-04918e2b69bb/text.vtt*~hmac=18ead26aefca1aac4ba58e0885792053cb717ac5e06435b4fd223709e78c46f5"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/97e9a8ff-05b3-42fe-becb-04918e2b69bb/text.vtt?akamai_token=exp=1689699726~acl=/media/v1/text/vtt/clear/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/97e9a8ff-05b3-42fe-becb-04918e2b69bb/text.vtt*~hmac=18ead26aefca1aac4ba58e0885792053cb717ac5e06435b4fd223709e78c46f5"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/b7c8871d-003d-4119-8695-e5cb2974b911/thumbnail.webvtt?fastly_token=NjRiNmM1OGVfYjMxYWU4Y2I2NjA4MDgzOTE2M2VhNzdiYTliYjc4ZmExM2NlY2QyOGIyNTg3MDA3ODkwNzYwOGZlMTAzYzgyOA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 490
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/bc6ab187-4973-4a0b-99b5-720ea4216601/b7c8871d-003d-4119-8695-e5cb2974b911/thumbnail.webvtt?fastly_token=NjRiNmM1OGVfYjMxYWU4Y2I2NjA4MDgzOTE2M2VhNzdiYTliYjc4ZmExM2NlY2QyOGIyNTg3MDA3ODkwNzYwOGZlMTAzYzgyOA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 490
+        }
+      ],
+      "published_at": "2011-05-27T06:17:01.701Z",
+      "created_at": "2011-05-27T06:17:01.701Z",
+      "updated_at": "2020-04-16T15:20:53.383Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "962239579001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/e13d2f19-c51c-4915-8f9b-58e168ef7a18/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/bca11064-aff9-401c-b356-1b0c3ac1edd1/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/e13d2f19-c51c-4915-8f9b-58e168ef7a18/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/bca11064-aff9-401c-b356-1b0c3ac1edd1/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect6 - kirchhoff's voltage law",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "false"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/10s/master.m3u8?fastly_token=NjRiNmQxZmFfMDExOGRhNTJlNjJjOTU1YzEzNzg5ZTA4YTBlNzQ0Zjk1MzE1ZTUyYjA0NmZhYzlkZWUwN2IwOWRkMjk3N2JiOQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/10s/master.m3u8?fastly_token=NjRiNmQxZmFfMDExOGRhNTJlNjJjOTU1YzEzNzg5ZTA4YTBlNzQ0Zjk1MzE1ZTUyYjA0NmZhYzlkZWUwN2IwOWRkMjk3N2JiOQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/6s/manifest.mpd?fastly_token=NjRiNmQxZmFfMzVlZWVlMjZlMzgyYzc2ZjBiYzhlOTIxYzQyNDM0NThmMzYwMzkxYzU5ZjAxNTRiYWZmODI4MDU0NDMyZDVhMA%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/6s/manifest.mpd?fastly_token=NjRiNmQxZmFfMzVlZWVlMjZlMzgyYzc2ZjBiYzhlOTIxYzQyNDM0NThmMzYwMzkxYzU5ZjAxNTRiYWZmODI4MDU0NDMyZDVhMA%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1252000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1807893,
+          "height": 480,
+          "size": 284369200,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/high.mp4?akamai_token=exp=1689702906~acl=/media/v1/pmp4/static/clear/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/high.mp4*~hmac=7a7bca06cde67891c09be7421278598e02a11fa42b79f963411bb0ebcc1f20c1",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1252000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1807893,
+          "height": 480,
+          "size": 284369200,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/high.mp4?akamai_token=exp=1689702906~acl=/media/v1/pmp4/static/clear/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/high.mp4*~hmac=7a7bca06cde67891c09be7421278598e02a11fa42b79f963411bb0ebcc1f20c1",
+          "width": 640
+        }
+      ],
+      "name": "06 - Kirchhoff's Voltage Law",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 1807773,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "6b550b55-166d-4d8e-a173-7d37518460bc",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/1577/61991422001_ac319d5f-0c50-4ee9-ae86-c088d78cc7d4.vtt?pubId=61991422001&videoId=965106849001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "ac319d5f-0c50-4ee9-ae86-c088d78cc7d4",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/1577/61991422001_ac319d5f-0c50-4ee9-ae86-c088d78cc7d4.vtt?pubId=61991422001&videoId=965106849001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/1577/61991422001_ac319d5f-0c50-4ee9-ae86-c088d78cc7d4.vtt?pubId=61991422001&videoId=965106849001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "f130e7e6-98db-48e5-b181-b545bbb5d507",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/f130e7e6-98db-48e5-b181-b545bbb5d507/text.vtt?akamai_token=exp=1689702906~acl=/media/v1/text/vtt/clear/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/f130e7e6-98db-48e5-b181-b545bbb5d507/text.vtt*~hmac=243cbcb174c0ce2d8b746d5d2bd52ad7c0cdd377fd617e327e34b150c5f30583",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/f130e7e6-98db-48e5-b181-b545bbb5d507/text.vtt?akamai_token=exp=1689702906~acl=/media/v1/text/vtt/clear/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/f130e7e6-98db-48e5-b181-b545bbb5d507/text.vtt*~hmac=243cbcb174c0ce2d8b746d5d2bd52ad7c0cdd377fd617e327e34b150c5f30583"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/f130e7e6-98db-48e5-b181-b545bbb5d507/text.vtt?akamai_token=exp=1689702906~acl=/media/v1/text/vtt/clear/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/f130e7e6-98db-48e5-b181-b545bbb5d507/text.vtt*~hmac=243cbcb174c0ce2d8b746d5d2bd52ad7c0cdd377fd617e327e34b150c5f30583"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/9c96afc3-224b-4556-98cd-5a549a20cf43/thumbnail.webvtt?fastly_token=NjRiNmQxZmFfNTcyZGY0Y2RjNzA2OTFiNDYzZTY3NzVlZjE4ZTg0MzIyOTY3ZjY0YmI3NWY2YjY4NmU5NWY5YTc4ZTQ2ZDg5OA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 489
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/4bedfea1-fd5f-4a05-923d-2d306788b395/9c96afc3-224b-4556-98cd-5a549a20cf43/thumbnail.webvtt?fastly_token=NjRiNmQxZmFfNTcyZGY0Y2RjNzA2OTFiNDYzZTY3NzVlZjE4ZTg0MzIyOTY3ZjY0YmI3NWY2YjY4NmU5NWY5YTc4ZTQ2ZDg5OA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 489
+        }
+      ],
+      "published_at": "2011-05-28T21:19:31.103Z",
+      "created_at": "2011-05-28T21:19:31.103Z",
+      "updated_at": "2020-04-16T14:25:30.905Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "965106849001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/883e0eda-db3b-4e7b-adc7-fd59e1007ace/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/3bf5206f-d8cd-48b4-8e05-1a0d3a68024c/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/883e0eda-db3b-4e7b-adc7-fd59e1007ace/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/3bf5206f-d8cd-48b4-8e05-1a0d3a68024c/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect7 - circuit analysis using kirchhoff's laws - part 1",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "false"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/10s/master.m3u8?fastly_token=NjRiNmQzZjRfYWUwMTdmMGNmMzVhNjBjMmQ5MzZhNTZjY2UwZGE3NjUwNzAzZGU5MjQ0MTBmMmRlYWZkZjhhOTNjYTgwOGMyZg%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/10s/master.m3u8?fastly_token=NjRiNmQzZjRfYWUwMTdmMGNmMzVhNjBjMmQ5MzZhNTZjY2UwZGE3NjUwNzAzZGU5MjQ0MTBmMmRlYWZkZjhhOTNjYTgwOGMyZg%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/6s/manifest.mpd?fastly_token=NjRiNmQzZjRfNTQwYmE3NDYzMTRhM2U2Yzk3OTM1Mzg0NTBjODEyMTI0MzUyYTExMjBhMDNiNDQxZDQzNDg4OTRhZTM2MWQxMw%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/6s/manifest.mpd?fastly_token=NjRiNmQzZjRfNTQwYmE3NDYzMTRhM2U2Yzk3OTM1Mzg0NTBjODEyMTI0MzUyYTExMjBhMDNiNDQxZDQzNDg4OTRhZTM2MWQxMw%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1252000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 2241578,
+          "height": 480,
+          "size": 352417947,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/high.mp4?akamai_token=exp=1689703412~acl=/media/v1/pmp4/static/clear/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/high.mp4*~hmac=6786db67333f36fc8121b19c5ab3023ecc850a3a31441b3b9fd57143c32e17f1",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1252000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 2241578,
+          "height": 480,
+          "size": 352417947,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/high.mp4?akamai_token=exp=1689703412~acl=/media/v1/pmp4/static/clear/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/high.mp4*~hmac=6786db67333f36fc8121b19c5ab3023ecc850a3a31441b3b9fd57143c32e17f1",
+          "width": 640
+        }
+      ],
+      "name": "07 - Circuit Analysis using Kirchhoff's Laws - Part 1",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 2241439,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "1ffe1715-2cbc-43ad-8940-3d73676bb074",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/2559/61991422001_aca055d2-227c-4147-8784-ddfd2833cb28.vtt?pubId=61991422001&videoId=973677692001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "aca055d2-227c-4147-8784-ddfd2833cb28",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/2559/61991422001_aca055d2-227c-4147-8784-ddfd2833cb28.vtt?pubId=61991422001&videoId=973677692001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/2559/61991422001_aca055d2-227c-4147-8784-ddfd2833cb28.vtt?pubId=61991422001&videoId=973677692001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "c2c13dd9-f292-45b3-b7d9-363001a8b36f",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/c2c13dd9-f292-45b3-b7d9-363001a8b36f/text.vtt?akamai_token=exp=1689703412~acl=/media/v1/text/vtt/clear/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/c2c13dd9-f292-45b3-b7d9-363001a8b36f/text.vtt*~hmac=6eb912fe30d8ed08824a0ce82aeb28e6c9f67f716c8ed2edf7cfc8b838b60287",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/c2c13dd9-f292-45b3-b7d9-363001a8b36f/text.vtt?akamai_token=exp=1689703412~acl=/media/v1/text/vtt/clear/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/c2c13dd9-f292-45b3-b7d9-363001a8b36f/text.vtt*~hmac=6eb912fe30d8ed08824a0ce82aeb28e6c9f67f716c8ed2edf7cfc8b838b60287"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/c2c13dd9-f292-45b3-b7d9-363001a8b36f/text.vtt?akamai_token=exp=1689703412~acl=/media/v1/text/vtt/clear/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/c2c13dd9-f292-45b3-b7d9-363001a8b36f/text.vtt*~hmac=6eb912fe30d8ed08824a0ce82aeb28e6c9f67f716c8ed2edf7cfc8b838b60287"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/a261e32e-e482-47ab-8973-2cbb3e464545/thumbnail.webvtt?fastly_token=NjRiNmQzZjRfMjJlNDNjNjZlMmQ4YzdhM2Q0ZmNjYTc4N2IyY2JmMGI1NGQ1ZDJmOWRjODBkY2Y1NDA1YzA3ZWY0ZDIyNTQzNw%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 313
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/b36c13a0-aa79-4b7c-8bf2-8a0acd27b0bf/a261e32e-e482-47ab-8973-2cbb3e464545/thumbnail.webvtt?fastly_token=NjRiNmQzZjRfMjJlNDNjNjZlMmQ4YzdhM2Q0ZmNjYTc4N2IyY2JmMGI1NGQ1ZDJmOWRjODBkY2Y1NDA1YzA3ZWY0ZDIyNTQzNw%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 313
+        }
+      ],
+      "published_at": "2011-06-03T07:55:57.679Z",
+      "created_at": "2011-06-03T07:55:57.679Z",
+      "updated_at": "2020-04-16T12:01:00.171Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "973677692001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/fa4a3f93-0622-4777-9c10-8126695a76d4/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/7bb650d9-db01-47c6-bb21-b83c309635d3/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/fa4a3f93-0622-4777-9c10-8126695a76d4/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/7bb650d9-db01-47c6-bb21-b83c309635d3/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect8 - circuit analysis using kirchhoff's laws - part 2",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "false"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/10s/master.m3u8?fastly_token=NjRiNmM1N2FfYTI3MTk4ZGY3YzhjMzNiODA1MGY5MjM0YTZkZjYxZTVjMjllMmYzMzU4M2I1OGVlYzIxZDBhY2VkY2QzMjQ5Yg%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/10s/master.m3u8?fastly_token=NjRiNmM1N2FfYTI3MTk4ZGY3YzhjMzNiODA1MGY5MjM0YTZkZjYxZTVjMjllMmYzMzU4M2I1OGVlYzIxZDBhY2VkY2QzMjQ5Yg%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/6s/manifest.mpd?fastly_token=NjRiNmM1N2FfNjNkNzc0YzNhNDcyMWIyMmQyZGFjYjllNmE2OWM5NjZkMWIzZTE1MDFmYjIyNjk4MTUzNTVlZTBjZmZiZDliMA%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/6s/manifest.mpd?fastly_token=NjRiNmM1N2FfNjNkNzc0YzNhNDcyMWIyMmQyZGFjYjllNmE2OWM5NjZkMWIzZTE1MDFmYjIyNjk4MTUzNTVlZTBjZmZiZDliMA%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1252000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1280938,
+          "height": 480,
+          "size": 201450026,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/high.mp4?akamai_token=exp=1689699706~acl=/media/v1/pmp4/static/clear/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/high.mp4*~hmac=e1edbd86a1a7c31dc3a3249a8c28f55254f2fda7492f7e48037ac11a2c1ebcb8",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1252000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1280938,
+          "height": 480,
+          "size": 201450026,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/high.mp4?akamai_token=exp=1689699706~acl=/media/v1/pmp4/static/clear/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/high.mp4*~hmac=e1edbd86a1a7c31dc3a3249a8c28f55254f2fda7492f7e48037ac11a2c1ebcb8",
+          "width": 640
+        }
+      ],
+      "name": "08 - Circuit Analysis using Kirchhoff's Laws - Part 2",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 1280813,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "36939dc2-e14f-450f-aad3-e24acd0e4f79",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/230/61991422001_682ebe80-40b8-4382-b908-a0f99282169c.vtt?pubId=61991422001&videoId=975198021001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "682ebe80-40b8-4382-b908-a0f99282169c",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/230/61991422001_682ebe80-40b8-4382-b908-a0f99282169c.vtt?pubId=61991422001&videoId=975198021001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/230/61991422001_682ebe80-40b8-4382-b908-a0f99282169c.vtt?pubId=61991422001&videoId=975198021001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "53941ba8-1868-47ae-879c-8cd2a4de98d5",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/53941ba8-1868-47ae-879c-8cd2a4de98d5/text.vtt?akamai_token=exp=1689699706~acl=/media/v1/text/vtt/clear/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/53941ba8-1868-47ae-879c-8cd2a4de98d5/text.vtt*~hmac=a65782efdfd1c50a7a25e33e2268038734197d87a6c019264f1fcecb0537eee9",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/53941ba8-1868-47ae-879c-8cd2a4de98d5/text.vtt?akamai_token=exp=1689699706~acl=/media/v1/text/vtt/clear/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/53941ba8-1868-47ae-879c-8cd2a4de98d5/text.vtt*~hmac=a65782efdfd1c50a7a25e33e2268038734197d87a6c019264f1fcecb0537eee9"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/53941ba8-1868-47ae-879c-8cd2a4de98d5/text.vtt?akamai_token=exp=1689699706~acl=/media/v1/text/vtt/clear/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/53941ba8-1868-47ae-879c-8cd2a4de98d5/text.vtt*~hmac=a65782efdfd1c50a7a25e33e2268038734197d87a6c019264f1fcecb0537eee9"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/372c591c-d806-4a87-8b03-9cdd12e11f81/thumbnail.webvtt?fastly_token=NjRiNmM1N2FfNjE2MTY5OTZlYjA5ODZlMmUxZDJhY2ZjMGIwMWMwZDMwMzI3YTk0MzBhMDZmNmM4YTFlMWEzNWYyMjI4ZjJiMg%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/8a86a7af-dd89-4101-a1e1-86b0ff5206ac/372c591c-d806-4a87-8b03-9cdd12e11f81/thumbnail.webvtt?fastly_token=NjRiNmM1N2FfNjE2MTY5OTZlYjA5ODZlMmUxZDJhY2ZjMGIwMWMwZDMwMzI3YTk0MzBhMDZmNmM4YTFlMWEzNWYyMjI4ZjJiMg%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        }
+      ],
+      "published_at": "2011-06-04T02:41:18.999Z",
+      "created_at": "2011-06-04T02:41:18.999Z",
+      "updated_at": "2020-04-16T22:45:51.759Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "975198021001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/877149c5-c92d-4c0a-bdff-6bd59b577a8e/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/f6b9beb1-38e3-46d9-b77d-23eb302b6907/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/877149c5-c92d-4c0a-bdff-6bd59b577a8e/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/f6b9beb1-38e3-46d9-b77d-23eb302b6907/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect9 - circuit analysis using kirchhoff's laws - part 3",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "false"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/10s/master.m3u8?fastly_token=NjRiNmJkZmJfZGZkZTE3MTI1YTIzOGIyN2RiODdmMGNlMGU3NTVmOTM5MWE1NWU2NGU2OTkyMThkMjcwZDM0OGZjMmRiNzZlZQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/10s/master.m3u8?fastly_token=NjRiNmJkZmJfZGZkZTE3MTI1YTIzOGIyN2RiODdmMGNlMGU3NTVmOTM5MWE1NWU2NGU2OTkyMThkMjcwZDM0OGZjMmRiNzZlZQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/6s/manifest.mpd?fastly_token=NjRiNmJkZmJfY2RlNmU1Mjg3ZjVlYTE0YjFkNjQyYjg4ODk4NDliOTNhYjc3MWJlM2E1ZDNiMzljYWVkNzU3ZDM3NjFiZjk1Nw%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/6s/manifest.mpd?fastly_token=NjRiNmJkZmJfY2RlNmU1Mjg3ZjVlYTE0YjFkNjQyYjg4ODk4NDliOTNhYjc3MWJlM2E1ZDNiMzljYWVkNzU3ZDM3NjFiZjk1Nw%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 2226517,
+          "height": 480,
+          "size": 350285033,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/high.mp4?akamai_token=exp=1689697787~acl=/media/v1/pmp4/static/clear/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/high.mp4*~hmac=38e421e62bc6b0d4e342ad3be5c05d17ae2e7875d614ed8056e79e9919708269",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 2226517,
+          "height": 480,
+          "size": 350285033,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/high.mp4?akamai_token=exp=1689697787~acl=/media/v1/pmp4/static/clear/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/high.mp4*~hmac=38e421e62bc6b0d4e342ad3be5c05d17ae2e7875d614ed8056e79e9919708269",
+          "width": 640
+        }
+      ],
+      "name": "09 - Circuit Analysis using Kirchhoff's Laws - Part 3",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 2226391,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "4d2267bb-0a69-4b21-88eb-6bf2df3ac76d",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/1099/61991422001_0e00302e-333d-41b1-adaa-fd6b19294094.vtt?pubId=61991422001&videoId=1013994248001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "0e00302e-333d-41b1-adaa-fd6b19294094",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/1099/61991422001_0e00302e-333d-41b1-adaa-fd6b19294094.vtt?pubId=61991422001&videoId=1013994248001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/1099/61991422001_0e00302e-333d-41b1-adaa-fd6b19294094.vtt?pubId=61991422001&videoId=1013994248001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "c571b21b-7df6-4c79-8555-568faefa043c",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/c571b21b-7df6-4c79-8555-568faefa043c/text.vtt?akamai_token=exp=1689697787~acl=/media/v1/text/vtt/clear/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/c571b21b-7df6-4c79-8555-568faefa043c/text.vtt*~hmac=019a90588097e267be159d379382b436ed137d72b3eeb21752a7650b5885f716",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/c571b21b-7df6-4c79-8555-568faefa043c/text.vtt?akamai_token=exp=1689697787~acl=/media/v1/text/vtt/clear/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/c571b21b-7df6-4c79-8555-568faefa043c/text.vtt*~hmac=019a90588097e267be159d379382b436ed137d72b3eeb21752a7650b5885f716"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/c571b21b-7df6-4c79-8555-568faefa043c/text.vtt?akamai_token=exp=1689697787~acl=/media/v1/text/vtt/clear/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/c571b21b-7df6-4c79-8555-568faefa043c/text.vtt*~hmac=019a90588097e267be159d379382b436ed137d72b3eeb21752a7650b5885f716"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/528b098d-a351-4ff9-a6e3-ee1b99d93ca9/thumbnail.webvtt?fastly_token=NjRiNmJkZmJfZDExOTU1N2M4N2ZkMTAyY2FjNjg1Mzc0ZWZiM2VmZDZhOGRhNTEyZmI3MGMzNzk5ZTgwZTkwMDEyMmRiZDRkZA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/45811228-eee3-49b5-a192-39df3cdc93a9/528b098d-a351-4ff9-a6e3-ee1b99d93ca9/thumbnail.webvtt?fastly_token=NjRiNmJkZmJfZDExOTU1N2M4N2ZkMTAyY2FjNjg1Mzc0ZWZiM2VmZDZhOGRhNTEyZmI3MGMzNzk5ZTgwZTkwMDEyMmRiZDRkZA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        }
+      ],
+      "published_at": "2011-06-22T18:50:07.783Z",
+      "created_at": "2011-06-22T18:50:07.783Z",
+      "updated_at": "2020-04-16T17:43:56.543Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "1013994248001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/007a662d-74f7-4f4b-b11d-300066a0f48a/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/10dedbd0-f436-4adc-85c3-ede2d8582dcd/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/007a662d-74f7-4f4b-b11d-300066a0f48a/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/10dedbd0-f436-4adc-85c3-ede2d8582dcd/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect10 - circuit analysis using kirchhoff's laws - part 4",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "false"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/10s/master.m3u8?fastly_token=NjRiNmI5ZGVfM2QxMTdmYjc4N2I3YjE1Nzk3NzMwMDE0MWYxOGM4NjdmYTNlMWUyZTVkOWVhOTIyOTIyZjYzMDMyZmY5NWNjYQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/10s/master.m3u8?fastly_token=NjRiNmI5ZGVfM2QxMTdmYjc4N2I3YjE1Nzk3NzMwMDE0MWYxOGM4NjdmYTNlMWUyZTVkOWVhOTIyOTIyZjYzMDMyZmY5NWNjYQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/6s/manifest.mpd?fastly_token=NjRiNmI5ZGVfYTUwZTYwYzRlNWJkYmMxOGZjN2VkNjY0NTNjZDcyMmIwNzA1ZmNiZjZlM2Q5Yjk0NDYxMDlmYWU3NzA1MTkzZg%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/6s/manifest.mpd?fastly_token=NjRiNmI5ZGVfYTUwZTYwYzRlNWJkYmMxOGZjN2VkNjY0NTNjZDcyMmIwNzA1ZmNiZjZlM2Q5Yjk0NDYxMDlmYWU3NzA1MTkzZg%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1323947,
+          "height": 480,
+          "size": 208273813,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/high.mp4?akamai_token=exp=1689696734~acl=/media/v1/pmp4/static/clear/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/high.mp4*~hmac=ae12e5af935e1e7e77a6e22db38d8500e6f80ea654313e7eeef7a556b9a5bb9c",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1323947,
+          "height": 480,
+          "size": 208273813,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/high.mp4?akamai_token=exp=1689696734~acl=/media/v1/pmp4/static/clear/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/high.mp4*~hmac=ae12e5af935e1e7e77a6e22db38d8500e6f80ea654313e7eeef7a556b9a5bb9c",
+          "width": 640
+        }
+      ],
+      "name": "10 - Circuit Analysis using Kirchhoff's Laws - Part 4",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 1323822,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "d3268140-a628-476e-a6e1-ce7764ed1ed8",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/213/61991422001_7ead66e1-1ca2-4284-8e29-acbf62e235e7.vtt?pubId=61991422001&videoId=1017555760001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "7ead66e1-1ca2-4284-8e29-acbf62e235e7",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/213/61991422001_7ead66e1-1ca2-4284-8e29-acbf62e235e7.vtt?pubId=61991422001&videoId=1017555760001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/213/61991422001_7ead66e1-1ca2-4284-8e29-acbf62e235e7.vtt?pubId=61991422001&videoId=1017555760001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "0d1e400a-d003-462e-9dae-1bcc2c447633",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/0d1e400a-d003-462e-9dae-1bcc2c447633/text.vtt?akamai_token=exp=1689696734~acl=/media/v1/text/vtt/clear/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/0d1e400a-d003-462e-9dae-1bcc2c447633/text.vtt*~hmac=f5be3e1bbb963e9b1c74f0cf57981ffdf1b95db1b14c363e8eee255efbb43539",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/0d1e400a-d003-462e-9dae-1bcc2c447633/text.vtt?akamai_token=exp=1689696734~acl=/media/v1/text/vtt/clear/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/0d1e400a-d003-462e-9dae-1bcc2c447633/text.vtt*~hmac=f5be3e1bbb963e9b1c74f0cf57981ffdf1b95db1b14c363e8eee255efbb43539"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/0d1e400a-d003-462e-9dae-1bcc2c447633/text.vtt?akamai_token=exp=1689696734~acl=/media/v1/text/vtt/clear/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/0d1e400a-d003-462e-9dae-1bcc2c447633/text.vtt*~hmac=f5be3e1bbb963e9b1c74f0cf57981ffdf1b95db1b14c363e8eee255efbb43539"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/ef51d778-2ba0-4d57-8575-0f3a91f67c9b/thumbnail.webvtt?fastly_token=NjRiNmI5ZGVfZTg3MjExOWFiOTA4NjcxZDU3NzM3YTBhZmZkNjgxNzdkNTdjZjNlN2I2MjhkYTA4Y2I0YTYyNjEyZjRiZjY5OA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 488
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/6de6ac0f-1205-49dd-a513-d959f2a75d08/ef51d778-2ba0-4d57-8575-0f3a91f67c9b/thumbnail.webvtt?fastly_token=NjRiNmI5ZGVfZTg3MjExOWFiOTA4NjcxZDU3NzM3YTBhZmZkNjgxNzdkNTdjZjNlN2I2MjhkYTA4Y2I0YTYyNjEyZjRiZjY5OA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 488
+        }
+      ],
+      "published_at": "2011-06-23T21:35:07.413Z",
+      "created_at": "2011-06-23T21:35:07.413Z",
+      "updated_at": "2020-04-16T09:32:36.378Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "1017555760001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/f90ec7b4-1828-4a79-9f3f-94e1ea2d12bb/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/f9548d54-ceef-47e4-911b-ed5951d2a870/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/f90ec7b4-1828-4a79-9f3f-94e1ea2d12bb/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/f9548d54-ceef-47e4-911b-ed5951d2a870/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect11 - circuit analysis using kirchhoff's laws - part 5",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "true"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/10s/master.m3u8?fastly_token=NjRiNmM2MmZfYWE3NWNkNWE5MDgzZWI0OWYyZmY1ODQ3ZDM5ZGJhZjVhNmJkYzAxODk4MzE2ZTJmNTQ2NWY1ZGFiZjI2MmE2Yg%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/10s/master.m3u8?fastly_token=NjRiNmM2MmZfYWE3NWNkNWE5MDgzZWI0OWYyZmY1ODQ3ZDM5ZGJhZjVhNmJkYzAxODk4MzE2ZTJmNTQ2NWY1ZGFiZjI2MmE2Yg%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/6s/manifest.mpd?fastly_token=NjRiNmM2MmZfODE5OWQ0Nzg4MzhjNjc0MTNjOGMzNGVhNmM2YTE3MWQxMWU1YjYwZDk2NTg1MmQ1MTM2NTVjY2UxZGZiNzZiYg%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/6s/manifest.mpd?fastly_token=NjRiNmM2MmZfODE5OWQ0Nzg4MzhjNjc0MTNjOGMzNGVhNmM2YTE3MWQxMWU1YjYwZDk2NTg1MmQ1MTM2NTVjY2UxZGZiNzZiYg%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1252000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1617535,
+          "height": 480,
+          "size": 254334171,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/high.mp4?akamai_token=exp=1689699887~acl=/media/v1/pmp4/static/clear/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/high.mp4*~hmac=45ba796bb7c3ef4a5b2a3f0154a4f0567b4b6334401bd723881da42744a69b03",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1252000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1617535,
+          "height": 480,
+          "size": 254334171,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/high.mp4?akamai_token=exp=1689699887~acl=/media/v1/pmp4/static/clear/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/high.mp4*~hmac=45ba796bb7c3ef4a5b2a3f0154a4f0567b4b6334401bd723881da42744a69b03",
+          "width": 640
+        }
+      ],
+      "name": "11 - Circuit Analysis using Kirchhoff's Laws - Part 5",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 1617416,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "e945783c-93ae-4605-b841-f84c4c2c2045",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/995/61991422001_37b82756-55d0-46f7-821b-a34b9f0045bd.vtt?pubId=61991422001&videoId=1017466741001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "37b82756-55d0-46f7-821b-a34b9f0045bd",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/995/61991422001_37b82756-55d0-46f7-821b-a34b9f0045bd.vtt?pubId=61991422001&videoId=1017466741001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/995/61991422001_37b82756-55d0-46f7-821b-a34b9f0045bd.vtt?pubId=61991422001&videoId=1017466741001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "c3e0ec97-48b8-475d-b90e-3b9eaef23c8d",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/c3e0ec97-48b8-475d-b90e-3b9eaef23c8d/text.vtt?akamai_token=exp=1689699887~acl=/media/v1/text/vtt/clear/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/c3e0ec97-48b8-475d-b90e-3b9eaef23c8d/text.vtt*~hmac=2880c08b1dcab160bee2d684a8f6cd72d7642d5aa8b819597055147cd017a011",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/c3e0ec97-48b8-475d-b90e-3b9eaef23c8d/text.vtt?akamai_token=exp=1689699887~acl=/media/v1/text/vtt/clear/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/c3e0ec97-48b8-475d-b90e-3b9eaef23c8d/text.vtt*~hmac=2880c08b1dcab160bee2d684a8f6cd72d7642d5aa8b819597055147cd017a011"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/c3e0ec97-48b8-475d-b90e-3b9eaef23c8d/text.vtt?akamai_token=exp=1689699887~acl=/media/v1/text/vtt/clear/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/c3e0ec97-48b8-475d-b90e-3b9eaef23c8d/text.vtt*~hmac=2880c08b1dcab160bee2d684a8f6cd72d7642d5aa8b819597055147cd017a011"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/2da7a142-deaa-4658-9cd6-c883ee0e5ef7/thumbnail.webvtt?fastly_token=NjRiNmM2MmZfNTgwNDg0YTQ2NzJkNjYzYWYxZTFlYTI2MjQwYzhhZTZmNWQzMWYwYTJmMWY3YmYxOGIyZDFlODI5MmY1Y2EyNA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 487
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/5bdd103a-e355-4da7-8a45-ae94a6ac02ba/2da7a142-deaa-4658-9cd6-c883ee0e5ef7/thumbnail.webvtt?fastly_token=NjRiNmM2MmZfNTgwNDg0YTQ2NzJkNjYzYWYxZTFlYTI2MjQwYzhhZTZmNWQzMWYwYTJmMWY3YmYxOGIyZDFlODI5MmY1Y2EyNA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 487
+        }
+      ],
+      "published_at": "2011-06-23T20:17:14.291Z",
+      "created_at": "2011-06-23T20:17:14.291Z",
+      "updated_at": "2020-04-16T11:44:10.819Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "1017466741001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/5c6949ad-c78a-41ee-b4ba-8e9887d5da3f/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/2c6857ac-5357-4d23-915d-1633e85cf841/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/5c6949ad-c78a-41ee-b4ba-8e9887d5da3f/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/2c6857ac-5357-4d23-915d-1633e85cf841/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect12 - circuit analysis using kirchhoff's laws - part 6",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "true"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/10s/master.m3u8?fastly_token=NjRiNmMzMThfZTExMjRlYjZjZDljOWJkYTBmYTQ2OWEwZDg3ZjA3ZjM2Mzk4YjgzYzViODA5MWI1MDc5NzFkYWRkNjk1MDAzYw%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/10s/master.m3u8?fastly_token=NjRiNmMzMThfZTExMjRlYjZjZDljOWJkYTBmYTQ2OWEwZDg3ZjA3ZjM2Mzk4YjgzYzViODA5MWI1MDc5NzFkYWRkNjk1MDAzYw%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/6s/manifest.mpd?fastly_token=NjRiNmMzMThfZDQwM2RhNWFmOGUwNjBhNDNmMTRmNTIzNjMwOTk3YzNhYTZiZjQ2NTVjNTBiNDNhOGFiNjJmZmNmNGJlMDc3MQ%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/6s/manifest.mpd?fastly_token=NjRiNmMzMThfZDQwM2RhNWFmOGUwNjBhNDNmMTRmNTIzNjMwOTk3YzNhYTZiZjQ2NTVjNTBiNDNhOGFiNjJmZmNmNGJlMDc3MQ%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1252000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1565653,
+          "height": 480,
+          "size": 246226015,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/high.mp4?akamai_token=exp=1689699096~acl=/media/v1/pmp4/static/clear/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/high.mp4*~hmac=3056d015e8118f9f253696a9c8b86b973d38374f13f058f697a80d179d3ea87f",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1252000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1565653,
+          "height": 480,
+          "size": 246226015,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/high.mp4?akamai_token=exp=1689699096~acl=/media/v1/pmp4/static/clear/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/high.mp4*~hmac=3056d015e8118f9f253696a9c8b86b973d38374f13f058f697a80d179d3ea87f",
+          "width": 640
+        }
+      ],
+      "name": "12 - Circuit Analysis using Kirchhoff's Laws - Part 6",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 1565531,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "367563b3-9ff1-448a-90f2-cdb5b2970c7d",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/1387/61991422001_80d13d22-f733-449f-9880-2804ab4642a5.vtt?pubId=61991422001&videoId=1017266656001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "80d13d22-f733-449f-9880-2804ab4642a5",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/1387/61991422001_80d13d22-f733-449f-9880-2804ab4642a5.vtt?pubId=61991422001&videoId=1017266656001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/1387/61991422001_80d13d22-f733-449f-9880-2804ab4642a5.vtt?pubId=61991422001&videoId=1017266656001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "ee162c38-1cc7-416c-af67-32a559c0f499",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/ee162c38-1cc7-416c-af67-32a559c0f499/text.vtt?akamai_token=exp=1689699096~acl=/media/v1/text/vtt/clear/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/ee162c38-1cc7-416c-af67-32a559c0f499/text.vtt*~hmac=c3646092208d0fa29d15671d80b8199f1df9212e66e6362f47a56f9b039197ae",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/ee162c38-1cc7-416c-af67-32a559c0f499/text.vtt?akamai_token=exp=1689699096~acl=/media/v1/text/vtt/clear/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/ee162c38-1cc7-416c-af67-32a559c0f499/text.vtt*~hmac=c3646092208d0fa29d15671d80b8199f1df9212e66e6362f47a56f9b039197ae"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/ee162c38-1cc7-416c-af67-32a559c0f499/text.vtt?akamai_token=exp=1689699096~acl=/media/v1/text/vtt/clear/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/ee162c38-1cc7-416c-af67-32a559c0f499/text.vtt*~hmac=c3646092208d0fa29d15671d80b8199f1df9212e66e6362f47a56f9b039197ae"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/8381123b-d520-4a3a-9a55-373d48413e18/thumbnail.webvtt?fastly_token=NjRiNmMzMThfOTllYWE5ZGQ3ZDcwZmQxNmE5MGM0ZDMyMWVjN2UwNjA2MDBkZTRhOGQ2ZGI1YWRhNDIyZWU4MjJlMGIwZDM3Mg%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/44a481be-b4c0-48f5-9318-dad3937618ff/8381123b-d520-4a3a-9a55-373d48413e18/thumbnail.webvtt?fastly_token=NjRiNmMzMThfOTllYWE5ZGQ3ZDcwZmQxNmE5MGM0ZDMyMWVjN2UwNjA2MDBkZTRhOGQ2ZGI1YWRhNDIyZWU4MjJlMGIwZDM3Mg%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        }
+      ],
+      "published_at": "2011-06-23T18:40:47.885Z",
+      "created_at": "2011-06-23T18:40:47.885Z",
+      "updated_at": "2020-04-16T14:59:57.351Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "1017266656001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/d2488aa5-6d41-4603-ba87-79a7381f56e8/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/75a33369-ef86-4c63-a043-67cb80109d0f/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/d2488aa5-6d41-4603-ba87-79a7381f56e8/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/75a33369-ef86-4c63-a043-67cb80109d0f/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect13 - circuit analysis using kirchhoff's laws - part 7",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "true"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/10s/master.m3u8?fastly_token=NjRiNmMyMTBfMDAzODExZmY0MjgwZWI0MTdmY2JjZGI5MDZmM2E1MzNkZDQwYWJhZGJjZDRiNWJiNWY0MzI2Y2MyZTNkNjEyMA%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/10s/master.m3u8?fastly_token=NjRiNmMyMTBfMDAzODExZmY0MjgwZWI0MTdmY2JjZGI5MDZmM2E1MzNkZDQwYWJhZGJjZDRiNWJiNWY0MzI2Y2MyZTNkNjEyMA%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/6s/manifest.mpd?fastly_token=NjRiNmMyMTBfZDc0YjY5NTllYjk3MGVlMGU3NzI4NjRkMWViYjg2M2QzZjgzOGI2ZDUwMWQzYzY1Nzc5MzFkMDBhZWRkZGE5MQ%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/6s/manifest.mpd?fastly_token=NjRiNmMyMTBfZDc0YjY5NTllYjk3MGVlMGU3NzI4NjRkMWViYjg2M2QzZjgzOGI2ZDUwMWQzYzY1Nzc5MzFkMDBhZWRkZGE5MQ%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1252000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1339627,
+          "height": 480,
+          "size": 210627393,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/high.mp4?akamai_token=exp=1689698832~acl=/media/v1/pmp4/static/clear/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/high.mp4*~hmac=85ed8a78533822dc801ab569517ed18c5e28b376b3f4fb62e2f9d6dac46659f1",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1252000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1339627,
+          "height": 480,
+          "size": 210627393,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/high.mp4?akamai_token=exp=1689698832~acl=/media/v1/pmp4/static/clear/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/high.mp4*~hmac=85ed8a78533822dc801ab569517ed18c5e28b376b3f4fb62e2f9d6dac46659f1",
+          "width": 640
+        }
+      ],
+      "name": "13 - Circuit Analysis using Kirchhoff's Laws - Part 7",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 1339505,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "c6814c35-e4d1-47a7-b93e-ed679786f566",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/1677/61991422001_50050404-1be9-4d09-a6d3-373866965ab8.vtt?pubId=61991422001&videoId=1017128207001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "50050404-1be9-4d09-a6d3-373866965ab8",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/1677/61991422001_50050404-1be9-4d09-a6d3-373866965ab8.vtt?pubId=61991422001&videoId=1017128207001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/1677/61991422001_50050404-1be9-4d09-a6d3-373866965ab8.vtt?pubId=61991422001&videoId=1017128207001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "9b9465b2-2188-4efe-93a9-0cba76d92c57",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/9b9465b2-2188-4efe-93a9-0cba76d92c57/text.vtt?akamai_token=exp=1689698832~acl=/media/v1/text/vtt/clear/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/9b9465b2-2188-4efe-93a9-0cba76d92c57/text.vtt*~hmac=4262a60055eab9bf8227f12ecf31c831d338af4128a4a729a2c11897b82a2612",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/9b9465b2-2188-4efe-93a9-0cba76d92c57/text.vtt?akamai_token=exp=1689698832~acl=/media/v1/text/vtt/clear/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/9b9465b2-2188-4efe-93a9-0cba76d92c57/text.vtt*~hmac=4262a60055eab9bf8227f12ecf31c831d338af4128a4a729a2c11897b82a2612"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/9b9465b2-2188-4efe-93a9-0cba76d92c57/text.vtt?akamai_token=exp=1689698832~acl=/media/v1/text/vtt/clear/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/9b9465b2-2188-4efe-93a9-0cba76d92c57/text.vtt*~hmac=4262a60055eab9bf8227f12ecf31c831d338af4128a4a729a2c11897b82a2612"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/f9da7272-c54b-43f4-ab81-eee8675c9466/thumbnail.webvtt?fastly_token=NjRiNmMyMTBfZDU3Y2RlYzMwYTAwNTIyZGExZmI1NDMyNDg4MDhhNWIyYjkzODUwMWU3ZGI3NDUzMDU3NGVjYTk4ZTMzZWMzZQ%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 489
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/20bbd2c0-9159-4f58-93ac-7d02f59b511d/f9da7272-c54b-43f4-ab81-eee8675c9466/thumbnail.webvtt?fastly_token=NjRiNmMyMTBfZDU3Y2RlYzMwYTAwNTIyZGExZmI1NDMyNDg4MDhhNWIyYjkzODUwMWU3ZGI3NDUzMDU3NGVjYTk4ZTMzZWMzZQ%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 489
+        }
+      ],
+      "published_at": "2011-06-23T17:08:26.208Z",
+      "created_at": "2011-06-23T17:08:26.208Z",
+      "updated_at": "2020-04-16T09:40:38.630Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "1017128207001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/276b3dd2-b1f5-4cdd-822c-e08300e389c7/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/f48a84eb-9ac4-482b-ad41-a4f162329165/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/276b3dd2-b1f5-4cdd-822c-e08300e389c7/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/f48a84eb-9ac4-482b-ad41-a4f162329165/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect14 - solving circuits with dependent current sources",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "true"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/10s/master.m3u8?fastly_token=NjRiNmM2NGZfZTFhMjk5MjVkMTAxNDI3MjVlMGZkOGFlZmJjYTUzYTQ1ZTUyODgzMjZlMGI0YzU5OGE1NWE3OTQzYmIzYTFhMQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/10s/master.m3u8?fastly_token=NjRiNmM2NGZfZTFhMjk5MjVkMTAxNDI3MjVlMGZkOGFlZmJjYTUzYTQ1ZTUyODgzMjZlMGI0YzU5OGE1NWE3OTQzYmIzYTFhMQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/6s/manifest.mpd?fastly_token=NjRiNmM2NGZfNWJiMDhjMWZhYTg4M2U1ZmE0NWJmY2VjZTg3NGZmYzU4NjI3NmRjNzZhMTQ0M2FkMGNmZjdkNTdhYWVhMzQyZA%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/6s/manifest.mpd?fastly_token=NjRiNmM2NGZfNWJiMDhjMWZhYTg4M2U1ZmE0NWJmY2VjZTg3NGZmYzU4NjI3NmRjNzZhMTQ0M2FkMGNmZjdkNTdhYWVhMzQyZA%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1463423,
+          "height": 480,
+          "size": 230265256,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/high.mp4?akamai_token=exp=1689699919~acl=/media/v1/pmp4/static/clear/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/high.mp4*~hmac=a4bab5a2ee048512f1335048e11a4f421eb63b407a44cc084e3cf97aeefdf3af",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1463423,
+          "height": 480,
+          "size": 230265256,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/high.mp4?akamai_token=exp=1689699919~acl=/media/v1/pmp4/static/clear/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/high.mp4*~hmac=a4bab5a2ee048512f1335048e11a4f421eb63b407a44cc084e3cf97aeefdf3af",
+          "width": 640
+        }
+      ],
+      "name": "14 - Solving Circuits with Dependent Current Sources - Part 1",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 1463295,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "86df7f47-7e1f-4f10-91cc-dc86b9f55371",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/1515/61991422001_b688bff6-c291-460f-b78d-41246c60992c.vtt?pubId=61991422001&videoId=1016897880001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "b688bff6-c291-460f-b78d-41246c60992c",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/1515/61991422001_b688bff6-c291-460f-b78d-41246c60992c.vtt?pubId=61991422001&videoId=1016897880001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/1515/61991422001_b688bff6-c291-460f-b78d-41246c60992c.vtt?pubId=61991422001&videoId=1016897880001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "b02f3b7f-ed87-456d-bed4-daa5656a4e45",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/b02f3b7f-ed87-456d-bed4-daa5656a4e45/text.vtt?akamai_token=exp=1689699919~acl=/media/v1/text/vtt/clear/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/b02f3b7f-ed87-456d-bed4-daa5656a4e45/text.vtt*~hmac=e9397bb7f0d7d777b527e81a68df702a8df0a1b0917d33303455327443523c94",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/b02f3b7f-ed87-456d-bed4-daa5656a4e45/text.vtt?akamai_token=exp=1689699919~acl=/media/v1/text/vtt/clear/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/b02f3b7f-ed87-456d-bed4-daa5656a4e45/text.vtt*~hmac=e9397bb7f0d7d777b527e81a68df702a8df0a1b0917d33303455327443523c94"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/b02f3b7f-ed87-456d-bed4-daa5656a4e45/text.vtt?akamai_token=exp=1689699919~acl=/media/v1/text/vtt/clear/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/b02f3b7f-ed87-456d-bed4-daa5656a4e45/text.vtt*~hmac=e9397bb7f0d7d777b527e81a68df702a8df0a1b0917d33303455327443523c94"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/5354064b-32d7-4fba-8ce5-26b8c64279ba/thumbnail.webvtt?fastly_token=NjRiNmM2NGZfMzBkZjlhMWU2Zjc3NThhYzVmZTc4YmQ1N2UxZWVhN2M4OTkyYTg5M2Y5MDI2ZjgxNjZhY2JkM2Q3MzAyNDkyMg%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 315
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/77851264-e7ef-4182-bbd1-df26eb0bac4e/5354064b-32d7-4fba-8ce5-26b8c64279ba/thumbnail.webvtt?fastly_token=NjRiNmM2NGZfMzBkZjlhMWU2Zjc3NThhYzVmZTc4YmQ1N2UxZWVhN2M4OTkyYTg5M2Y5MDI2ZjgxNjZhY2JkM2Q3MzAyNDkyMg%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 315
+        }
+      ],
+      "published_at": "2011-06-23T15:48:59.146Z",
+      "created_at": "2011-06-23T15:48:59.146Z",
+      "updated_at": "2020-04-16T09:59:12.845Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "1016897880001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/962c46c3-d37a-485f-8193-088b76863ba2/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/56f4705f-b765-4511-8a27-47bd0182a7e2/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/962c46c3-d37a-485f-8193-088b76863ba2/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/56f4705f-b765-4511-8a27-47bd0182a7e2/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect15 - solving circuits with dependent current sources - part 2",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "true"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/10s/master.m3u8?fastly_token=NjRiNmM2ZTdfMjc3ZTQzNTdlYTBlOGUxZGM3MDZmNGI3MzUyZjE4ZmQzNTVkNGE4ZDg0ZjRiMDhlOWRmOTg4N2NjNGVhYjZlMQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/10s/master.m3u8?fastly_token=NjRiNmM2ZTdfMjc3ZTQzNTdlYTBlOGUxZGM3MDZmNGI3MzUyZjE4ZmQzNTVkNGE4ZDg0ZjRiMDhlOWRmOTg4N2NjNGVhYjZlMQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/6s/manifest.mpd?fastly_token=NjRiNmM2ZTdfMWQ4NjA4ODA0MTJmYzYxYWMwOTExZWEzZjZkZjQxMGQ3ZjQ1MjYxMTExMmM0NDdiY2VlZGU4OTNmMjliZjQyOQ%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/6s/manifest.mpd?fastly_token=NjRiNmM2ZTdfMWQ4NjA4ODA0MTJmYzYxYWMwOTExZWEzZjZkZjQxMGQ3ZjQ1MjYxMTExMmM0NDdiY2VlZGU4OTNmMjliZjQyOQ%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1775125,
+          "height": 480,
+          "size": 279282495,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/high.mp4?akamai_token=exp=1689700071~acl=/media/v1/pmp4/static/clear/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/high.mp4*~hmac=d09234d7e5f2e601d56f41b070d87c22f7843a6c2ee2534c95ea0ebf56537a04",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1775125,
+          "height": 480,
+          "size": 279282495,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/high.mp4?akamai_token=exp=1689700071~acl=/media/v1/pmp4/static/clear/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/high.mp4*~hmac=d09234d7e5f2e601d56f41b070d87c22f7843a6c2ee2534c95ea0ebf56537a04",
+          "width": 640
+        }
+      ],
+      "name": "15 - Solving Circuits with Dependent Current Sources - Part 2",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 1775007,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "6f33aafb-670d-4b8a-98c1-270c90c79d21",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/125/61991422001_30eaa7ae-af57-493d-a1a2-6338c006114e.vtt?pubId=61991422001&videoId=1016661705001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "30eaa7ae-af57-493d-a1a2-6338c006114e",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/125/61991422001_30eaa7ae-af57-493d-a1a2-6338c006114e.vtt?pubId=61991422001&videoId=1016661705001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/125/61991422001_30eaa7ae-af57-493d-a1a2-6338c006114e.vtt?pubId=61991422001&videoId=1016661705001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "4e7d80fc-1248-4906-8dbb-6e65585d1582",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/4e7d80fc-1248-4906-8dbb-6e65585d1582/text.vtt?akamai_token=exp=1689700071~acl=/media/v1/text/vtt/clear/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/4e7d80fc-1248-4906-8dbb-6e65585d1582/text.vtt*~hmac=fdc798157a214ec80ed9ef163a100212c416458e754585ff072478ca2ee691a0",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/4e7d80fc-1248-4906-8dbb-6e65585d1582/text.vtt?akamai_token=exp=1689700071~acl=/media/v1/text/vtt/clear/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/4e7d80fc-1248-4906-8dbb-6e65585d1582/text.vtt*~hmac=fdc798157a214ec80ed9ef163a100212c416458e754585ff072478ca2ee691a0"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/4e7d80fc-1248-4906-8dbb-6e65585d1582/text.vtt?akamai_token=exp=1689700071~acl=/media/v1/text/vtt/clear/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/4e7d80fc-1248-4906-8dbb-6e65585d1582/text.vtt*~hmac=fdc798157a214ec80ed9ef163a100212c416458e754585ff072478ca2ee691a0"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/cebb46e7-e140-4810-907e-5878238225c0/thumbnail.webvtt?fastly_token=NjRiNmM2ZTdfMGQzNzczMGNlMGRiN2JlNzY5ZTBkNDg5MWI5NTQ0ZWJlNjgzYjIxZmQ3MjU0MmI2MGYxMzRiNDY0MmYxZTg1NQ%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/4d80bde0-3311-40fa-bb43-cbc4bf11fe2e/cebb46e7-e140-4810-907e-5878238225c0/thumbnail.webvtt?fastly_token=NjRiNmM2ZTdfMGQzNzczMGNlMGRiN2JlNzY5ZTBkNDg5MWI5NTQ0ZWJlNjgzYjIxZmQ3MjU0MmI2MGYxMzRiNDY0MmYxZTg1NQ%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        }
+      ],
+      "published_at": "2011-06-23T14:22:00.833Z",
+      "created_at": "2011-06-23T14:22:00.833Z",
+      "updated_at": "2020-04-16T14:51:20.085Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "1016661705001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/b063a887-db78-4d28-b285-101110e111e7/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/a94ec34d-59d7-4257-82eb-6965fb3446f8/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/b063a887-db78-4d28-b285-101110e111e7/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/a94ec34d-59d7-4257-82eb-6965fb3446f8/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect16 - resistors in series and parallel - part 1",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "true"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/10s/master.m3u8?fastly_token=NjRiNmQwZGFfODRmNmI0M2ZkY2NjODUyYWE1YTNmNjAxOTM4NDM2ZGQ0ZmU4ZTE3ZTdkMmFmMDAwMjJmMjdhYjUwZTg4MTM4Mw%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/10s/master.m3u8?fastly_token=NjRiNmQwZGFfODRmNmI0M2ZkY2NjODUyYWE1YTNmNjAxOTM4NDM2ZGQ0ZmU4ZTE3ZTdkMmFmMDAwMjJmMjdhYjUwZTg4MTM4Mw%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/6s/manifest.mpd?fastly_token=NjRiNmQwZGFfNjBiMTc1NWJjYzBlNWUzNGVjNjBhNjU0ZWQwMGY4MjZiZmUzNzg3ZGNlZTQyMTZmNGEzZDBmZDcxZTU0ZTFiMw%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/6s/manifest.mpd?fastly_token=NjRiNmQwZGFfNjBiMTc1NWJjYzBlNWUzNGVjNjBhNjU0ZWQwMGY4MjZiZmUzNzg3ZGNlZTQyMTZmNGEzZDBmZDcxZTU0ZTFiMw%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1560553,
+          "height": 480,
+          "size": 245505776,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/high.mp4?akamai_token=exp=1689702618~acl=/media/v1/pmp4/static/clear/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/high.mp4*~hmac=fe81139e47cdecef73898b8f97fafabec02c06d4418a80040328daf9cb27ed17",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1560553,
+          "height": 480,
+          "size": 245505776,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/high.mp4?akamai_token=exp=1689702618~acl=/media/v1/pmp4/static/clear/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/high.mp4*~hmac=fe81139e47cdecef73898b8f97fafabec02c06d4418a80040328daf9cb27ed17",
+          "width": 640
+        }
+      ],
+      "name": "16 - Resistors in Series and Parallel - Part 1",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 1560426,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "1b64d263-e798-46e5-b2d5-c4392e7230dc",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/563/61991422001_eaf96ba7-1bb0-4697-8719-b3c54e5dfd8e.vtt?pubId=61991422001&videoId=1015363871001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "eaf96ba7-1bb0-4697-8719-b3c54e5dfd8e",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/563/61991422001_eaf96ba7-1bb0-4697-8719-b3c54e5dfd8e.vtt?pubId=61991422001&videoId=1015363871001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/563/61991422001_eaf96ba7-1bb0-4697-8719-b3c54e5dfd8e.vtt?pubId=61991422001&videoId=1015363871001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "f154a264-ebbc-494e-baf1-9ae9775f7230",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/f154a264-ebbc-494e-baf1-9ae9775f7230/text.vtt?akamai_token=exp=1689702618~acl=/media/v1/text/vtt/clear/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/f154a264-ebbc-494e-baf1-9ae9775f7230/text.vtt*~hmac=1fd410614e0b035103d35150864ee1ca3ec986772c6704247a36dd48a1fd3bd1",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/f154a264-ebbc-494e-baf1-9ae9775f7230/text.vtt?akamai_token=exp=1689702618~acl=/media/v1/text/vtt/clear/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/f154a264-ebbc-494e-baf1-9ae9775f7230/text.vtt*~hmac=1fd410614e0b035103d35150864ee1ca3ec986772c6704247a36dd48a1fd3bd1"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/f154a264-ebbc-494e-baf1-9ae9775f7230/text.vtt?akamai_token=exp=1689702618~acl=/media/v1/text/vtt/clear/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/f154a264-ebbc-494e-baf1-9ae9775f7230/text.vtt*~hmac=1fd410614e0b035103d35150864ee1ca3ec986772c6704247a36dd48a1fd3bd1"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/9c86e489-828a-4038-89a8-6fedfa5835ac/thumbnail.webvtt?fastly_token=NjRiNmQwZGFfMjVjZDk1NzU2YzBiNWMzOWQyNGNjN2IzM2JjZTRiNDBiZmE2MzdkZmI3MjJlYTRhZGY0MTg5MTFkYTNiYTBmMA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/a115c4e3-8a91-4790-897d-500aac4cd77b/9c86e489-828a-4038-89a8-6fedfa5835ac/thumbnail.webvtt?fastly_token=NjRiNmQwZGFfMjVjZDk1NzU2YzBiNWMzOWQyNGNjN2IzM2JjZTRiNDBiZmE2MzdkZmI3MjJlYTRhZGY0MTg5MTFkYTNiYTBmMA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        }
+      ],
+      "published_at": "2011-06-23T12:37:32.920Z",
+      "created_at": "2011-06-23T12:37:32.920Z",
+      "updated_at": "2020-04-16T11:21:02.312Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "1015363871001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/ebf9308d-fba5-4f43-aa21-d4fb078a44a1/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/535bf586-f9db-4de1-a592-2f0a23a952cb/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/ebf9308d-fba5-4f43-aa21-d4fb078a44a1/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/535bf586-f9db-4de1-a592-2f0a23a952cb/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect17 - resistors in series and parallel - part 1",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "true"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/10s/master.m3u8?fastly_token=NjRiNmJhOWVfZWQ5ZTFhOWQwMWRlYTdhNTY3YmY1OWFhYTAyYzQyMjY1NDY5MWEwYWZiYThmMTgxYTFlMGM0MDdlOWU5YTViNg%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/10s/master.m3u8?fastly_token=NjRiNmJhOWVfZWQ5ZTFhOWQwMWRlYTdhNTY3YmY1OWFhYTAyYzQyMjY1NDY5MWEwYWZiYThmMTgxYTFlMGM0MDdlOWU5YTViNg%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/6s/manifest.mpd?fastly_token=NjRiNmJhOWVfMzc3ZTdjZGJlM2JkYzJlNjhhNTFkMTAxZmI4MzNlMWEzYzE1YzE4OWFjMmVjNWE5YTNjZmM3NjYzZjMyYWJiZA%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/6s/manifest.mpd?fastly_token=NjRiNmJhOWVfMzc3ZTdjZGJlM2JkYzJlNjhhNTFkMTAxZmI4MzNlMWEzYzE1YzE4OWFjMmVjNWE5YTNjZmM3NjYzZjMyYWJiZA%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1488853,
+          "height": 480,
+          "size": 234235301,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/high.mp4?akamai_token=exp=1689696926~acl=/media/v1/pmp4/static/clear/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/high.mp4*~hmac=80a03c55632944652d53b0d083c1d2fdfe026f6b631d3394d0c11dfc6e92badb",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1488853,
+          "height": 480,
+          "size": 234235301,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/high.mp4?akamai_token=exp=1689696926~acl=/media/v1/pmp4/static/clear/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/high.mp4*~hmac=80a03c55632944652d53b0d083c1d2fdfe026f6b631d3394d0c11dfc6e92badb",
+          "width": 640
+        }
+      ],
+      "name": "17 - Resistors in Series and Parallel - Part 1",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 1488721,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "92aee8f6-99b1-48d2-8524-e188fb138c25",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/3979/61991422001_24785c9f-b030-4ef9-925c-e54043f3f21c.vtt?pubId=61991422001&videoId=1015031692001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "24785c9f-b030-4ef9-925c-e54043f3f21c",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/3979/61991422001_24785c9f-b030-4ef9-925c-e54043f3f21c.vtt?pubId=61991422001&videoId=1015031692001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/3979/61991422001_24785c9f-b030-4ef9-925c-e54043f3f21c.vtt?pubId=61991422001&videoId=1015031692001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "c301754f-78bc-4a0e-b22f-e4e4f5cb04bd",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/c301754f-78bc-4a0e-b22f-e4e4f5cb04bd/text.vtt?akamai_token=exp=1689696926~acl=/media/v1/text/vtt/clear/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/c301754f-78bc-4a0e-b22f-e4e4f5cb04bd/text.vtt*~hmac=83284f7a2113b3237d155fdac34ef43761f34f696e6a0e8e99643422cb678b66",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/c301754f-78bc-4a0e-b22f-e4e4f5cb04bd/text.vtt?akamai_token=exp=1689696926~acl=/media/v1/text/vtt/clear/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/c301754f-78bc-4a0e-b22f-e4e4f5cb04bd/text.vtt*~hmac=83284f7a2113b3237d155fdac34ef43761f34f696e6a0e8e99643422cb678b66"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/c301754f-78bc-4a0e-b22f-e4e4f5cb04bd/text.vtt?akamai_token=exp=1689696926~acl=/media/v1/text/vtt/clear/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/c301754f-78bc-4a0e-b22f-e4e4f5cb04bd/text.vtt*~hmac=83284f7a2113b3237d155fdac34ef43761f34f696e6a0e8e99643422cb678b66"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/4a89642a-0893-4057-850a-5f713de83540/thumbnail.webvtt?fastly_token=NjRiNmJhOWVfMDhmOTE2NTA4M2ZlOTA2ZmM1YzZmMDgzMjYwZjM3ZWJiMzVmYzZjOWEyNDhkMDU5ZmI3M2Y4YTk4OGQwNTIxZQ%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 490
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/72fd9621-7a4b-473b-85ee-2922e5539045/4a89642a-0893-4057-850a-5f713de83540/thumbnail.webvtt?fastly_token=NjRiNmJhOWVfMDhmOTE2NTA4M2ZlOTA2ZmM1YzZmMDgzMjYwZjM3ZWJiMzVmYzZjOWEyNDhkMDU5ZmI3M2Y4YTk4OGQwNTIxZQ%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 490
+        }
+      ],
+      "published_at": "2011-06-23T11:05:59.900Z",
+      "created_at": "2011-06-23T11:05:59.900Z",
+      "updated_at": "2020-04-16T09:45:19.777Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "1015031692001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/120262ea-e3a5-4518-a364-cf191ec25f27/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/ac279aa0-d53e-4d39-8f2b-5af17279e3f3/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/120262ea-e3a5-4518-a364-cf191ec25f27/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/ac279aa0-d53e-4d39-8f2b-5af17279e3f3/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect18 - voltage divider circuits - part 1",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "true"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/10s/master.m3u8?fastly_token=NjRiNmMzOGVfZWY2MzdjNTg2YzJmM2Q0NmJhNzJkNzk3Nzk0NjAxNjQwNjI0NjY0N2MxMmQ5OGYyZTY1NWM2N2YwNDU4NjBlOA%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/10s/master.m3u8?fastly_token=NjRiNmMzOGVfZWY2MzdjNTg2YzJmM2Q0NmJhNzJkNzk3Nzk0NjAxNjQwNjI0NjY0N2MxMmQ5OGYyZTY1NWM2N2YwNDU4NjBlOA%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/6s/manifest.mpd?fastly_token=NjRiNmMzOGVfMDk4NzViM2UyNWY0NGViZWQxOWFhMzY2OWI1MDQ4MjIwMDZiNTNjMjRmYmFiMjUyYjUyNzA1ZDJkMjM2ODEyNA%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/6s/manifest.mpd?fastly_token=NjRiNmMzOGVfMDk4NzViM2UyNWY0NGViZWQxOWFhMzY2OWI1MDQ4MjIwMDZiNTNjMjRmYmFiMjUyYjUyNzA1ZDJkMjM2ODEyNA%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1666965,
+          "height": 480,
+          "size": 262291135,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/high.mp4?akamai_token=exp=1689699214~acl=/media/v1/pmp4/static/clear/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/high.mp4*~hmac=e0eaddab71aea5699431894bd558a77c308faa8a35dea23de81438dc12afa930",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1666965,
+          "height": 480,
+          "size": 262291135,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/high.mp4?akamai_token=exp=1689699214~acl=/media/v1/pmp4/static/clear/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/high.mp4*~hmac=e0eaddab71aea5699431894bd558a77c308faa8a35dea23de81438dc12afa930",
+          "width": 640
+        }
+      ],
+      "name": "18 - Voltage Divider Circuits - Part 1",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 1666832,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "b5c0d22d-c80a-4961-8b4f-19273db7a032",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/3845/61991422001_a9a2430a-1243-44e4-9e45-6ac05f270d37.vtt?pubId=61991422001&videoId=1015136690001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "a9a2430a-1243-44e4-9e45-6ac05f270d37",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/3845/61991422001_a9a2430a-1243-44e4-9e45-6ac05f270d37.vtt?pubId=61991422001&videoId=1015136690001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/3845/61991422001_a9a2430a-1243-44e4-9e45-6ac05f270d37.vtt?pubId=61991422001&videoId=1015136690001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "a2580ff5-31f4-42b8-94e6-1513c4de4e89",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/a2580ff5-31f4-42b8-94e6-1513c4de4e89/text.vtt?akamai_token=exp=1689699214~acl=/media/v1/text/vtt/clear/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/a2580ff5-31f4-42b8-94e6-1513c4de4e89/text.vtt*~hmac=07bd5e6d872701d7d8cd4b3e826025d02a6baeaaf8eebad137cadb54b9998c7d",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/a2580ff5-31f4-42b8-94e6-1513c4de4e89/text.vtt?akamai_token=exp=1689699214~acl=/media/v1/text/vtt/clear/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/a2580ff5-31f4-42b8-94e6-1513c4de4e89/text.vtt*~hmac=07bd5e6d872701d7d8cd4b3e826025d02a6baeaaf8eebad137cadb54b9998c7d"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/a2580ff5-31f4-42b8-94e6-1513c4de4e89/text.vtt?akamai_token=exp=1689699214~acl=/media/v1/text/vtt/clear/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/a2580ff5-31f4-42b8-94e6-1513c4de4e89/text.vtt*~hmac=07bd5e6d872701d7d8cd4b3e826025d02a6baeaaf8eebad137cadb54b9998c7d"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/4544316e-efd5-426f-b6d6-79814dab73ad/thumbnail.webvtt?fastly_token=NjRiNmMzOGVfN2MwMWY0MzIzNTQzMzA2ZDVkZWQ3NWZhYzZkZTg1ZmNlZmM5ZGIzMWI4YTU5YTEyOTRkN2IwNjY1OGM1Njg0YQ%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 490
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/1f0053d6-037f-4674-89d0-76459411ccab/4544316e-efd5-426f-b6d6-79814dab73ad/thumbnail.webvtt?fastly_token=NjRiNmMzOGVfN2MwMWY0MzIzNTQzMzA2ZDVkZWQ3NWZhYzZkZTg1ZmNlZmM5ZGIzMWI4YTU5YTEyOTRkN2IwNjY1OGM1Njg0YQ%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 490
+        }
+      ],
+      "published_at": "2011-06-23T09:38:34.175Z",
+      "created_at": "2011-06-23T09:38:34.175Z",
+      "updated_at": "2020-04-16T21:49:33.854Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "1015136690001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/ae8f96c2-13c3-483e-9213-964bb77521eb/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/9afc6493-e900-4684-ad85-6ea58eda92e1/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/ae8f96c2-13c3-483e-9213-964bb77521eb/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/9afc6493-e900-4684-ad85-6ea58eda92e1/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect19 - voltage divider circuits - part 2",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "true"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/10s/master.m3u8?fastly_token=NjRiNmJlZDVfNzFlOGFiZDViZTg4ZGExYzViMjA1NTM1OTdjY2M2ODI5MGFiYjk4NDcwNTNjY2RjNGVjMWFkNDM5ZmM3YWQ2YQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/10s/master.m3u8?fastly_token=NjRiNmJlZDVfNzFlOGFiZDViZTg4ZGExYzViMjA1NTM1OTdjY2M2ODI5MGFiYjk4NDcwNTNjY2RjNGVjMWFkNDM5ZmM3YWQ2YQ%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/6s/manifest.mpd?fastly_token=NjRiNmJlZDVfNWUyOWQ3MjI3NDZlNjdiYmU0ZmI1NWZiZDI5M2Q1OGRiMWEyMzA1NDliMjUyYmFkNTNlMDAyODQwNmM0N2E4OQ%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/6s/manifest.mpd?fastly_token=NjRiNmJlZDVfNWUyOWQ3MjI3NDZlNjdiYmU0ZmI1NWZiZDI5M2Q1OGRiMWEyMzA1NDliMjUyYmFkNTNlMDAyODQwNmM0N2E4OQ%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 630975,
+          "height": 480,
+          "size": 99260347,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/high.mp4?akamai_token=exp=1689698005~acl=/media/v1/pmp4/static/clear/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/high.mp4*~hmac=91d65c1f60ad932f4aa0b6bed72861f1cf5b520054d9a46ea3d8b996d3aae10b",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1253000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 630975,
+          "height": 480,
+          "size": 99260347,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/high.mp4?akamai_token=exp=1689698005~acl=/media/v1/pmp4/static/clear/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/high.mp4*~hmac=91d65c1f60ad932f4aa0b6bed72861f1cf5b520054d9a46ea3d8b996d3aae10b",
+          "width": 640
+        }
+      ],
+      "name": "19 - Voltage Divider Circuits - Part 2",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 630864,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "68507368-97ff-4b27-887f-4724a91095d2",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/3547/61991422001_5516a41e-9927-47d5-8c66-e1df45988204.vtt?pubId=61991422001&videoId=1014845754001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "5516a41e-9927-47d5-8c66-e1df45988204",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/3547/61991422001_5516a41e-9927-47d5-8c66-e1df45988204.vtt?pubId=61991422001&videoId=1014845754001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/3547/61991422001_5516a41e-9927-47d5-8c66-e1df45988204.vtt?pubId=61991422001&videoId=1014845754001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "21808802-8e98-438e-adad-57718dc492ec",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/21808802-8e98-438e-adad-57718dc492ec/text.vtt?akamai_token=exp=1689698005~acl=/media/v1/text/vtt/clear/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/21808802-8e98-438e-adad-57718dc492ec/text.vtt*~hmac=a20bbbcee285969da75b3a7b026fa7c02af4b2baae9149aa6d14bd1721374863",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/21808802-8e98-438e-adad-57718dc492ec/text.vtt?akamai_token=exp=1689698005~acl=/media/v1/text/vtt/clear/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/21808802-8e98-438e-adad-57718dc492ec/text.vtt*~hmac=a20bbbcee285969da75b3a7b026fa7c02af4b2baae9149aa6d14bd1721374863"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/21808802-8e98-438e-adad-57718dc492ec/text.vtt?akamai_token=exp=1689698005~acl=/media/v1/text/vtt/clear/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/21808802-8e98-438e-adad-57718dc492ec/text.vtt*~hmac=a20bbbcee285969da75b3a7b026fa7c02af4b2baae9149aa6d14bd1721374863"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/3ec5ca15-5cbd-40dc-b931-ba9054956662/thumbnail.webvtt?fastly_token=NjRiNmJlZDVfZTVlZjI0ZmY0ZTMzNzdkODBmNzI4MTBjNWY2ZDZjZTQ4OWYzYThkMTA5ZGUyMGU2ZDUzODkxM2RhOTU3N2Y5NA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 490
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/9761ee9e-79b0-44f4-9d3f-22b62e0f84f2/3ec5ca15-5cbd-40dc-b931-ba9054956662/thumbnail.webvtt?fastly_token=NjRiNmJlZDVfZTVlZjI0ZmY0ZTMzNzdkODBmNzI4MTBjNWY2ZDZjZTQ4OWYzYThkMTA5ZGUyMGU2ZDUzODkxM2RhOTU3N2Y5NA%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 480,
+          "height": 360,
+          "bandwidth": 490
+        }
+      ],
+      "published_at": "2011-06-23T08:00:48.441Z",
+      "created_at": "2011-06-23T08:00:48.441Z",
+      "updated_at": "2020-04-16T17:01:21.291Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "1014845754001",
+      "ad_keys": null
+    },
+    {
+      "poster": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/96092004-47a9-460a-b449-11fbe2dda093/957f9484-0a71-4b9a-a717-b5a559cd7e91/640x480/match/image.jpg",
+      "thumbnail": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/96092004-47a9-460a-b449-11fbe2dda093/d9782136-f61e-45c3-ba0c-45bf368754f9/120x90/match/image.jpg",
+      "poster_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/96092004-47a9-460a-b449-11fbe2dda093/957f9484-0a71-4b9a-a717-b5a559cd7e91/640x480/match/image.jpg"
+        }
+      ],
+      "thumbnail_sources": [
+        {
+          "src": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/61991422001/96092004-47a9-460a-b449-11fbe2dda093/d9782136-f61e-45c3-ba0c-45bf368754f9/120x90/match/image.jpg"
+        }
+      ],
+      "description": "circuit analysis, vol1 - sect20 - current divider circuits",
+      "tags": [
+        "engineering circuit analysis - vol 1",
+        "rev-completed"
+      ],
+      "cue_points": [],
+      "custom_fields": {
+        "subscription_required": "true"
+      },
+      "account_id": "61991422001",
+      "sources": [
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/96092004-47a9-460a-b449-11fbe2dda093/10s/master.m3u8?fastly_token=NjRiNmI4OGZfNzhkNWNhYjAwYTU0YjdhYmFlZWY5MDM2ZTU5ZGMxYmE2OWI4NTA5ZmJjNmM3MWRhNTFiN2YyYjA5MWNjMDQ5Ng%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "ext_x_version": "4",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/96092004-47a9-460a-b449-11fbe2dda093/10s/master.m3u8?fastly_token=NjRiNmI4OGZfNzhkNWNhYjAwYTU0YjdhYmFlZWY5MDM2ZTU5ZGMxYmE2OWI4NTA5ZmJjNmM3MWRhNTFiN2YyYjA5MWNjMDQ5Ng%3D%3D",
+          "type": "application/x-mpegURL"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/96092004-47a9-460a-b449-11fbe2dda093/6s/manifest.mpd?fastly_token=NjRiNmI4OGZfMmYwZDhiYTlhMzBlNzA3YjdhYmZmNDVlZGM1OGVkMDMxYmQ2ZDg1YjAzNTUwZTYyNzVlMDU3MmU4ZDMyZDc2Mg%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "codecs": "avc1,mp4a",
+          "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+          "src": "https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/96092004-47a9-460a-b449-11fbe2dda093/6s/manifest.mpd?fastly_token=NjRiNmI4OGZfMmYwZDhiYTlhMzBlNzA3YjdhYmZmNDVlZGM1OGVkMDMxYmQ2ZDg1YjAzNTUwZTYyNzVlMDU3MmU4ZDMyZDc2Mg%3D%3D",
+          "type": "application/dash+xml"
+        },
+        {
+          "avg_bitrate": 1252000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1037482,
+          "height": 480,
+          "size": 163183566,
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/96092004-47a9-460a-b449-11fbe2dda093/high.mp4?akamai_token=exp=1689696399~acl=/media/v1/pmp4/static/clear/61991422001/96092004-47a9-460a-b449-11fbe2dda093/high.mp4*~hmac=da93fe7885246d16b2a90182d99badf34939b0f4d003706179d0448985018078",
+          "width": 640
+        },
+        {
+          "avg_bitrate": 1252000,
+          "codec": "H264",
+          "container": "MP4",
+          "duration": 1037482,
+          "height": 480,
+          "size": 163183566,
+          "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/96092004-47a9-460a-b449-11fbe2dda093/high.mp4?akamai_token=exp=1689696399~acl=/media/v1/pmp4/static/clear/61991422001/96092004-47a9-460a-b449-11fbe2dda093/high.mp4*~hmac=da93fe7885246d16b2a90182d99badf34939b0f4d003706179d0448985018078",
+          "width": 640
+        }
+      ],
+      "name": "20 - Current Divider Circuits",
+      "reference_id": null,
+      "long_description": null,
+      "duration": 1037370,
+      "economics": "AD_SUPPORTED",
+      "text_tracks": [
+        {
+          "id": "63ceba7d-57d3-4f58-88a5-4dc51ae22cc5",
+          "account_id": "61991422001",
+          "src": "http://brightcove01.brightcove.com/23/61991422001/202004/907/61991422001_1c2112bc-7994-4808-8016-de4659bfd28a.vtt?pubId=61991422001&videoId=1014748108001",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/vtt",
+          "asset_id": "1c2112bc-7994-4808-8016-de4659bfd28a",
+          "sources": [
+            {
+              "src": "http://brightcove01.brightcove.com/23/61991422001/202004/907/61991422001_1c2112bc-7994-4808-8016-de4659bfd28a.vtt?pubId=61991422001&videoId=1014748108001"
+            },
+            {
+              "src": "https://bcsecure01-a.akamaihd.net/23/61991422001/202004/907/61991422001_1c2112bc-7994-4808-8016-de4659bfd28a.vtt?pubId=61991422001&videoId=1014748108001"
+            }
+          ],
+          "default": true
+        },
+        {
+          "id": "fd2005c1-5e7b-41f2-9136-bc14e65b9915",
+          "account_id": "61991422001",
+          "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/96092004-47a9-460a-b449-11fbe2dda093/fd2005c1-5e7b-41f2-9136-bc14e65b9915/text.vtt?akamai_token=exp=1689696399~acl=/media/v1/text/vtt/clear/61991422001/96092004-47a9-460a-b449-11fbe2dda093/fd2005c1-5e7b-41f2-9136-bc14e65b9915/text.vtt*~hmac=2c0bfc397fe2f00927079dca4826c5537cc55474a02fb4f937b06f716d7dd054",
+          "srclang": "en",
+          "label": "English",
+          "kind": "captions",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": [
+            {
+              "src": "http://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/96092004-47a9-460a-b449-11fbe2dda093/fd2005c1-5e7b-41f2-9136-bc14e65b9915/text.vtt?akamai_token=exp=1689696399~acl=/media/v1/text/vtt/clear/61991422001/96092004-47a9-460a-b449-11fbe2dda093/fd2005c1-5e7b-41f2-9136-bc14e65b9915/text.vtt*~hmac=2c0bfc397fe2f00927079dca4826c5537cc55474a02fb4f937b06f716d7dd054"
+            },
+            {
+              "src": "https://bcbolt446c5271-a.akamaihd.net/media/v1/text/vtt/clear/61991422001/96092004-47a9-460a-b449-11fbe2dda093/fd2005c1-5e7b-41f2-9136-bc14e65b9915/text.vtt?akamai_token=exp=1689696399~acl=/media/v1/text/vtt/clear/61991422001/96092004-47a9-460a-b449-11fbe2dda093/fd2005c1-5e7b-41f2-9136-bc14e65b9915/text.vtt*~hmac=2c0bfc397fe2f00927079dca4826c5537cc55474a02fb4f937b06f716d7dd054"
+            }
+          ],
+          "in_band_metadata_track_dispatch_type": "",
+          "default": false
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "http://manifest.prod.boltdns.net/thumbnail/v1/61991422001/96092004-47a9-460a-b449-11fbe2dda093/677e1114-6d09-46ba-abc8-fb3fb0a17290/thumbnail.webvtt?fastly_token=NjRiNmI4OGZfYjA3YzlkYTI2N2FmNWFmZTBiNTBlNmMxYjcxMTMxMTY3OWQzMTI1ZWExYmM1ZmI1OTEwMTA0MjMxODVjZjU1NQ%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        },
+        {
+          "id": null,
+          "account_id": "61991422001",
+          "src": "https://manifest.prod.boltdns.net/thumbnail/v1/61991422001/96092004-47a9-460a-b449-11fbe2dda093/677e1114-6d09-46ba-abc8-fb3fb0a17290/thumbnail.webvtt?fastly_token=NjRiNmI4OGZfYjA3YzlkYTI2N2FmNWFmZTBiNTBlNmMxYjcxMTMxMTY3OWQzMTI1ZWExYmM1ZmI1OTEwMTA0MjMxODVjZjU1NQ%3D%3D",
+          "srclang": null,
+          "label": "thumbnails",
+          "kind": "metadata",
+          "mime_type": "text/webvtt",
+          "asset_id": null,
+          "sources": null,
+          "default": false,
+          "width": 360,
+          "height": 270,
+          "bandwidth": 314
+        }
+      ],
+      "published_at": "2011-06-23T07:23:48.501Z",
+      "created_at": "2011-06-23T07:23:48.501Z",
+      "updated_at": "2020-04-16T07:50:30.784Z",
+      "offline_enabled": false,
+      "link": null,
+      "id": "1014748108001",
+      "ad_keys": null
+    }
+  ]
+}

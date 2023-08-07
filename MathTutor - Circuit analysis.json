@@ -1,0 +1,83 @@
+{
+  "name": "Electrical Engineering",
+  "playlist": "",
+  "children": [
+    {
+      "name": "Engineering DC Circuits",
+      "playlist": "",
+      "children": [
+        {
+          "name": "DC Circuits: Vol 1",
+          "playlist": "5455901781001",
+          "children": []
+        },
+        {
+          "name": "DC Circuits: Vol 2",
+          "playlist": "5455901782001",
+          "children": []
+        },
+        {
+          "name": "DC Circuits: Vol 3",
+          "playlist": "5456011852001",
+          "children": []
+        },
+        {
+          "name": "DC Circuits: Vol 4",
+          "playlist": "5456343826001",
+          "children": []
+        },
+        {
+          "name": "DC Circuits: Vol 5",
+          "playlist": "5455901784001",
+          "children": []
+        },
+        {
+          "name": "DC Circuits: Vol 6",
+          "playlist": "5626711241001",
+          "children": []
+        },
+        {
+          "name": "DC Circuits: Vol 7",
+          "playlist": "5648816780001",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Engineering AC Circuits",
+      "playlist": "",
+      "children": [
+        {
+          "name": "AC Circuits: Vol 1",
+          "playlist": "5455801697001",
+          "children": []
+        },
+        {
+          "name": "AC Circuits: Vol 2",
+          "playlist": "5455903806001",
+          "children": []
+        },
+        {
+          "name": "AC Circuits: Vol 3",
+          "playlist": "5455901780001",
+          "children": []
+        },
+        {
+          "name": "AC Circuits: Vol 4",
+          "playlist": "5756101524001",
+          "children": []
+        },
+        {
+          "name": "AC Circuits: Vol 5",
+          "playlist": "5821044166001",
+          "children": []
+        },
+        {
+          "name": "AC Circuits: Vol 6",
+          "playlist": "5821324587001",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "remote_url": "https:// s3 .amazonaws.com/android-app-json/MathTutor.json",
+  "uiConfig": {
+    "stringsFilename": "Localizable"
+  },
+  "urlConfig": {
+    "share_url": "http:// www .mathtutorapp.com",
+    "about_url": "http:// www .mathtutordvd.com/public/department90.cfm",
+    "faq_url": "",
+    "privacy_url": "http:// www .mathtutordvd.com/public/department12.cfm",
+    "terms_url": "http:// www .mathtutordvd.com/public/73.cfm",
+    "support_url": "",
+    "contactus_url": ""
+  },
+  "sessionConfig": {
+    "kBCGSSessionType": "kBCGSSessionTypeVCCache",
+    "kVCAPIToken": "l1Ap8pCOIzyoyxsrKTJ-RHrWuBHay2gihRlPAoCOefTCTkoTFTKANw..",
+    "kVCSessionCacheIntervalInHours": 60,
+    "kBCGSSessionTags": [],
+    "kWVAccountID": "61991422001",
+    "kWVPolicyKey": "BCpkADawqM3IHJ2eoVWggztYsIJiXJhevAgSWmH0c8xAzYdpOb9K5vgjbpO7tERtTWf69iLCskauOHlXPYy0o_h-CPBgORLV4nzdq0Bpg83ZLApEWLdRJJp45Uo",
+    "kBCGSPlaylistJSItems": []
+  },
+  "landingConfig": [
+    "1740354517305597228",
+    "1732361960164351310",
+    "1732361860371318922",
+    "1669872324028865884",
+    "1669872215608074942"
+  ],
+  "heroConfig": [
+    "5452603551001",
+    "5454138014001",
+    "5455903759001",
+    "5455901758001",
+    "5455801690001",
+    "5455901785001",
+    "5457947484001",
+    "5455801737001",
+    "5455901782001",
+    "5455903807001"
+  ],
+  "appConfig": {
+    "waitingPage": "Waiting",
+    "waitingClass": "MTWaitingViewController"
+  },
+  "pageConfig": [],
+  "cellConfig": [],
+  "menu_config": {
+    "items": [
+      {
+        "name": "Electrical Engineering",
+        "playlist": "",
+        "children": [
+          {
+            "name": "Engineering DC Circuits",
+            "playlist": "",
+            "children": [
+              {
+                "name": "DC Circuits: Vol 1",
+                "playlist": "5455901781001",
+                "children": []
+              },
+              {
+                "name": "DC Circuits: Vol 2",
+                "playlist": "5455901782001",
+                "children": []
+              },
+              {
+                "name": "DC Circuits: Vol 3",
+                "playlist": "5456011852001",
+                "children": []
+              },
+              {
+                "name": "DC Circuits: Vol 4",
+                "playlist": "5456343826001",
+                "children": []
+              },
+              {
+                "name": "DC Circuits: Vol 5",
+                "playlist": "5455901784001",
+                "children": []
+              },
+              {
+                "name": "DC Circuits: Vol 6",
+                "playlist": "5626711241001",
+                "children": []
+              },
+              {
+                "name": "DC Circuits: Vol 7",
+                "playlist": "5648816780001",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Engineering AC Circuits",
+            "playlist": "",
+            "children": [
+              {
+                "name": "AC Circuits: Vol 1",
+                "playlist": "5455801697001",
+                "children": []
+              },
+              {
+                "name": "AC Circuits: Vol 2",
+                "playlist": "5455903806001",
+                "children": []
+              },
+              {
+                "name": "AC Circuits: Vol 3",
+                "playlist": "5455901780001",
+                "children": []
+              },
+              {
+                "name": "AC Circuits: Vol 4",
+                "playlist": "5756101524001",
+                "children": []
+              },
+              {
+                "name": "AC Circuits: Vol 5",
+                "playlist": "5821044166001",
+                "children": []
+              },
+              {
+                "name": "AC Circuits: Vol 6",
+                "playlist": "5821324587001",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

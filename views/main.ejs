@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Tutor</title>
+</head>
+
+<body>
+    <style>
+        body,
+        html {
+            padding: 0 !important;
+            margin: 0 !important;
+            /* height: 100% !important; */
+            /* width: 100vw !important; */
+        }
+
+
+        * {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            /* overflow: hidden; */
+            background-color: #e5d7e5;
+            overflow-y: scroll;
+            position: relative;
+            /* width: 100vw; */
+        }
+
+
+        .main {
+            /* width: 100%; */
+            /* min-width: 100%; */
+            /* min-height: 100%; */
+            height: fit-content;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .sideNav {
+            background-color: purple;
+            width: fit-content;
+            min-width: 6rem;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-y: scroll;
+
+
+
+            .sideNav__list {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 1.2rem;
+                min-width: fit-content;
+
+
+                .sideNav__list__item {
+                    width: fit-content;
+                    width: 100%;
+                    padding: 1rem;
+                    min-height: fit-content;
+
+                    background-color: #fff;
+                    border-radius: 0.4rem;
+                    text-align: center;
+                    cursor: pointer;
+                    position: relative;
+
+                    &:hover {
+                        background-color: rgb(167, 45, 167);
+                        color: #fff;
+                    }
+                }
+
+                .sideNav__list__item span {
+                    display: inline-block;
+                }
+
+                .sideNav__list__item:has(.sideNav__list__item__subNavCheckbox:checked) {
+                    >*:not(:last-child) {
+                        margin-bottom: .8rem;
+
+                    }
+
+                    &:hover {
+                        color: #000 !important;
+                        background-color: #fff !important;
+                    }
+                }
+            }
+
+            .sideNav__list__subNav {
+                display: none;
+                outline: 2px solid coral;
+                border-radius: 0.4rem;
+            }
+        }
+
+
+        .sideNav__list>*:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+
+
+
+
+        .sideNav__list__item__subNavCheckbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .sideNav__list__item__subNavCheckbox:checked~.sideNav__list__subNav {
+            display: flex;
+
+
+        }
+
+        .topNav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            /* width: 100%; */
+            background-color: purple;
+            height: fit-content;
+            padding: 2rem 0;
+
+
+
+
+            width: 100%;
+        }
+
+        .topNav>*:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+
+        select,
+        .downloadAll {
+            outline: none;
+            color: coral;
+            border-radius: 1rem;
+            padding: 1rem;
+            height: fit-content;
+            min-width: 15rem;
+            background-color: #e5d7e5;
+            text-align: center;
+
+        }
+
+        .leftCont,
+        .rightCont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .playlist__title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: rgb(123 53 123);
+
+            .playlist__title__description {
+                color: rgb(109 89 109);
+                margin: 0;
+            }
+        }
+
+        .playlist {
+            /* background-color: green; */
+            width: 100%;
+            height: 100%;
+            padding: 2rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+            grid-gap: 2rem;
+            place-content: center;
+            place-items: center;
+
+
+            .playlist__wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .playlist__wrapper__item {
+                background-color: purple;
+                width: 26rem;
+                min-height: 28rem;
+                height: fit-content;
+                border-radius: 1rem;
+                overflow: hidden;
+                box-shadow: 0px 0px 7px 0px purple;
+
+                transition: transform 200ms ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                .playlist__wrapper__item__header {
+                    background-color: gray;
+                    width: 100%;
+                    min-height: 60%;
+                    height: 60%;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .playlist__wrapper__item__body {
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 0.8rem;
+
+
+
+                    >* {
+                        width: 100%;
+
+
+                    }
+
+                    .playlist__wrapper__item__body__top {
+                        /* background-color: red; */
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0;
+                        height: fit-content;
+
+                        & h2,
+                        h3 {
+                            margin: 0;
+                        }
+                    }
+
+
+                    .playlist__wrapper__item__body__description {
+                        display: block;
+                        /* background-color: blue; */
+                        min-height: 3.8rem;
+                        color: rgb(241, 198, 241);
+                        font-size: 1.2rem;
+                        font-weight: lighter;
+                        margin: 0;
+                    }
+
+                    &>*:not(:last-child) {
+                        margin-bottom: .4rem;
+                    }
+
+                    .playlist__wrapper__item__body__bottom {
+                        /* background-color: green; */
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        >*:not(:last-child) {
+                            margin-right: .4rem;
+                        }
+
+                        >* {
+                            text-decoration: none;
+                            padding: 1rem 2rem;
+                            background-color: rgb(241, 153, 241);
+                            display: inline-block;
+                            border-radius: 1rem;
+                            color: rgb(58, 27, 58);
+                            outline: none;
+                            cursor: pointer;
+                            font-weight: bold;
+
+                            &:hover {
+                                color: rgb(241, 153, 241);
+                                background-color: transparent;
+                                outline: 4px solid rgb(241, 153, 241);
+                            }
+                        }
+
+                        .playlist__wrapper__item__body__bottom__sources {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .overlay {
+            /* display: none; */
+            /* border-radius: 1rem; */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #373847c5;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            z-index: 99;
+            /* &::after {
+                position: absolute;
+                content: ' ';
+                z-index: 9999;
+            } */
+
+        }
+
+        .overlay textarea {
+
+            outline-style: none;
+            border-style: none;
+            border-radius: .5rem;
+            padding: 1rem;
+            width: 80%;
+            height: 40%;
+        }
+
+        .overlay .close {
+            background-color: rgb(236, 94, 236);
+            color: rgb(54, 21, 54);
+            position: absolute;
+            top: 3rem;
+            left: 3rem;
+            cursor: pointer;
+            padding: 1rem;
+            border-radius: .4rem;
+
+        }
+
+        .overflow_hidden {
+            overflow: hidden;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .rightCont {
+            position: relative;
+        }
+
+        .downloadAll {
+            z-index: 1;
+        }
+
+        .bottomCont {
+            background-color: rgb(216, 136, 216);
+            color: rgb(85, 38, 85);
+            width: 100%;
+            padding: 2rem 0 1rem 0;
+            position: absolute;
+            bottom: -3.2rem;
+            z-index: 0;
+            text-align: center;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+
+        }
+
+        .topNav>*:not(:last-child) {
+            margin: 1rem;
+        }
+
+        .footer {
+            background-color: purple;
+            color: #fff;
+            width: 100%;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-top: auto; */
+
+        }
+
+        .footer>*:not(:last-child) {
+            margin-right: 1rem;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .navFooter {
+            flex-direction: column;
+            width: fit-content;
+            outline: 2px solid #fff;
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+
+        @media screen and (max-width:860px) {
+            .topNav {
+                flex-direction: column;
+            }
+
+            .navFooter {
+                margin-top: 4rem !important;
+            }
+        }
+    </style>
+
+    <main class="main">
+        <nav class="topNav">
+            <div class="leftCont">
+                <select class="list1"></select>
+                <select class="list2"></select>
+                <select class="list3"></select>
+            </div>
+            <div class="rightCont">
+                <a href="#" class="downloadAll">Download All</a>
+
+                <div class="bottomCont"></div>
+
+
+            </div>
+            <footer class="footer navFooter">
+                <span>made with ❤️ by Eng Ahmed Abdulaziz namee</span>
+                <a href="https://wa.me/+201002047539" target="_blank"> whatsapp +201002047539 </a>
+                <a href="https://wa.me/+201030791942" target="_blank"> +201030791942 </a>
+                <a href="mailto:ahmed88xdev88@gmail.com"> ahmed88xdev88@gmail.com </a>
+            </footer>
+            <div class="overlay hidden">
+                <div class="close">X</div>
+                <textarea class="links" name="" id="" cols="30" rows="10"></textarea>
+                <footer class="footer">
+                    <span>made with ❤️ by Eng Ahmed Abdulaziz namee</span>
+                    <a href="https://wa.me/+201002047539" target="_blank"> whatsapp +201002047539 </a>
+                    <a href="https://wa.me/+201030791942" target="_blank"> +201030791942 </a>
+                    <a href="mailto:ahmed88xdev88@gmail.com"> ahmed88xdev88@gmail.com </a>
+                </footer>
+            </div>
+        </nav>
+
+        <!-- <nav class="sideNav">
+            <ul class="sideNav__list">
+                <li class="sideNav__list__item">aaaaaa</li>
+                <li class="sideNav__list__item">aaaaaa</li>
+                <li class="sideNav__list__item">aaaaaa</li>
+                <li class="sideNav__list__item">
+                    <span>aaaaa</span>
+                    <input type="checkbox" name="subNav" id="subNav" class="sideNav__list__item__subNavCheckbox">
+                    <ul class="sideNav__list sideNav__list__subNav">
+                        <li class="sideNav__list__item">aaaaaa</li>
+                        <li class="sideNav__list__item">aaaaaa</li>
+                        <li class="sideNav__list__item">aaaaaa</li>
+                        <li class="sideNav__list__item">aaaaaa</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav> -->
+        <div class="playlist__title">
+            <h1 class="playlist__title__text"></h1>
+            <p class="playlist__title__description"></p>
+        </div>
+        <div class="playlist">
+            <!-- <div class="playlist__wrapper__item">
+                <div class="playlist__wrapper__item__header"></div>
+                <div class="playlist__wrapper__item__body">
+                    <div class="playlist__wrapper__item__body__top">
+                        <h2 class="playlist__wrapper__item__body__top__title">the title</h2>
+                        <h3 class="playlist__wrapper__item__body__top__title">00:30</h3>
+                    </div>
+                    <p class="playlist__wrapper__item__body__description">the description</p>
+                    <div class="playlist__wrapper__item__body__bottom">
+                        <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                            <option value="">720p</option>
+                            <option value="">430p</option>
+                        </select>
+                        <a href="#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                    </div>
+
+                </div>
+            </div>
+     -->
+        </div>
+
+
+
+    </main>
+    <input type="hidden" name="nav" value="<%=nav%>">
+
+    <footer class="footer">
+        <span>made with ❤️ by Eng Ahmed Abdulaziz namee</span>
+        <a href="https://wa.me/+201002047539" target="_blank"> whatsapp +201002047539 </a>
+        <a href="https://wa.me/+201030791942" target="_blank"> +201030791942 </a>
+        <a href="mailto:ahmed88xdev88@gmail.com"> ahmed88xdev88@gmail.com </a>
+    </footer>
+    <script>
+
+
+        const accountId = 61991422001;
+        const nav = JSON.parse(document.querySelector('input[type="hidden"][name="nav"]').value)
+
+        const opts = nav.map((it, i) => {
+            return `<option index="${i}" playlist="${it.playlist}">${it.name}</option>`
+        }).join(' ')
+
+        // document.querySelector('main').innerHTML = ''
+        document.querySelector('.list1').innerHTML = opts
+        showSublist1('.list1', '.list2')
+        showSublist2('.list1', '.list2', '.list3')
+        document.addEventListener('DOMContentLoaded', () => {
+
+            setTimeout(() => {
+                populate('.list1')
+                populate('.list2')
+                populate('.list3')
+            }, 500);
+            // obs1.observe(document.querySelectorAll('select')[1], { attributes: true, childList: true, characterData: true })
+            // obs2.observe(document.querySelectorAll('select')[2], { attributes: true, childList: true, characterData: true })
+            document.querySelector('.overlay .close').addEventListener('click', () => {
+                document.querySelector('.overlay').classList.add('hidden')
+                document.body.classList.remove('overflow_hidden')
+
+
+
+            })
+
+        })
+
+        document.querySelector('.list1').addEventListener('change', () => {
+            console.log('list 1 changed')
+            showSublist1('.list1', '.list2')
+            populate('.list1')
+        })
+
+        document.querySelector('.list2').addEventListener('change', () => {
+            console.log('list 2 changed');
+            showSublist2('.list1', '.list2', '.list3')
+            populate('.list2')
+        })
+
+        document.querySelector('.list3').addEventListener('change', async (e) => {
+            console.log('list 3 changed')
+
+            populate('.list3')
+
+        })
+        document.querySelector('.downloadAll').addEventListener('click', () => {
+            let links = '';
+
+            document.querySelectorAll('.playlist__wrapper__item__body__bottom__sources').forEach(it => {
+                links += '\n ===== \n ' + it.parentElement.previousElementSibling.previousElementSibling.children[0].innerText + '\n ===== \n'
+                links += [...it.children].map((item, index) => {
+                    if (item.innerText.toLowerCase().includes('container_mp4')) {
+                        if (item.value.replaceAll(/https\:\/\/|http\:\/\//ig, '') != it.children[index - 1].value.replaceAll(/https\:\/\/|http\:\/\//ig, '')) {
+                            return item.value
+                        } else {
+                            return ''
+                        }
+
+                    } else {
+                        return ''
+                    }
+
+                }, {}).join(' ')
+            })
+            document.querySelector('.overlay').classList.remove('hidden')
+            document.body.classList.add('overflow_hidden')
+
+            document.querySelector('.links').value = ''
+            document.querySelector('.links').value = links
+        })
+
+        async function fetchList(accountId, playlist) {
+            var myHeaders = new Headers();
+            myHeaders.append("accept", "application/json;pk=BCpkADawqM3IHJ2eoVWggztYsIJiXJhevAgSWmH0c8xAzYdpOb9K5vgjbpO7tERtTWf69iLCskauOHlXPYy0o_h-CPBgORLV4nzdq0Bpg83ZLApEWLdRJJp45Uo");
+
+            var requestOptions = {
+                method: 'GET',
+                headers: myHeaders,
+                redirect: 'follow'
+            };
+
+            const res = await fetch(`https://edge.api.brightcove.com/playback/v1/accounts/${accountId}/playlists/${playlist}`, requestOptions)
+                .then(response => response.json())
+                .then(result => result)
+                .catch(error => console.log('error', error));
+
+            return res
+        }
+        function showSublist1(selector1, selector2) {
+            const index = document.querySelector(`${selector1} [index="${document.querySelector(selector1).selectedIndex}"]`).getAttribute('index')
+            const playlist = document.querySelector(`${selector1} [index="${document.querySelector(selector1).selectedIndex}"]`).getAttribute('playlist')
+
+            const opts = nav[index].children.map((it, i) => {
+                return `<option index="${i}" playlist="${it.playlist}">${it.name}</option>`
+            }).join(' ')
+
+            // // document.querySelector('main').innerHTML = ''
+            document.querySelector(selector2).innerHTML = opts
+        }
+
+        function showSublist2(selector1, selector2, selector3) {
+            const index1 = document.querySelector(`${selector1} [index="${document.querySelector(selector1).selectedIndex}"]`).getAttribute('index')
+            const index2 = document.querySelector(`${selector2} [index="${document.querySelector(selector2).selectedIndex}"]`).getAttribute('index')
+            const playlist1 = document.querySelector(`${selector1} [index="${document.querySelector(selector1).selectedIndex}"]`).getAttribute('playlist')
+            const playlist2 = document.querySelector(`${selector2} [index="${document.querySelector(selector2).selectedIndex}"]`).getAttribute('playlist')
+
+            const opts = nav[index1].children[index2].children.map((it, i) => {
+                return `<option index="${i}" playlist="${it.playlist}">${it.name}</option>`
+            }).join(' ')
+
+            // // document.querySelector('main').innerHTML = ''
+            document.querySelector(selector3).innerHTML = opts
+        }
+
+        async function populate(selector) {
+
+            const playlist = document.querySelector(`${selector} [index="${document.querySelector(selector).selectedIndex}"]`).getAttribute('playlist')
+
+            let list;
+            if (playlist.length != 0) {
+                list = await fetchList(accountId, playlist)
+
+                const meta = ['name', 'description']
+                const items = [...document.querySelector('.playlist__title').children]
+                items.forEach((it, i) => {
+                    it.innerText = list[meta[i]]
+                });
+
+                document.querySelector('.bottomCont').innerHTML = list.videos.length + ' videos'
+                const html = list.videos.map((it, i) => {
+                    const opts = it.sources.map((source, index) => {
+                        const title = Object.keys(source).map((it, i) => {
+                            if (it != 'src') {
+                                return it + '_' + source[it]
+                            } else {
+                                return ''
+                            }
+                        }, {}).join(' - ').replaceAll(/ -  - /ig, ' - ')
+
+                        return `<option value="${source.src}">${title}</option>`
+                    }, {}).join('  ')
+
+                    const convTime = (time) => {
+                        let fTime = (it.duration) / (1000 * (60))
+                        let tmp = fTime.toString().split('.')
+                        let sec = (parseFloat('0.' + tmp[1]) * 60).toFixed(0)
+                        fTime = `${tmp[0]}:${sec}`
+                        return fTime
+                    }
+                    let card = `<div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="${it.poster}"/></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">${it.name}</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">${convTime(it.duration)}</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">${it.description}</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    ${opts}
+                                                </select>
+                                                <a href="#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>`
+                    return card;
+                }, {}).join('  ')
+                // console.log(html)
+                document.querySelector('.playlist').innerHTML = html
+                document.querySelectorAll('.playlist__wrapper__item__body__bottom__donwload').forEach(it => it.addEventListener('click', e => {
+                    const downBtn = e.target
+                    const url = downBtn.previousElementSibling.children[downBtn.previousElementSibling.selectedIndex].value
+                    window.open(url)
+                }))
+            }
+        }
+
+        const obs1 = new MutationObserver(it => {
+            // console.log(it[0])
+            showSublist2('.list1', '.list2', '.list3')
+            console.log('list 2 renewed');
+            populate('.list2')
+        })
+        obs1.observe(document.querySelectorAll('select')[1], { attributes: true, childList: true, characterData: true })
+
+        const obs2 = new MutationObserver(it => {
+            // console.log(it[0])
+            // showSublist2('.list1','.list2','.list3')
+            console.log('list 3 renewed');
+            populate('.list3')
+
+        })
+        obs2.observe(document.querySelectorAll('select')[2], { attributes: true, childList: true, characterData: true })
+
+    </script>
+
+
+</body>
+
+</html>
