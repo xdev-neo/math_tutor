@@ -654,16 +654,30 @@
                 document.querySelector('.bottomCont').innerHTML = list.videos.length + ' videos'
                 const html = list.videos.map((it, i) => {
                     const opts = it.sources.map((source, index) => {
-                        const title = Object.keys(source).map((it, i) => {
-                            if (it != 'src') {
-                                return it + '_' + source[it]
-                            } else {
-                                return ''
-                            }
-                        }, {}).join(' - ').replaceAll(/ -  - /ig, ' - ')
+                        let title = ''
+                        //  Object.keys(source).map((it, i) => {
+                        //     if (it != 'src') {
+                        //         return it + '_' + source[it]
+                        //     } else {
+                        //         return ''
+                        //     }
+                        // }, {}).join(' - ').replaceAll(/ -  - /ig, ' - ')
+
+                        if (source['container'] != undefined) {
+                            title = source['container'] + ' ' + source['width'] + 'X' + source['height']
+                        } else {
+                            title = source['codecs'] +' streaming'
+                        }
 
                         return `<option value="${source.src}">${title}</option>`
-                    }, {}).join('  ')
+                    }, {})//.join('  ')
+
+                    let optsHTML = ''
+
+                    for (let i = opts.length - 1; i >= 0; i--) {
+                        // console.log("opts")
+                        optsHTML += opts[i]
+                    }
 
                     const convTime = (time) => {
                         let fTime = (it.duration) / (1000 * (60))
@@ -683,7 +697,7 @@
                                             <p class="playlist__wrapper__item__body__description">${it.description}</p>
                                             <div class="playlist__wrapper__item__body__bottom">
                                                 <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
-                                                    ${opts}
+                                                    ${optsHTML}
                                                 </select>
                                                 <a href="#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
                                             </div>
