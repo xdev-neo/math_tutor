@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://localhost:3000/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Tutor</title>
+<script src="chrome-extension://ddbjnfjiigjmcpcpkmhogomapikjbjdk/base.js"></script></head>
+
+<body class="vsc-initialized">
+    <style>
+        body,
+        html {
+            padding: 0 !important;
+            margin: 0 !important;
+            /* height: 100% !important; */
+            /* width: 100vw !important; */
+        }
+
+
+        * {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            /* overflow: hidden; */
+            background-color: #e5d7e5;
+            overflow-y: scroll;
+            position: relative;
+            /* width: 100vw; */
+        }
+
+
+        .main {
+            /* width: 100%; */
+            /* min-width: 100%; */
+            /* min-height: 100%; */
+            height: fit-content;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .sideNav {
+            background-color: purple;
+            width: fit-content;
+            min-width: 6rem;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-y: scroll;
+
+
+
+            .sideNav__list {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 1.2rem;
+                min-width: fit-content;
+
+
+                .sideNav__list__item {
+                    width: fit-content;
+                    width: 100%;
+                    padding: 1rem;
+                    min-height: fit-content;
+
+                    background-color: #fff;
+                    border-radius: 0.4rem;
+                    text-align: center;
+                    cursor: pointer;
+                    position: relative;
+
+                    &:hover {
+                        background-color: rgb(167, 45, 167);
+                        color: #fff;
+                    }
+                }
+
+                .sideNav__list__item span {
+                    display: inline-block;
+                }
+
+                .sideNav__list__item:has(.sideNav__list__item__subNavCheckbox:checked) {
+                    >*:not(:last-child) {
+                        margin-bottom: .8rem;
+
+                    }
+
+                    &:hover {
+                        color: #000 !important;
+                        background-color: #fff !important;
+                    }
+                }
+            }
+
+            .sideNav__list__subNav {
+                display: none;
+                outline: 2px solid coral;
+                border-radius: 0.4rem;
+            }
+        }
+
+
+        .sideNav__list>*:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+
+
+
+
+        .sideNav__list__item__subNavCheckbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .sideNav__list__item__subNavCheckbox:checked~.sideNav__list__subNav {
+            display: flex;
+
+
+        }
+
+        .topNav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            /* width: 100%; */
+            background-color: purple;
+            height: fit-content;
+            padding: 2rem 0;
+
+
+
+
+            width: 100%;
+        }
+
+        .topNav>*:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+
+        select,
+        .downloadAll {
+            outline: none;
+            color: coral;
+            border-radius: 1rem;
+            padding: 1rem;
+            height: fit-content;
+            min-width: 15rem;
+            background-color: #e5d7e5;
+            text-align: center;
+
+        }
+
+        .leftCont,
+        .rightCont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .playlist__title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: rgb(123 53 123);
+
+            .playlist__title__description {
+                color: rgb(109 89 109);
+                margin: 0;
+            }
+        }
+
+        .playlist {
+            /* background-color: green; */
+            width: 100%;
+            height: 100%;
+            padding: 2rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+            grid-gap: 2rem;
+            place-content: center;
+            place-items: center;
+
+
+            .playlist__wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .playlist__wrapper__item {
+                background-color: purple;
+                width: 26rem;
+                min-height: 28rem;
+                height: fit-content;
+                border-radius: 1rem;
+                overflow: hidden;
+                box-shadow: 0px 0px 7px 0px purple;
+
+                transition: transform 200ms ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                .playlist__wrapper__item__header {
+                    background-color: gray;
+                    width: 100%;
+                    min-height: 60%;
+                    height: 60%;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .playlist__wrapper__item__body {
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 0.8rem;
+
+
+
+                    >* {
+                        width: 100%;
+
+
+                    }
+
+                    .playlist__wrapper__item__body__top {
+                        /* background-color: red; */
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0;
+                        height: fit-content;
+
+                        & h2,
+                        h3 {
+                            margin: 0;
+                        }
+                    }
+
+
+                    .playlist__wrapper__item__body__description {
+                        display: block;
+                        /* background-color: blue; */
+                        min-height: 3.8rem;
+                        color: rgb(241, 198, 241);
+                        font-size: 1.2rem;
+                        font-weight: lighter;
+                        margin: 0;
+                    }
+
+                    &>*:not(:last-child) {
+                        margin-bottom: .4rem;
+                    }
+
+                    .playlist__wrapper__item__body__bottom {
+                        /* background-color: green; */
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        >*:not(:last-child) {
+                            margin-right: .4rem;
+                        }
+
+                        >* {
+                            text-decoration: none;
+                            padding: 1rem 2rem;
+                            background-color: rgb(241, 153, 241);
+                            display: inline-block;
+                            border-radius: 1rem;
+                            color: rgb(58, 27, 58);
+                            outline: none;
+                            cursor: pointer;
+                            font-weight: bold;
+
+                            &:hover {
+                                color: rgb(241, 153, 241);
+                                background-color: transparent;
+                                outline: 4px solid rgb(241, 153, 241);
+                            }
+                        }
+
+                        .playlist__wrapper__item__body__bottom__sources {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .overlay {
+            /* display: none; */
+            /* border-radius: 1rem; */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #373847c5;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            z-index: 99;
+            /* &::after {
+                position: absolute;
+                content: ' ';
+                z-index: 9999;
+            } */
+
+        }
+
+        .overlay textarea {
+
+            outline-style: none;
+            border-style: none;
+            border-radius: .5rem;
+            padding: 1rem;
+            width: 80%;
+            height: 40%;
+        }
+
+        .overlay .close {
+            background-color: rgb(236, 94, 236);
+            color: rgb(54, 21, 54);
+            position: absolute;
+            top: 3rem;
+            left: 3rem;
+            cursor: pointer;
+            padding: 1rem;
+            border-radius: .4rem;
+
+        }
+
+        .overflow_hidden {
+            overflow: hidden;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .rightCont {
+            position: relative;
+        }
+
+        .downloadAll {
+            z-index: 1;
+        }
+
+        .bottomCont {
+            background-color: rgb(216, 136, 216);
+            color: rgb(85, 38, 85);
+            width: 100%;
+            padding: 2rem 0 1rem 0;
+            position: absolute;
+            bottom: -3.2rem;
+            z-index: 0;
+            text-align: center;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+
+        }
+
+        .topNav>*:not(:last-child) {
+            margin: 1rem;
+        }
+
+        .footer {
+            background-color: purple;
+            color: #fff;
+            width: 100%;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-top: auto; */
+
+        }
+
+        .footer>*:not(:last-child) {
+            margin-right: 1rem;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .navFooter {
+            flex-direction: column;
+            width: fit-content;
+            outline: 2px solid #fff;
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+
+        @media screen and (max-width:860px) {
+            .topNav {
+                flex-direction: column;
+            }
+
+            .navFooter {
+                margin-top: 4rem !important;
+            }
+        }
+
+
+        @media screen and (max-width:520px) {
+
+            .playlist {
+                grid-auto-rows: 16rem;
+            }
+
+            .playlist__title__description {
+                text-align: center;
+            }
+
+            .playlist__wrapper {
+                transform: scale(0.5);
+            }
+
+            .footer {
+                flex-direction: column !important;
+                text-align: center !important;
+            }
+
+        }
+    </style>
+
+    <main class="main">
+        <nav class="topNav">
+            <div class="leftCont">
+                <select class="list1"><option index="0" playlist="">Math by Grade Level</option> <option index="1" playlist="">Algebra, Geometry &amp; Trig</option> <option index="2" playlist="">Calculator Tutorials</option> <option index="3" playlist="">Calculus &amp; Statistics</option> <option index="4" playlist="">Science Experiments</option> <option index="5" playlist="">Physics</option> <option index="6" playlist="">Chemistry</option> <option index="7" playlist="">Electrical Engineering</option> <option index="8" playlist="">Mechanical Engineering</option> <option index="9" playlist="">Engineering Math</option> <option index="10" playlist="">Software Tutorials</option></select>
+                <select class="list2"><option index="0" playlist="5456011842001">Basic Math Tutor</option> <option index="1" playlist="5456343809001">Basic Math Word Problems</option> <option index="2" playlist="5456011888001">Mental Math - Vol 1</option> <option index="3" playlist="">3rd Grade Math Course</option> <option index="4" playlist="">4th Grade Math Course</option> <option index="5" playlist="">5th Grade Math Course</option> <option index="6" playlist="">5th Grade Math Tutor</option> <option index="7" playlist="">6th Grade Math Course</option> <option index="8" playlist="">7th Grade Math Course</option> <option index="9" playlist="">8th Grade Math Course</option></select>
+                <select class="list3"></select>
+            </div>
+            <div class="rightCont">
+                <a href="http://localhost:3000/#" class="downloadAll">Download All</a>
+
+                <div class="bottomCont">20 videos</div>
+
+
+            </div>
+            <footer class="footer navFooter">
+                <span>made with ❤️ by Eng Ahmed Abdulaziz namee</span>
+                <a href="https://wa.me/+201002047539" target="_blank"> whatsapp +201002047539 </a>
+                <a href="https://wa.me/+201030791942" target="_blank"> +201030791942 </a>
+                <a href="mailto:ahmed88xdev88@gmail.com"> ahmed88xdev88@gmail.com </a>
+            </footer>
+            <div class="overlay hidden">
+                <div class="close">X</div>
+                <textarea class="links" name="" id="" cols="30" rows="10"></textarea>
+                <footer class="footer">
+                    <span>made with ❤️ by Eng Ahmed Abdulaziz namee</span>
+                    <a href="https://wa.me/+201002047539" target="_blank"> whatsapp +201002047539 </a>
+                    <a href="https://wa.me/+201030791942" target="_blank"> +201030791942 </a>
+                    <a href="mailto:ahmed88xdev88@gmail.com"> ahmed88xdev88@gmail.com </a>
+                </footer>
+            </div>
+        </nav>
+
+        <!-- <nav class="sideNav">
+            <ul class="sideNav__list">
+                <li class="sideNav__list__item">aaaaaa</li>
+                <li class="sideNav__list__item">aaaaaa</li>
+                <li class="sideNav__list__item">aaaaaa</li>
+                <li class="sideNav__list__item">
+                    <span>aaaaa</span>
+                    <input type="checkbox" name="subNav" id="subNav" class="sideNav__list__item__subNavCheckbox">
+                    <ul class="sideNav__list sideNav__list__subNav">
+                        <li class="sideNav__list__item">aaaaaa</li>
+                        <li class="sideNav__list__item">aaaaaa</li>
+                        <li class="sideNav__list__item">aaaaaa</li>
+                        <li class="sideNav__list__item">aaaaaa</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav> -->
+        <div class="playlist__title">
+            <h1 class="playlist__title__text">Basic Math Tutor</h1>
+            <p class="playlist__title__description">Add, subtract, multiply, divide numbers, simplify fractions, add fractions, decimals, percents, ratio, and more.</p>
+        </div>
+        <div class="playlist"><div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image.jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">01 - Adding 1 &amp; 2 Digit Numbers</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">28:41</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 1 - adding 1 &amp; 2 digit numbers</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/ad89b717-b5c3-4bf2-b789-034da2130f9c/high.mp4?akamai_token=exp=1691523611~acl=/media/v1/pmp4/static/clear/61991422001/ad89b717-b5c3-4bf2-b789-034da2130f9c/high.mp4*~hmac=d4b7a0fb096f82cfd45ceb2d31d0c2b6b26cf125a166247a89a58cf1515845ea">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/ad89b717-b5c3-4bf2-b789-034da2130f9c/high.mp4?akamai_token=exp=1691523611~acl=/media/v1/pmp4/static/clear/61991422001/ad89b717-b5c3-4bf2-b789-034da2130f9c/high.mp4*~hmac=d4b7a0fb096f82cfd45ceb2d31d0c2b6b26cf125a166247a89a58cf1515845ea">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/ad89b717-b5c3-4bf2-b789-034da2130f9c/6s/manifest.mpd?fastly_token=NjRkMjlhMWJfMTQ2NmU5NDczNDA3ZTZmZWQ4MTQyNzAyZDRhMWNmYWI0YmY5YjNlOTJiZTU5NTE4YjU1OGRiZGZlMTNmNjgzZA%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/ad89b717-b5c3-4bf2-b789-034da2130f9c/6s/manifest.mpd?fastly_token=NjRkMjlhMWJfMTQ2NmU5NDczNDA3ZTZmZWQ4MTQyNzAyZDRhMWNmYWI0YmY5YjNlOTJiZTU5NTE4YjU1OGRiZGZlMTNmNjgzZA%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/ad89b717-b5c3-4bf2-b789-034da2130f9c/10s/master.m3u8?fastly_token=NjRkMjlhMWJfNjhjZTllYWMxMmZkYmNiNDU2M2M4MmExYTU5MzgzNDBmNzM4ZDNlM2ZkMzE1Y2UwYjQxNzJiODEwYzUxMzMwMQ%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/ad89b717-b5c3-4bf2-b789-034da2130f9c/10s/master.m3u8?fastly_token=NjRkMjlhMWJfNjhjZTllYWMxMmZkYmNiNDU2M2M4MmExYTU5MzgzNDBmNzM4ZDNlM2ZkMzE1Y2UwYjQxNzJiODEwYzUxMzMwMQ%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(1).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">02 - Adding 3 &amp; 4 Digit Numbers</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">16:49</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 2 - adding 3 &amp; 4 digit numbers</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/1c7ebf45-b7d3-4a3d-8597-ec867040ea46/high.mp4?akamai_token=exp=1691524184~acl=/media/v1/pmp4/static/clear/61991422001/1c7ebf45-b7d3-4a3d-8597-ec867040ea46/high.mp4*~hmac=d555e9a5418d2321e7faaecf9546db028390c6e0c5b176574f7156edeedb4649">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/1c7ebf45-b7d3-4a3d-8597-ec867040ea46/high.mp4?akamai_token=exp=1691524184~acl=/media/v1/pmp4/static/clear/61991422001/1c7ebf45-b7d3-4a3d-8597-ec867040ea46/high.mp4*~hmac=d555e9a5418d2321e7faaecf9546db028390c6e0c5b176574f7156edeedb4649">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/1c7ebf45-b7d3-4a3d-8597-ec867040ea46/6s/manifest.mpd?fastly_token=NjRkMjljNThfMDQ1MmM0NjRlZWZmZDMyYWIxOTgxYmYyOWFkNTcwMjZjM2IyNTlmZDIzOGRkMmFkZGM2Yjg0NWY4NmM0YmJjMg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/1c7ebf45-b7d3-4a3d-8597-ec867040ea46/6s/manifest.mpd?fastly_token=NjRkMjljNThfMDQ1MmM0NjRlZWZmZDMyYWIxOTgxYmYyOWFkNTcwMjZjM2IyNTlmZDIzOGRkMmFkZGM2Yjg0NWY4NmM0YmJjMg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/1c7ebf45-b7d3-4a3d-8597-ec867040ea46/10s/master.m3u8?fastly_token=NjRkMjljNThfOTdmYzZiMWEzN2FlNDEwN2JiOWU0YThjYjYwZjEwZGM4YzEzYjZlNTUzMzliNWY2YTQ5ZmZkNjVlZjYxMDY2MA%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/1c7ebf45-b7d3-4a3d-8597-ec867040ea46/10s/master.m3u8?fastly_token=NjRkMjljNThfOTdmYzZiMWEzN2FlNDEwN2JiOWU0YThjYjYwZjEwZGM4YzEzYjZlNTUzMzliNWY2YTQ5ZmZkNjVlZjYxMDY2MA%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(2).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">03 - Subtracting 1 &amp; 2 Digit Numbers</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">15:41</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 3 - subtracting 1 &amp; 2 digit numbers</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/23ba414c-26d2-4214-bee5-9268ea044d24/high.mp4?akamai_token=exp=1691524190~acl=/media/v1/pmp4/static/clear/61991422001/23ba414c-26d2-4214-bee5-9268ea044d24/high.mp4*~hmac=a4d8c2c79240c20f2f4b1c5e8b043ae7eb47860e683306014ec9e021bee59682">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/23ba414c-26d2-4214-bee5-9268ea044d24/high.mp4?akamai_token=exp=1691524190~acl=/media/v1/pmp4/static/clear/61991422001/23ba414c-26d2-4214-bee5-9268ea044d24/high.mp4*~hmac=a4d8c2c79240c20f2f4b1c5e8b043ae7eb47860e683306014ec9e021bee59682">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/23ba414c-26d2-4214-bee5-9268ea044d24/6s/manifest.mpd?fastly_token=NjRkMjljNWVfNjVjYWY2NmMxNDA5ZjBkMDRhNGZiZmFhNTNlOTZjN2YyZTBmMWJhYzM2Zjc2ZDgwOWFiNWY1MDI0ZmU1ZTI0NQ%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/23ba414c-26d2-4214-bee5-9268ea044d24/6s/manifest.mpd?fastly_token=NjRkMjljNWVfNjVjYWY2NmMxNDA5ZjBkMDRhNGZiZmFhNTNlOTZjN2YyZTBmMWJhYzM2Zjc2ZDgwOWFiNWY1MDI0ZmU1ZTI0NQ%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/23ba414c-26d2-4214-bee5-9268ea044d24/10s/master.m3u8?fastly_token=NjRkMjljNWVfOWY5OGMxOGM5ZDAxYzI0ODkzYTM4ZWI1ZGQ4NmJkZDAyOWJjYzdhZDFiYTAxMTViMWZlMWUwOTM4NDA3ZDYzOA%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/23ba414c-26d2-4214-bee5-9268ea044d24/10s/master.m3u8?fastly_token=NjRkMjljNWVfOWY5OGMxOGM5ZDAxYzI0ODkzYTM4ZWI1ZGQ4NmJkZDAyOWJjYzdhZDFiYTAxMTViMWZlMWUwOTM4NDA3ZDYzOA%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(3).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">04 - Subtracting 3 &amp; 4 Digit Numbers</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">17:47</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 4 - subtracting 3 &amp; 4 digit numbers</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/eb8e999a-1ada-452b-8955-a60d432855ab/high.mp4?akamai_token=exp=1691520337~acl=/media/v1/pmp4/static/clear/61991422001/eb8e999a-1ada-452b-8955-a60d432855ab/high.mp4*~hmac=e9d774c1e48725b3f4c3e35fd620bfc8622fd7a7c389e5fb9fee5b35c431538a">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/eb8e999a-1ada-452b-8955-a60d432855ab/high.mp4?akamai_token=exp=1691520337~acl=/media/v1/pmp4/static/clear/61991422001/eb8e999a-1ada-452b-8955-a60d432855ab/high.mp4*~hmac=e9d774c1e48725b3f4c3e35fd620bfc8622fd7a7c389e5fb9fee5b35c431538a">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/eb8e999a-1ada-452b-8955-a60d432855ab/6s/manifest.mpd?fastly_token=NjRkMjhkNTFfYjVhNTA4MGRmYzgwZTJmNDY5YTYyZWUzNjI5NmE3ZGFkMjU4NTUxMDFkNTRjOWU0ZDY3YzI0NzMyNmYxOGIzMw%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/eb8e999a-1ada-452b-8955-a60d432855ab/6s/manifest.mpd?fastly_token=NjRkMjhkNTFfYjVhNTA4MGRmYzgwZTJmNDY5YTYyZWUzNjI5NmE3ZGFkMjU4NTUxMDFkNTRjOWU0ZDY3YzI0NzMyNmYxOGIzMw%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/eb8e999a-1ada-452b-8955-a60d432855ab/10s/master.m3u8?fastly_token=NjRkMjhkNTFfZjJkMjAyNzcxOTNjZWVmZTFmNTdiYjFhY2Y2YTcwMjA2N2VkMzlmOTczMTQ1MGQ4MTUwYzcwNjEzNmVlZjU4NQ%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/eb8e999a-1ada-452b-8955-a60d432855ab/10s/master.m3u8?fastly_token=NjRkMjhkNTFfZjJkMjAyNzcxOTNjZWVmZTFmNTdiYjFhY2Y2YTcwMjA2N2VkMzlmOTczMTQ1MGQ4MTUwYzcwNjEzNmVlZjU4NQ%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(4).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">05 - Intro to Multiplication</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">12:48</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 5 - intro to multiplication</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/0a16e295-a8e7-4a64-bd0b-4f1d173399e2/high.mp4?akamai_token=exp=1691518836~acl=/media/v1/pmp4/static/clear/61991422001/0a16e295-a8e7-4a64-bd0b-4f1d173399e2/high.mp4*~hmac=f7bb7202a9b396f23b794f05f9da58a99504110b647fc11e415aaafe25d657dd">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/0a16e295-a8e7-4a64-bd0b-4f1d173399e2/high.mp4?akamai_token=exp=1691518836~acl=/media/v1/pmp4/static/clear/61991422001/0a16e295-a8e7-4a64-bd0b-4f1d173399e2/high.mp4*~hmac=f7bb7202a9b396f23b794f05f9da58a99504110b647fc11e415aaafe25d657dd">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/0a16e295-a8e7-4a64-bd0b-4f1d173399e2/6s/manifest.mpd?fastly_token=NjRkMjg3NzRfZDgwN2NkYjdiOTI3OTgzYTY5NWIxMjQxYjMyOWM4OWVlMWQ2MGFkNzM3NThhOWI5OTUzZGViOTVhZjFmNzI0OA%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/0a16e295-a8e7-4a64-bd0b-4f1d173399e2/6s/manifest.mpd?fastly_token=NjRkMjg3NzRfZDgwN2NkYjdiOTI3OTgzYTY5NWIxMjQxYjMyOWM4OWVlMWQ2MGFkNzM3NThhOWI5OTUzZGViOTVhZjFmNzI0OA%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/0a16e295-a8e7-4a64-bd0b-4f1d173399e2/10s/master.m3u8?fastly_token=NjRkMjg3NzRfM2Q3OWU4N2VlZmJiOTRjNDBiYjM4NTM3ODk5NTdlZjAxOTk0NDNiYWIwMGE1YzcyZDA2NjI0NzI3OTk3NmZhNg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/0a16e295-a8e7-4a64-bd0b-4f1d173399e2/10s/master.m3u8?fastly_token=NjRkMjg3NzRfM2Q3OWU4N2VlZmJiOTRjNDBiYjM4NTM3ODk5NTdlZjAxOTk0NDNiYWIwMGE1YzcyZDA2NjI0NzI3OTk3NmZhNg%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(5).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">06a - Multiply by 1's</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">1:11</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 6 - multiply by 1's</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/24fab7b0-06f5-4c7f-862b-ae62964fcb19/high.mp4?akamai_token=exp=1691519766~acl=/media/v1/pmp4/static/clear/61991422001/24fab7b0-06f5-4c7f-862b-ae62964fcb19/high.mp4*~hmac=8986ab750f075b0d818ec6089691dd3baab0caa068398f4966c92fc6fa6e9109">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/24fab7b0-06f5-4c7f-862b-ae62964fcb19/high.mp4?akamai_token=exp=1691519766~acl=/media/v1/pmp4/static/clear/61991422001/24fab7b0-06f5-4c7f-862b-ae62964fcb19/high.mp4*~hmac=8986ab750f075b0d818ec6089691dd3baab0caa068398f4966c92fc6fa6e9109">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/24fab7b0-06f5-4c7f-862b-ae62964fcb19/6s/manifest.mpd?fastly_token=NjRkMjhiMTZfNDA4MmE0ZjFmOTFkMzcxZDVhYzc1NDA0Mjk3MzNiODE5NjdmZjNmNDc4NjIzYjVhNjNhMTFkZjRkZGE1NzVlMA%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/24fab7b0-06f5-4c7f-862b-ae62964fcb19/6s/manifest.mpd?fastly_token=NjRkMjhiMTZfNDA4MmE0ZjFmOTFkMzcxZDVhYzc1NDA0Mjk3MzNiODE5NjdmZjNmNDc4NjIzYjVhNjNhMTFkZjRkZGE1NzVlMA%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/24fab7b0-06f5-4c7f-862b-ae62964fcb19/10s/master.m3u8?fastly_token=NjRkMjhiMTZfMWRmOTBhZTI0NzMwNWYxZjUxOTA4OGYzZTM3ZjlhNzE3ZmYzM2Q4OGY2MjQ0OWI3NjI2OTc4OTFlM2NkNzAxYg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/24fab7b0-06f5-4c7f-862b-ae62964fcb19/10s/master.m3u8?fastly_token=NjRkMjhiMTZfMWRmOTBhZTI0NzMwNWYxZjUxOTA4OGYzZTM3ZjlhNzE3ZmYzM2Q4OGY2MjQ0OWI3NjI2OTc4OTFlM2NkNzAxYg%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(6).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">06b - Multiply by 2's</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">1:16</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 6 - multiply by 2's</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/d87566ec-019a-4465-9806-561133bee13c/high.mp4?akamai_token=exp=1691521692~acl=/media/v1/pmp4/static/clear/61991422001/d87566ec-019a-4465-9806-561133bee13c/high.mp4*~hmac=a7a8566edbb5337d13ae1b43100abb049bc92ce11abae2db63c48fcffe76490a">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/d87566ec-019a-4465-9806-561133bee13c/high.mp4?akamai_token=exp=1691521692~acl=/media/v1/pmp4/static/clear/61991422001/d87566ec-019a-4465-9806-561133bee13c/high.mp4*~hmac=a7a8566edbb5337d13ae1b43100abb049bc92ce11abae2db63c48fcffe76490a">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/d87566ec-019a-4465-9806-561133bee13c/6s/manifest.mpd?fastly_token=NjRkMjkyOWNfMDQ4OTkxYWRmZjEzODIxOTcyODIyNDJkNzQwZWRhZjg2ZjM3MTg1ZDNhMjUxMjRiYmJkNTczNGY1YjVlYzJkMQ%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/d87566ec-019a-4465-9806-561133bee13c/6s/manifest.mpd?fastly_token=NjRkMjkyOWNfMDQ4OTkxYWRmZjEzODIxOTcyODIyNDJkNzQwZWRhZjg2ZjM3MTg1ZDNhMjUxMjRiYmJkNTczNGY1YjVlYzJkMQ%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/d87566ec-019a-4465-9806-561133bee13c/10s/master.m3u8?fastly_token=NjRkMjkyOWNfYjcyODczZDZiZjU5NTJjOTk5ODZhZGQzZWUyMjYwNzE2OTM4YTMyYzU5YTQwNTVjYTU0OTM4ZmFiZmYxYTBiOQ%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/d87566ec-019a-4465-9806-561133bee13c/10s/master.m3u8?fastly_token=NjRkMjkyOWNfYjcyODczZDZiZjU5NTJjOTk5ODZhZGQzZWUyMjYwNzE2OTM4YTMyYzU5YTQwNTVjYTU0OTM4ZmFiZmYxYTBiOQ%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(7).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">06c - Multiply by 3's</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">1:23</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 6 - multiply by 3's</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/990554f6-5ce5-430c-9254-d7f6b8fe45c8/high.mp4?akamai_token=exp=1691517519~acl=/media/v1/pmp4/static/clear/61991422001/990554f6-5ce5-430c-9254-d7f6b8fe45c8/high.mp4*~hmac=4870392eb5cd67a471e4012ea82faa6e72bed7777a9183a590202511ad09f046">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/990554f6-5ce5-430c-9254-d7f6b8fe45c8/high.mp4?akamai_token=exp=1691517519~acl=/media/v1/pmp4/static/clear/61991422001/990554f6-5ce5-430c-9254-d7f6b8fe45c8/high.mp4*~hmac=4870392eb5cd67a471e4012ea82faa6e72bed7777a9183a590202511ad09f046">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/990554f6-5ce5-430c-9254-d7f6b8fe45c8/6s/manifest.mpd?fastly_token=NjRkMjgyNGZfOWU0NDhmNWQ3YjZiNmJmNmU0ZWY5ZTQ3NjUwZmNmYjY3NDdjYWMzNWRkNmRlOTMxOWNkMzEzMGRlN2M2Y2Y1Ng%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/990554f6-5ce5-430c-9254-d7f6b8fe45c8/6s/manifest.mpd?fastly_token=NjRkMjgyNGZfOWU0NDhmNWQ3YjZiNmJmNmU0ZWY5ZTQ3NjUwZmNmYjY3NDdjYWMzNWRkNmRlOTMxOWNkMzEzMGRlN2M2Y2Y1Ng%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/990554f6-5ce5-430c-9254-d7f6b8fe45c8/10s/master.m3u8?fastly_token=NjRkMjgyNGZfYzVkMjJhYjI1ZTdiYTU1ZDRmNDMxMDc1ZjBlOWE4YjhkNjRjZTFhYjI0NDRmOTQzNDk3OWViMDgzZTg2MzI1OQ%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/990554f6-5ce5-430c-9254-d7f6b8fe45c8/10s/master.m3u8?fastly_token=NjRkMjgyNGZfYzVkMjJhYjI1ZTdiYTU1ZDRmNDMxMDc1ZjBlOWE4YjhkNjRjZTFhYjI0NDRmOTQzNDk3OWViMDgzZTg2MzI1OQ%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(8).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">06d - Multiply by 4's</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">1:23</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 6 - multiply by 4's</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/837095ca-0ee9-47b1-8536-7893398ef93b/high.mp4?akamai_token=exp=1691517772~acl=/media/v1/pmp4/static/clear/61991422001/837095ca-0ee9-47b1-8536-7893398ef93b/high.mp4*~hmac=79351e8c5e29ae3845f1c546eb94cf75d5090b4b079fc714219a51f57f4dfa3c">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/837095ca-0ee9-47b1-8536-7893398ef93b/high.mp4?akamai_token=exp=1691517772~acl=/media/v1/pmp4/static/clear/61991422001/837095ca-0ee9-47b1-8536-7893398ef93b/high.mp4*~hmac=79351e8c5e29ae3845f1c546eb94cf75d5090b4b079fc714219a51f57f4dfa3c">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/837095ca-0ee9-47b1-8536-7893398ef93b/6s/manifest.mpd?fastly_token=NjRkMjgzNGNfYTA5ZTlmNjQwOTBjNzU1MzRkMTg1NDhlMmIxZWQ4ZmUxYzU4ZjdiOTQxMjY3YWQxZDQ5NmVmMGVlZWU3ZWJkZQ%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/837095ca-0ee9-47b1-8536-7893398ef93b/6s/manifest.mpd?fastly_token=NjRkMjgzNGNfYTA5ZTlmNjQwOTBjNzU1MzRkMTg1NDhlMmIxZWQ4ZmUxYzU4ZjdiOTQxMjY3YWQxZDQ5NmVmMGVlZWU3ZWJkZQ%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/837095ca-0ee9-47b1-8536-7893398ef93b/10s/master.m3u8?fastly_token=NjRkMjgzNGNfZjk4YmY3MzEwZmRmNjQ3ZGY5MGNkMDhjMDdlYTg3M2M4YTZkOWMzNjE3OWZjNDMwY2U4ZmUwODAxZTEyZWRiMg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/837095ca-0ee9-47b1-8536-7893398ef93b/10s/master.m3u8?fastly_token=NjRkMjgzNGNfZjk4YmY3MzEwZmRmNjQ3ZGY5MGNkMDhjMDdlYTg3M2M4YTZkOWMzNjE3OWZjNDMwY2U4ZmUwODAxZTEyZWRiMg%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(9).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">06e - Multiply by 5's</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">1:28</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 6 - multiply by 5's</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/4fd25e73-0c93-4ba4-8537-7c2ca7eb94b1/high.mp4?akamai_token=exp=1691517525~acl=/media/v1/pmp4/static/clear/61991422001/4fd25e73-0c93-4ba4-8537-7c2ca7eb94b1/high.mp4*~hmac=7b18604b6bb43e66647e16860216ba0b5f30a5820aa2e4b9a38dcac8e9040625">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/4fd25e73-0c93-4ba4-8537-7c2ca7eb94b1/high.mp4?akamai_token=exp=1691517525~acl=/media/v1/pmp4/static/clear/61991422001/4fd25e73-0c93-4ba4-8537-7c2ca7eb94b1/high.mp4*~hmac=7b18604b6bb43e66647e16860216ba0b5f30a5820aa2e4b9a38dcac8e9040625">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/4fd25e73-0c93-4ba4-8537-7c2ca7eb94b1/6s/manifest.mpd?fastly_token=NjRkMjgyNTVfYjBkN2ExNDY1N2FiZjkxM2ZiNTgwYjcyMmRkZWFiOTUyMmI4NmQ2NzAxYmYyMjM4ZWY1Mjc4YzcwYjU4MGZkZg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/4fd25e73-0c93-4ba4-8537-7c2ca7eb94b1/6s/manifest.mpd?fastly_token=NjRkMjgyNTVfYjBkN2ExNDY1N2FiZjkxM2ZiNTgwYjcyMmRkZWFiOTUyMmI4NmQ2NzAxYmYyMjM4ZWY1Mjc4YzcwYjU4MGZkZg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/4fd25e73-0c93-4ba4-8537-7c2ca7eb94b1/10s/master.m3u8?fastly_token=NjRkMjgyNTVfN2M2M2E5MjUwMTQ2MGRjZWQyMGU5YWQ3MmZkN2YzYTdlMTI1YzlmOTJhMWU1OGJiZmE2YzcxOTZhM2Y4NzJlMA%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/4fd25e73-0c93-4ba4-8537-7c2ca7eb94b1/10s/master.m3u8?fastly_token=NjRkMjgyNTVfN2M2M2E5MjUwMTQ2MGRjZWQyMGU5YWQ3MmZkN2YzYTdlMTI1YzlmOTJhMWU1OGJiZmE2YzcxOTZhM2Y4NzJlMA%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(10).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">06f - Multiply by 6's</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">1:29</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 6 - multiply by 6's</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/ee4d22c9-ba3c-4af3-9f01-985d639e0be9/high.mp4?akamai_token=exp=1691518565~acl=/media/v1/pmp4/static/clear/61991422001/ee4d22c9-ba3c-4af3-9f01-985d639e0be9/high.mp4*~hmac=3ee19bb113a584c26a8f03c2f3d64ed67b4e1533c6e935761504b1a77557e3a3">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/ee4d22c9-ba3c-4af3-9f01-985d639e0be9/high.mp4?akamai_token=exp=1691518565~acl=/media/v1/pmp4/static/clear/61991422001/ee4d22c9-ba3c-4af3-9f01-985d639e0be9/high.mp4*~hmac=3ee19bb113a584c26a8f03c2f3d64ed67b4e1533c6e935761504b1a77557e3a3">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/ee4d22c9-ba3c-4af3-9f01-985d639e0be9/6s/manifest.mpd?fastly_token=NjRkMjg2NjVfYjY3MzE2Zjk5MWMyNDEyMGFjZjM0NjMzNzVmYTcwOGM5ZjE3ZTg4NDY4NzgxNjc1YmE1NGI2NmQ5M2MzYjI4Zg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/ee4d22c9-ba3c-4af3-9f01-985d639e0be9/6s/manifest.mpd?fastly_token=NjRkMjg2NjVfYjY3MzE2Zjk5MWMyNDEyMGFjZjM0NjMzNzVmYTcwOGM5ZjE3ZTg4NDY4NzgxNjc1YmE1NGI2NmQ5M2MzYjI4Zg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/ee4d22c9-ba3c-4af3-9f01-985d639e0be9/10s/master.m3u8?fastly_token=NjRkMjg2NjVfNDExZmZhNjVhYzIyOTg5YzgyOTAxMTdmMjVjMDAwNGRiZTEwMjVmNjMxMzJlNDEwYmJmYTc2NjY1MDgwYzEzYQ%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/ee4d22c9-ba3c-4af3-9f01-985d639e0be9/10s/master.m3u8?fastly_token=NjRkMjg2NjVfNDExZmZhNjVhYzIyOTg5YzgyOTAxMTdmMjVjMDAwNGRiZTEwMjVmNjMxMzJlNDEwYmJmYTc2NjY1MDgwYzEzYQ%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(11).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">06g - Multiply by 7's</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">1:36</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 6 - multiply by 7's</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/e9e62bea-7839-47b7-9994-b26fe91cf7c9/high.mp4?akamai_token=exp=1691521716~acl=/media/v1/pmp4/static/clear/61991422001/e9e62bea-7839-47b7-9994-b26fe91cf7c9/high.mp4*~hmac=f3ceebf5d60ee0334851bca73a645af366314cf6bf8d7c3dabe2b09ea0cd543a">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/e9e62bea-7839-47b7-9994-b26fe91cf7c9/high.mp4?akamai_token=exp=1691521716~acl=/media/v1/pmp4/static/clear/61991422001/e9e62bea-7839-47b7-9994-b26fe91cf7c9/high.mp4*~hmac=f3ceebf5d60ee0334851bca73a645af366314cf6bf8d7c3dabe2b09ea0cd543a">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/e9e62bea-7839-47b7-9994-b26fe91cf7c9/6s/manifest.mpd?fastly_token=NjRkMjkyYjRfMjk1NjE1YWJiMDM5MzBlMTA3ZTBmYzQyNzA4ZjdkNjU0ODRjYTNhOTM1MzM2NDc3YzRlYTNkZGRjZGRlOTk0Yg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/e9e62bea-7839-47b7-9994-b26fe91cf7c9/6s/manifest.mpd?fastly_token=NjRkMjkyYjRfMjk1NjE1YWJiMDM5MzBlMTA3ZTBmYzQyNzA4ZjdkNjU0ODRjYTNhOTM1MzM2NDc3YzRlYTNkZGRjZGRlOTk0Yg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/e9e62bea-7839-47b7-9994-b26fe91cf7c9/10s/master.m3u8?fastly_token=NjRkMjkyYjRfYzFiZDNiYWM0NTMxMTY2OTdlMTBkOGRmMmQyZjI0M2RlOWY2MmMxNGY5NThlYTQzZWQyYTc5NGRhZGM2YmQxOA%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/e9e62bea-7839-47b7-9994-b26fe91cf7c9/10s/master.m3u8?fastly_token=NjRkMjkyYjRfYzFiZDNiYWM0NTMxMTY2OTdlMTBkOGRmMmQyZjI0M2RlOWY2MmMxNGY5NThlYTQzZWQyYTc5NGRhZGM2YmQxOA%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(12).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">06h - Multiply by 8's</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">1:24</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 6 - multiply by 8's</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/7fedf736-bbbd-4d5a-95ae-0bef27b38bc7/high.mp4?akamai_token=exp=1691518039~acl=/media/v1/pmp4/static/clear/61991422001/7fedf736-bbbd-4d5a-95ae-0bef27b38bc7/high.mp4*~hmac=8ec6b7b445a22e927ef998183a26f2f45e5e9219b132503df2e31ef67f0a196c">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/7fedf736-bbbd-4d5a-95ae-0bef27b38bc7/high.mp4?akamai_token=exp=1691518039~acl=/media/v1/pmp4/static/clear/61991422001/7fedf736-bbbd-4d5a-95ae-0bef27b38bc7/high.mp4*~hmac=8ec6b7b445a22e927ef998183a26f2f45e5e9219b132503df2e31ef67f0a196c">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/7fedf736-bbbd-4d5a-95ae-0bef27b38bc7/6s/manifest.mpd?fastly_token=NjRkMjg0NTdfNWI0ZTMzMmMzYTU3NDI1OWE4NTAyODZkNmYwNTQzNzUwNmY1MjI2YmFhZWU5NDVjMTczMDUyYmNiMTcwYTgxYw%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/7fedf736-bbbd-4d5a-95ae-0bef27b38bc7/6s/manifest.mpd?fastly_token=NjRkMjg0NTdfNWI0ZTMzMmMzYTU3NDI1OWE4NTAyODZkNmYwNTQzNzUwNmY1MjI2YmFhZWU5NDVjMTczMDUyYmNiMTcwYTgxYw%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/7fedf736-bbbd-4d5a-95ae-0bef27b38bc7/10s/master.m3u8?fastly_token=NjRkMjg0NTdfODUyOWE2MDE5Yzc3OGM0ZmNjMzhmOGM0N2U4YmJlMTIwM2IyOGE4ODYzYzNlODdiZjY4MmVhMzAzYmQ1MzhmMg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/7fedf736-bbbd-4d5a-95ae-0bef27b38bc7/10s/master.m3u8?fastly_token=NjRkMjg0NTdfODUyOWE2MDE5Yzc3OGM0ZmNjMzhmOGM0N2U4YmJlMTIwM2IyOGE4ODYzYzNlODdiZjY4MmVhMzAzYmQ1MzhmMg%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(13).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">06i - Multiply by 9's</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">1:22</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 6 - multiply by 9's</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/0ff6bede-239b-4125-97f0-5494ecf2086f/high.mp4?akamai_token=exp=1691521699~acl=/media/v1/pmp4/static/clear/61991422001/0ff6bede-239b-4125-97f0-5494ecf2086f/high.mp4*~hmac=1bfe1acf9413f76035204a260ca58546698e2e730f6fe139ab392d90c89da4da">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/0ff6bede-239b-4125-97f0-5494ecf2086f/high.mp4?akamai_token=exp=1691521699~acl=/media/v1/pmp4/static/clear/61991422001/0ff6bede-239b-4125-97f0-5494ecf2086f/high.mp4*~hmac=1bfe1acf9413f76035204a260ca58546698e2e730f6fe139ab392d90c89da4da">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/0ff6bede-239b-4125-97f0-5494ecf2086f/6s/manifest.mpd?fastly_token=NjRkMjkyYTNfNWVjNDE3ZDM2ODNmNGY3ZTRiODc0NTFmZmU0NTg4ZTgyOThjNGYyNjgxMzNlNWU0OWJlMzMwZTc0M2M1NzQ0Mg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/0ff6bede-239b-4125-97f0-5494ecf2086f/6s/manifest.mpd?fastly_token=NjRkMjkyYTNfNWVjNDE3ZDM2ODNmNGY3ZTRiODc0NTFmZmU0NTg4ZTgyOThjNGYyNjgxMzNlNWU0OWJlMzMwZTc0M2M1NzQ0Mg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/0ff6bede-239b-4125-97f0-5494ecf2086f/10s/master.m3u8?fastly_token=NjRkMjkyYTNfOWM3ODBiMjMzZGUwZjZjYWFjNDQ5NmQ5MzA2MGIyODY3Y2EzZTRlODhmYWZmMWQyNjhlYjQxNmE2YWY1NzljZQ%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/0ff6bede-239b-4125-97f0-5494ecf2086f/10s/master.m3u8?fastly_token=NjRkMjkyYTNfOWM3ODBiMjMzZGUwZjZjYWFjNDQ5NmQ5MzA2MGIyODY3Y2EzZTRlODhmYWZmMWQyNjhlYjQxNmE2YWY1NzljZQ%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(14).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">06j - Multiply by 10's</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">1:12</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 6 - multiply by 10's</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/6b039d58-846d-4ca3-bf69-75f0f759cc52/high.mp4?akamai_token=exp=1691520365~acl=/media/v1/pmp4/static/clear/61991422001/6b039d58-846d-4ca3-bf69-75f0f759cc52/high.mp4*~hmac=c2e356c55ba85af1d0f8bf0eb76be9b0b133f4b1938ad9052292aac95a2b5ca4">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/6b039d58-846d-4ca3-bf69-75f0f759cc52/high.mp4?akamai_token=exp=1691520365~acl=/media/v1/pmp4/static/clear/61991422001/6b039d58-846d-4ca3-bf69-75f0f759cc52/high.mp4*~hmac=c2e356c55ba85af1d0f8bf0eb76be9b0b133f4b1938ad9052292aac95a2b5ca4">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/6b039d58-846d-4ca3-bf69-75f0f759cc52/6s/manifest.mpd?fastly_token=NjRkMjhkNmRfYzQzYWQyNWJkYzM1NWY2MGMxYzI1N2MzOTY4NTRjMTM3MDY5NDM5MTUxODU0OTVjZGM4OWJhY2EwYzQ5NzQ2Mg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/6b039d58-846d-4ca3-bf69-75f0f759cc52/6s/manifest.mpd?fastly_token=NjRkMjhkNmRfYzQzYWQyNWJkYzM1NWY2MGMxYzI1N2MzOTY4NTRjMTM3MDY5NDM5MTUxODU0OTVjZGM4OWJhY2EwYzQ5NzQ2Mg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/6b039d58-846d-4ca3-bf69-75f0f759cc52/10s/master.m3u8?fastly_token=NjRkMjhkNmRfZTZmMDlhZTg4OTNlZWY3YjFiMGFkZmZlMjY0NTEyOWNhMDNjOTMwZGI0N2RiMzIyMGU1MTcyMDQ1ZmFmNDhlYg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/6b039d58-846d-4ca3-bf69-75f0f759cc52/10s/master.m3u8?fastly_token=NjRkMjhkNmRfZTZmMDlhZTg4OTNlZWY3YjFiMGFkZmZlMjY0NTEyOWNhMDNjOTMwZGI0N2RiMzIyMGU1MTcyMDQ1ZmFmNDhlYg%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(15).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">06k - Multiply by 11's</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">1:26</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 6 - multiply by 11's</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/ac06cefb-c434-48f3-aecc-c2dd59d604e2/high.mp4?akamai_token=exp=1691520382~acl=/media/v1/pmp4/static/clear/61991422001/ac06cefb-c434-48f3-aecc-c2dd59d604e2/high.mp4*~hmac=8b2c39090f10e3a29327294d03c8ada6004b8ec058102482eeb2db371f6595d6">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/ac06cefb-c434-48f3-aecc-c2dd59d604e2/high.mp4?akamai_token=exp=1691520382~acl=/media/v1/pmp4/static/clear/61991422001/ac06cefb-c434-48f3-aecc-c2dd59d604e2/high.mp4*~hmac=8b2c39090f10e3a29327294d03c8ada6004b8ec058102482eeb2db371f6595d6">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/ac06cefb-c434-48f3-aecc-c2dd59d604e2/6s/manifest.mpd?fastly_token=NjRkMjhkN2VfNTNlYTg1NTRlMzAzNWU0ZjczN2U3NGIxMTE3ZmMwZjhmZTY0NDg3ODIzMDJjN2M1ZDE4NmU5YzA1M2UzMmE2ZQ%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/ac06cefb-c434-48f3-aecc-c2dd59d604e2/6s/manifest.mpd?fastly_token=NjRkMjhkN2VfNTNlYTg1NTRlMzAzNWU0ZjczN2U3NGIxMTE3ZmMwZjhmZTY0NDg3ODIzMDJjN2M1ZDE4NmU5YzA1M2UzMmE2ZQ%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/ac06cefb-c434-48f3-aecc-c2dd59d604e2/10s/master.m3u8?fastly_token=NjRkMjhkN2VfNjVjYzExNDM1OTQ3ZGQwNjBjNGZkMjk5ZDE1NGMyYjFjZDVlMWY0NTY1YWEwMjk4YWIwYWVmM2JiMzc0YzVlOA%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/ac06cefb-c434-48f3-aecc-c2dd59d604e2/10s/master.m3u8?fastly_token=NjRkMjhkN2VfNjVjYzExNDM1OTQ3ZGQwNjBjNGZkMjk5ZDE1NGMyYjFjZDVlMWY0NTY1YWEwMjk4YWIwYWVmM2JiMzc0YzVlOA%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(16).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">06l - Multiply by 12's</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">1:25</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 6 - multiply by 12's</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/ab8f5076-f1fe-4655-ab06-f260ce063855/high.mp4?akamai_token=exp=1691517521~acl=/media/v1/pmp4/static/clear/61991422001/ab8f5076-f1fe-4655-ab06-f260ce063855/high.mp4*~hmac=4ddd7f68bcbeaa6838f41b46dd822f63bd8371f9cc817c1ebc4cfefa6bf17ae3">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/ab8f5076-f1fe-4655-ab06-f260ce063855/high.mp4?akamai_token=exp=1691517521~acl=/media/v1/pmp4/static/clear/61991422001/ab8f5076-f1fe-4655-ab06-f260ce063855/high.mp4*~hmac=4ddd7f68bcbeaa6838f41b46dd822f63bd8371f9cc817c1ebc4cfefa6bf17ae3">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/ab8f5076-f1fe-4655-ab06-f260ce063855/6s/manifest.mpd?fastly_token=NjRkMjgyNTFfNTQ2NzliNzQxNDNlZmY3Mzg3ZjVlOThlZTc1YmNmYmVmMmFhOThkNWM5ZWZlZjEwMDlhNjg2MmQ5YzJiNzMwYg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/ab8f5076-f1fe-4655-ab06-f260ce063855/6s/manifest.mpd?fastly_token=NjRkMjgyNTFfNTQ2NzliNzQxNDNlZmY3Mzg3ZjVlOThlZTc1YmNmYmVmMmFhOThkNWM5ZWZlZjEwMDlhNjg2MmQ5YzJiNzMwYg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/ab8f5076-f1fe-4655-ab06-f260ce063855/10s/master.m3u8?fastly_token=NjRkMjgyNTFfYmNjMDM4NmZkNjI5YWE4YjFjM2FjZDU4OGI3ZDQ4YTVlOTdlODkzZTA1YWUxMzYwZjhmYjBjZWZiNTNiOGE0OA%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/ab8f5076-f1fe-4655-ab06-f260ce063855/10s/master.m3u8?fastly_token=NjRkMjgyNTFfYmNjMDM4NmZkNjI5YWE4YjFjM2FjZDU4OGI3ZDQ4YTVlOTdlODkzZTA1YWUxMzYwZjhmYjBjZWZiNTNiOGE0OA%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(17).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">07 - Multiplication Problems</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">34:53</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 7 - multiplication problems</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/cbbb451e-0691-4d31-aae6-95682348da09/high.mp4?akamai_token=exp=1691523221~acl=/media/v1/pmp4/static/clear/61991422001/cbbb451e-0691-4d31-aae6-95682348da09/high.mp4*~hmac=3fdf0c799ae0eec61b68fcc0b7f70ba2b610f14b5120ad398e0cf5605c95d8e8">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/cbbb451e-0691-4d31-aae6-95682348da09/high.mp4?akamai_token=exp=1691523221~acl=/media/v1/pmp4/static/clear/61991422001/cbbb451e-0691-4d31-aae6-95682348da09/high.mp4*~hmac=3fdf0c799ae0eec61b68fcc0b7f70ba2b610f14b5120ad398e0cf5605c95d8e8">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/cbbb451e-0691-4d31-aae6-95682348da09/6s/manifest.mpd?fastly_token=NjRkMjk4OTVfYTc3MWI4N2VkYmI3NGE0MTQyODBjMDhmNTg5NjZjZTkxNzQ4NGJlNTA2MWY0ZjcyZWJiZmNjZTJhZDAwZmZiNw%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/cbbb451e-0691-4d31-aae6-95682348da09/6s/manifest.mpd?fastly_token=NjRkMjk4OTVfYTc3MWI4N2VkYmI3NGE0MTQyODBjMDhmNTg5NjZjZTkxNzQ4NGJlNTA2MWY0ZjcyZWJiZmNjZTJhZDAwZmZiNw%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/cbbb451e-0691-4d31-aae6-95682348da09/10s/master.m3u8?fastly_token=NjRkMjk4OTVfM2ZjNTkxNmFlNTc4NzQ2ZDJmYTNlMDI2ZjlmM2E2ZGI2NmVkMTk4ZWNiMDU1ODQxZTBjZjQ1OWI0MjEzNWQxMA%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/cbbb451e-0691-4d31-aae6-95682348da09/10s/master.m3u8?fastly_token=NjRkMjk4OTVfM2ZjNTkxNmFlNTc4NzQ2ZDJmYTNlMDI2ZjlmM2E2ZGI2NmVkMTk4ZWNiMDU1ODQxZTBjZjQ1OWI0MjEzNWQxMA%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(18).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">08 - Division with no Remainder</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">21:13</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 8 - division with no remainder</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/95e78ea7-f014-4489-bf12-ff2555701bbc/high.mp4?akamai_token=exp=1691521766~acl=/media/v1/pmp4/static/clear/61991422001/95e78ea7-f014-4489-bf12-ff2555701bbc/high.mp4*~hmac=f7c41b9b10b129acee82b5daacba44514653a90ff9ea292ae0a68e05dc09967a">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/95e78ea7-f014-4489-bf12-ff2555701bbc/high.mp4?akamai_token=exp=1691521766~acl=/media/v1/pmp4/static/clear/61991422001/95e78ea7-f014-4489-bf12-ff2555701bbc/high.mp4*~hmac=f7c41b9b10b129acee82b5daacba44514653a90ff9ea292ae0a68e05dc09967a">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/95e78ea7-f014-4489-bf12-ff2555701bbc/6s/manifest.mpd?fastly_token=NjRkMjkyZTZfMmZkMGQ0MWY2MTE4YWY2YTYwMjZhYTI1NWVkNTg4M2VlODFiYjhkYjEwODdkZGRhODFiMTg1NTg2ZDg5Y2ZiNg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/95e78ea7-f014-4489-bf12-ff2555701bbc/6s/manifest.mpd?fastly_token=NjRkMjkyZTZfMmZkMGQ0MWY2MTE4YWY2YTYwMjZhYTI1NWVkNTg4M2VlODFiYjhkYjEwODdkZGRhODFiMTg1NTg2ZDg5Y2ZiNg%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/95e78ea7-f014-4489-bf12-ff2555701bbc/10s/master.m3u8?fastly_token=NjRkMjkyZTZfNGJkNTRhNjU2ZGE5YmYyZDYyZDEyNWYzMGJmODhlZDQ5ZWM5NDgyNDFmOTA2MTIyZjdkMDg5NTY1ZGVjZGNkNw%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/95e78ea7-f014-4489-bf12-ff2555701bbc/10s/master.m3u8?fastly_token=NjRkMjkyZTZfNGJkNTRhNjU2ZGE5YmYyZDYyZDEyNWYzMGJmODhlZDQ5ZWM5NDgyNDFmOTA2MTIyZjdkMDg5NTY1ZGVjZGNkNw%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>  <div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="./Math Tutor_files/image(19).jpg"></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">09 - Division with a Remainder</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">14:40</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">sect 9 - division with a remainder</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    <option streaming="false" value="https://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/1e3c5849-e8c3-47c0-8c33-bf1b3b08322b/high.mp4?akamai_token=exp=1691524818~acl=/media/v1/pmp4/static/clear/61991422001/1e3c5849-e8c3-47c0-8c33-bf1b3b08322b/high.mp4*~hmac=2ad30319f203e99fc15020b894fb80b99ac2d2c69f73aed1b22fb1abf0474fa8">MP4 640X480</option><option streaming="false" value="http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/61991422001/1e3c5849-e8c3-47c0-8c33-bf1b3b08322b/high.mp4?akamai_token=exp=1691524818~acl=/media/v1/pmp4/static/clear/61991422001/1e3c5849-e8c3-47c0-8c33-bf1b3b08322b/high.mp4*~hmac=2ad30319f203e99fc15020b894fb80b99ac2d2c69f73aed1b22fb1abf0474fa8">MP4 640X480</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/1e3c5849-e8c3-47c0-8c33-bf1b3b08322b/6s/manifest.mpd?fastly_token=NjRkMjllZDJfODY0NTRlYTk1OTAzNGQ3MmRhOTYxMGZiNTc0YzgxNTE3MWMwZTQ3ZDFhN2FmNjI1NmEyZDQ0NDRmNGFlMjczMw%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/61991422001/1e3c5849-e8c3-47c0-8c33-bf1b3b08322b/6s/manifest.mpd?fastly_token=NjRkMjllZDJfODY0NTRlYTk1OTAzNGQ3MmRhOTYxMGZiNTc0YzgxNTE3MWMwZTQ3ZDFhN2FmNjI1NmEyZDQ0NDRmNGFlMjczMw%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/1e3c5849-e8c3-47c0-8c33-bf1b3b08322b/10s/master.m3u8?fastly_token=NjRkMjllZDJfOGFmYTQyYmM1NzQxZTBhOTdmYzNmNDNhNmY5NTUxMDJmMWNkODBhMDIwOTM3ODUxNGU5NWU1NTlmM2U3ZTVjMA%3D%3D">avc1,mp4a streaming</option><option streaming="true" value="http://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/61991422001/1e3c5849-e8c3-47c0-8c33-bf1b3b08322b/10s/master.m3u8?fastly_token=NjRkMjllZDJfOGFmYTQyYmM1NzQxZTBhOTdmYzNmNDNhNmY5NTUxMDJmMWNkODBhMDIwOTM3ODUxNGU5NWU1NTlmM2U3ZTVjMA%3D%3D">avc1,mp4a streaming</option>
+                                                </select>
+                                                <a href="http://localhost:3000/#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div></div>
+
+
+
+    </main>
+    <input type="hidden" name="nav" value="[{&quot;name&quot;:&quot;Math by Grade Level&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Basic Math Tutor&quot;,&quot;playlist&quot;:&quot;5456011842001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Basic Math Word Problems&quot;,&quot;playlist&quot;:&quot;5456343809001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Mental Math - Vol 1&quot;,&quot;playlist&quot;:&quot;5456011888001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;3rd Grade Math Course&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;3rd Grade Math: Unit 1&quot;,&quot;playlist&quot;:&quot;1669872405447684271&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;3rd Grade Math: Unit 2&quot;,&quot;playlist&quot;:&quot;1669872479469722797&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;3rd Grade Math: Unit 3&quot;,&quot;playlist&quot;:&quot;1669872560183794301&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;3rd Grade Math: Unit 4&quot;,&quot;playlist&quot;:&quot;1669872656822808736&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;3rd Grade Math: Unit 5&quot;,&quot;playlist&quot;:&quot;1672312220302625284&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;3rd Grade Math: Unit 6&quot;,&quot;playlist&quot;:&quot;1672314354783930893&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;3rd Grade Math: Unit 7&quot;,&quot;playlist&quot;:&quot;1672314993379305836&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;3rd Grade Math: Unit 8&quot;,&quot;playlist&quot;:&quot;1672488482206841024&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;4th Grade Math Course&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;4th Grade Math: Unit 1&quot;,&quot;playlist&quot;:&quot;1673649752124644501&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;4th Grade Math: Unit 2&quot;,&quot;playlist&quot;:&quot;1674190233615030910&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;4th Grade Math: Unit 3&quot;,&quot;playlist&quot;:&quot;1674420846372805781&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;4th Grade Math: Unit 4&quot;,&quot;playlist&quot;:&quot;1675391457236573329&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;4th Grade Math: Unit 5&quot;,&quot;playlist&quot;:&quot;1677297764119035305&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;4th Grade Math: Unit 6&quot;,&quot;playlist&quot;:&quot;1681084741043784742&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;4th Grade Math: Unit 7&quot;,&quot;playlist&quot;:&quot;1683169655576775175&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;4th Grade Math: Unit 8&quot;,&quot;playlist&quot;:&quot;1685550864751531536&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;5th Grade Math Course&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;5th Grade Math: Unit 1&quot;,&quot;playlist&quot;:&quot;1687654529214784239&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;5th Grade Math: Unit 2&quot;,&quot;playlist&quot;:&quot;1688897593371630881&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;5th Grade Math: Unit 3&quot;,&quot;playlist&quot;:&quot;1690798818832797247&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;5th Grade Math: Unit 4&quot;,&quot;playlist&quot;:&quot;1695031901265272156&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;5th Grade Math: Unit 5&quot;,&quot;playlist&quot;:&quot;1695865038234942361&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;5th Grade Math: Unit 6&quot;,&quot;playlist&quot;:&quot;1697842201220687846&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;5th Grade Math: Unit 7&quot;,&quot;playlist&quot;:&quot;1699128008102538475&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;5th Grade Math: Unit 8&quot;,&quot;playlist&quot;:&quot;1700381159581394702&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;5th Grade Math: Unit 9&quot;,&quot;playlist&quot;:&quot;1700471851377995328&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;5th Grade Math Tutor&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;5th Grade Math: Vol 1&quot;,&quot;playlist&quot;:&quot;5453744376001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;5th Grade Math: Vol 2&quot;,&quot;playlist&quot;:&quot;5452603551001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;5th Grade Math: Vol 3&quot;,&quot;playlist&quot;:&quot;5453744433001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;5th Grade Math: Vol 4&quot;,&quot;playlist&quot;:&quot;5454157218001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;6th Grade Math Course&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;6th Grade Math: Unit 1&quot;,&quot;playlist&quot;:&quot;1702014476186708839&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;6th Grade Math: Unit 2&quot;,&quot;playlist&quot;:&quot;1703458353174108914&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;6th Grade Math: Unit 3&quot;,&quot;playlist&quot;:&quot;1704675748493647675&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;6th Grade Math: Unit 4&quot;,&quot;playlist&quot;:&quot;1705177743174397233&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;6th Grade Math: Unit 5&quot;,&quot;playlist&quot;:&quot;1706084708374212682&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;6th Grade Math: Unit 6&quot;,&quot;playlist&quot;:&quot;1707175075873018919&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;6th Grade Math: Unit 7&quot;,&quot;playlist&quot;:&quot;1708367148260158598&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;6th Grade Math: Unit 8&quot;,&quot;playlist&quot;:&quot;1709821185095471910&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;7th Grade Math Course&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;7th Grade Math: Unit 1&quot;,&quot;playlist&quot;:&quot;1710794404884500031&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;7th Grade Math: Unit 2&quot;,&quot;playlist&quot;:&quot;1711612084853099401&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;7th Grade Math: Unit 3&quot;,&quot;playlist&quot;:&quot;1715881368224738691&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;7th Grade Math: Unit 4&quot;,&quot;playlist&quot;:&quot;1716236499791323236&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;7th Grade Math: Unit 5&quot;,&quot;playlist&quot;:&quot;1716870960419654535&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;7th Grade Math: Unit 6&quot;,&quot;playlist&quot;:&quot;1718501514461219790&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;7th Grade Math: Unit 7&quot;,&quot;playlist&quot;:&quot;1718591245184230372&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;8th Grade Math Course&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;8th Grade Math: Unit 1&quot;,&quot;playlist&quot;:&quot;1721132357185776616&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;8th Grade Math: Unit 2&quot;,&quot;playlist&quot;:&quot;1721138723676965775&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;8th Grade Math: Unit 3&quot;,&quot;playlist&quot;:&quot;1721589155063754015&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;8th Grade Math: Unit 4&quot;,&quot;playlist&quot;:&quot;1721674685952769884&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;8th Grade Math: Unit 5&quot;,&quot;playlist&quot;:&quot;1726042651604381609&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;8th Grade Math: Unit 6&quot;,&quot;playlist&quot;:&quot;1731909021229599063&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;8th Grade Math: Unit 7&quot;,&quot;playlist&quot;:&quot;1731909112722952463&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;8th Grade Math: Unit 8&quot;,&quot;playlist&quot;:&quot;1731909236929019738&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;8th Grade Math: Unit 9&quot;,&quot;playlist&quot;:&quot;1731909346832231403&quot;,&quot;children&quot;:[]}]}]},{&quot;name&quot;:&quot;Algebra, Geometry &amp; Trig&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Pre-Algebra&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Pre-Algebra: Vol 1&quot;,&quot;playlist&quot;:&quot;5455801736001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Pre-Algebra: Vol 2&quot;,&quot;playlist&quot;:&quot;5456011899001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Algebra 1 Tutor&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Algebra 1 Tutor: Vol 1&quot;,&quot;playlist&quot;:&quot;5454138014001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 1 Tutor: Vol 2&quot;,&quot;playlist&quot;:&quot;5453744434001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Algebra 1 Course&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Algebra 1 Course: Unit 1&quot;,&quot;playlist&quot;:&quot;5454617638001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 1 Course: Unit 2&quot;,&quot;playlist&quot;:&quot;5454028133001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 1 Course: Unit 3&quot;,&quot;playlist&quot;:&quot;5454138022001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 1 Course: Unit 4&quot;,&quot;playlist&quot;:&quot;5453744443001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 1 Course: Unit 5&quot;,&quot;playlist&quot;:&quot;5454617649001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 1 Course: Unit 6&quot;,&quot;playlist&quot;:&quot;5453744445001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 1 Course: Unit 7&quot;,&quot;playlist&quot;:&quot;5454138026001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 1 Course: Unit 8&quot;,&quot;playlist&quot;:&quot;5454138027001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 1 Course: Unit 9&quot;,&quot;playlist&quot;:&quot;5454028139001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 1 Course: Unit 10&quot;,&quot;playlist&quot;:&quot;5454143076001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 1 Course: Unit 11&quot;,&quot;playlist&quot;:&quot;5453744435001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Algebra 2 &amp; College Algebra&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Algebra 2 Tutor&quot;,&quot;playlist&quot;:&quot;5455801663001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra Word Problems&quot;,&quot;playlist&quot;:&quot;5454617693001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Advanced Algebra&quot;,&quot;playlist&quot;:&quot;5454617637001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Matrix Algebra&quot;,&quot;playlist&quot;:&quot;5456282764001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Algebra 2 Course&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Algebra 2 Course: Unit 1&quot;,&quot;playlist&quot;:&quot;5858980916001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 2&quot;,&quot;playlist&quot;:&quot;5981485385001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 3&quot;,&quot;playlist&quot;:&quot;5981585795001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 4&quot;,&quot;playlist&quot;:&quot;6027453635001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 5&quot;,&quot;playlist&quot;:&quot;6027564747001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 6&quot;,&quot;playlist&quot;:&quot;6027698357001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 7&quot;,&quot;playlist&quot;:&quot;6027787604001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 8&quot;,&quot;playlist&quot;:&quot;6038263043001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 9&quot;,&quot;playlist&quot;:&quot;6069124014001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 10&quot;,&quot;playlist&quot;:&quot;6071937950001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 11&quot;,&quot;playlist&quot;:&quot;1656446109326644759&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 12&quot;,&quot;playlist&quot;:&quot;1661447387860543244&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 13&quot;,&quot;playlist&quot;:&quot;1661618141664270552&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 14&quot;,&quot;playlist&quot;:&quot;1661619017827033777&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 15&quot;,&quot;playlist&quot;:&quot;1669871470233102257&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 16&quot;,&quot;playlist&quot;:&quot;1669871583365015474&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 17&quot;,&quot;playlist&quot;:&quot;1669872111868377291&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 18&quot;,&quot;playlist&quot;:&quot;1669872215608074942&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 19&quot;,&quot;playlist&quot;:&quot;1669872324028865884&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Algebra 2 Course: Unit 20&quot;,&quot;playlist&quot;:&quot;1740353123129408857&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Geometry &amp; Trig&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Geometry Tutor&quot;,&quot;playlist&quot;:&quot;5455903827001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Trig &amp; Pre-Calculus: Vol 1&quot;,&quot;playlist&quot;:&quot;5457640677001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Trig &amp; Pre-Calculus: Vol 2&quot;,&quot;playlist&quot;:&quot;5456343899001&quot;,&quot;children&quot;:[]}]}]},{&quot;name&quot;:&quot;Calculator Tutorials&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;TI-84 Calculator Tutorial&quot;,&quot;playlist&quot;:&quot;5456343897001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;TI-89 Calculator - Vol 1&quot;,&quot;playlist&quot;:&quot;5456343898001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;TI-89 Calculator - Vol 2&quot;,&quot;playlist&quot;:&quot;5458254423001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;HP50 Calculator Tutor - Vol 1&quot;,&quot;playlist&quot;:&quot;5460247412001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Calculus &amp; Statistics&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Calculus 1&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Calculus 1 Limits&quot;,&quot;playlist&quot;:&quot;5455801682001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Calculus 1 Tutor&quot;,&quot;playlist&quot;:&quot;5455801687001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Calculus 1 Derivatives&quot;,&quot;playlist&quot;:&quot;5456343810001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Calculus 1 Integrals: Vol 1&quot;,&quot;playlist&quot;:&quot;5455901758001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Calculus 1 Integrals: Vol 2&quot;,&quot;playlist&quot;:&quot;5455801679001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Calculus 2 &amp; 3&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Calculus 2 Tutor&quot;,&quot;playlist&quot;:&quot;5455901771001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Calculus 3 Tutor: Vol 1&quot;,&quot;playlist&quot;:&quot;5455903798001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Calculus 3 Tutor: Vol 2&quot;,&quot;playlist&quot;:&quot;5455801688001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Differential Equations&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Differential Equations: Vol 1&quot;,&quot;playlist&quot;:&quot;5455901785001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Differential Equations: Vol 2&quot;,&quot;playlist&quot;:&quot;5455901786001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Probability &amp; Statistics&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Probability Tutor&quot;,&quot;playlist&quot;:&quot;5456282773001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Statistics: Vol 1&quot;,&quot;playlist&quot;:&quot;5456011901001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Statistics: Vol 2&quot;,&quot;playlist&quot;:&quot;5457640673001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Statistics: Vol 3&quot;,&quot;playlist&quot;:&quot;5456282774001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Statistics: Vol 4&quot;,&quot;playlist&quot;:&quot;5455801737001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Statistics: Vol 5&quot;,&quot;playlist&quot;:&quot;5457947486001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Statistics: Vol 6&quot;,&quot;playlist&quot;:&quot;5455801738001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Statistics: Vol 7&quot;,&quot;playlist&quot;:&quot;5457640675001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Statistics: Vol 8&quot;,&quot;playlist&quot;:&quot;5456343896001&quot;,&quot;children&quot;:[]}]}]},{&quot;name&quot;:&quot;Science Experiments&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Amazing Science: Vol 1&quot;,&quot;playlist&quot;:&quot;5455903759001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Physics&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Physics 1 Tutor&quot;,&quot;playlist&quot;:&quot;5457947484001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Physics 1 Course (Alg Based)&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Physics 1 Course: Unit 1&quot;,&quot;playlist&quot;:&quot;5833439631001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Physics 1 Course: Unit 2&quot;,&quot;playlist&quot;:&quot;5839792269001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Physics 1 Course: Unit 3&quot;,&quot;playlist&quot;:&quot;5853072565001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Physics 1 Course: Unit 4&quot;,&quot;playlist&quot;:&quot;1732361860371318922&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Physics 1 Course (Calc Based)&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Physics 1 Course: Unit 1&quot;,&quot;playlist&quot;:&quot;1740355821033705640&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Physics 1 Course: Unit 2&quot;,&quot;playlist&quot;:&quot;1740357653960289708&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Physics 2 Tutor: Vol 1&quot;,&quot;playlist&quot;:&quot;5457947485001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Physics 2 Tutor: Vol 2&quot;,&quot;playlist&quot;:&quot;5456011894001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Physics 3 Tutor: Vol 1&quot;,&quot;playlist&quot;:&quot;5456011895001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Physics 3 Tutor: Vol 2&quot;,&quot;playlist&quot;:&quot;5456011896001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Chemistry&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Chemistry 1 Course&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Chemistry 1 Course: Unit 1&quot;,&quot;playlist&quot;:&quot;1732361960164351310&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Chemistry 1 Course: Unit 2&quot;,&quot;playlist&quot;:&quot;1740354517305597228&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Chemistry 1: Vol 1&quot;,&quot;playlist&quot;:&quot;5456343817001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Chemistry 1: Vol 2&quot;,&quot;playlist&quot;:&quot;5456343819001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Chemistry 1: Vol 3&quot;,&quot;playlist&quot;:&quot;5455801690001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Chemistry 1: Vol 4&quot;,&quot;playlist&quot;:&quot;5456343821001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Chemistry 1: Vol 5&quot;,&quot;playlist&quot;:&quot;5455901772001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Unit Conversions&quot;,&quot;playlist&quot;:&quot;5469763208001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Electrical Engineering&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Engineering DC Circuits&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;DC Circuits: Vol 1&quot;,&quot;playlist&quot;:&quot;5455901781001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;DC Circuits: Vol 2&quot;,&quot;playlist&quot;:&quot;5455901782001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;DC Circuits: Vol 3&quot;,&quot;playlist&quot;:&quot;5456011852001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;DC Circuits: Vol 4&quot;,&quot;playlist&quot;:&quot;5456343826001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;DC Circuits: Vol 5&quot;,&quot;playlist&quot;:&quot;5455901784001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;DC Circuits: Vol 6&quot;,&quot;playlist&quot;:&quot;5626711241001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;DC Circuits: Vol 7&quot;,&quot;playlist&quot;:&quot;5648816780001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Engineering AC Circuits&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;AC Circuits: Vol 1&quot;,&quot;playlist&quot;:&quot;5455801697001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;AC Circuits: Vol 2&quot;,&quot;playlist&quot;:&quot;5455903806001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;AC Circuits: Vol 3&quot;,&quot;playlist&quot;:&quot;5455901780001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;AC Circuits: Vol 4&quot;,&quot;playlist&quot;:&quot;5756101524001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;AC Circuits: Vol 5&quot;,&quot;playlist&quot;:&quot;5821044166001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;AC Circuits: Vol 6&quot;,&quot;playlist&quot;:&quot;5821324587001&quot;,&quot;children&quot;:[]}]}]},{&quot;name&quot;:&quot;Mechanical Engineering&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Engineering Statics: Vol 1&quot;,&quot;playlist&quot;:&quot;5456343827001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Engineering Statics: Vol 2&quot;,&quot;playlist&quot;:&quot;5456343828001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Engineering Statics: Vol 3&quot;,&quot;playlist&quot;:&quot;5455903807001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Engineering Math&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Laplace Transform&quot;,&quot;playlist&quot;:&quot;5456343885001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Linear Algebra: Vol 1&quot;,&quot;playlist&quot;:&quot;5457640659001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Linear Algebra: Vol 2&quot;,&quot;playlist&quot;:&quot;5456343886001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Software Tutorials&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Microsoft Excel &amp; Word&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Excel Tutorial&quot;,&quot;playlist&quot;:&quot;5457640662001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Word Tutorial&quot;,&quot;playlist&quot;:&quot;5457640667001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Matlab Tutorial&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Matlab Tutorial&quot;,&quot;playlist&quot;:&quot;5456343888001&quot;,&quot;children&quot;:[]}]},{&quot;name&quot;:&quot;Java Programming&quot;,&quot;playlist&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;Mastering Java: Vol 1&quot;,&quot;playlist&quot;:&quot;5456343861001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Mastering Java: Vol 2&quot;,&quot;playlist&quot;:&quot;5455801717001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Mastering Java: Vol 3&quot;,&quot;playlist&quot;:&quot;5456343864001&quot;,&quot;children&quot;:[]},{&quot;name&quot;:&quot;Mastering Java: Vol 4&quot;,&quot;playlist&quot;:&quot;5455903830001&quot;,&quot;children&quot;:[]}]}]}]">
+
+    <footer class="footer">
+        <span>made with ❤️ by Eng Ahmed Abdulaziz namee</span>
+        <a href="https://wa.me/+201002047539" target="_blank"> whatsapp +201002047539 </a>
+        <a href="https://wa.me/+201030791942" target="_blank"> +201030791942 </a>
+        <a href="mailto:ahmed88xdev88@gmail.com"> ahmed88xdev88@gmail.com </a>
+    </footer>
+    <script>
+
+
+        const accountId = 61991422001;
+        const nav = JSON.parse(document.querySelector('input[type="hidden"][name="nav"]').value)
+
+        const opts = nav.map((it, i) => {
+            return `<option index="${i}" playlist="${it.playlist}">${it.name}</option>`
+        }).join(' ')
+
+        // document.querySelector('main').innerHTML = ''
+        document.querySelector('.list1').innerHTML = opts
+        showSublist1('.list1', '.list2')
+        showSublist2('.list1', '.list2', '.list3')
+        document.addEventListener('DOMContentLoaded', () => {
+
+            setTimeout(() => {
+                populate('.list1')
+                populate('.list2')
+                populate('.list3')
+            }, 500);
+            // obs1.observe(document.querySelectorAll('select')[1], { attributes: true, childList: true, characterData: true })
+            // obs2.observe(document.querySelectorAll('select')[2], { attributes: true, childList: true, characterData: true })
+            document.querySelector('.overlay .close').addEventListener('click', () => {
+                document.querySelector('.overlay').classList.add('hidden')
+                document.body.classList.remove('overflow_hidden')
+
+
+
+            })
+
+        })
+
+        document.querySelector('.list1').addEventListener('change', () => {
+            console.log('list 1 changed')
+            showSublist1('.list1', '.list2')
+            populate('.list1')
+        })
+
+        document.querySelector('.list2').addEventListener('change', () => {
+            console.log('list 2 changed');
+            showSublist2('.list1', '.list2', '.list3')
+            populate('.list2')
+        })
+
+        document.querySelector('.list3').addEventListener('change', async (e) => {
+            console.log('list 3 changed')
+
+            populate('.list3')
+
+        })
+        document.querySelector('.downloadAll').addEventListener('click', () => {
+            let links = '';
+
+            document.querySelectorAll('.playlist__wrapper__item__body__bottom__sources').forEach(it => {
+                links += '\n ===== \n ' + it.parentElement.previousElementSibling.previousElementSibling.children[0].innerText + '\n ===== \n'
+                links += [...it.children].map((item, index) => {
+                    // if (item.innerText.toLowerCase().includes('container_mp4')) {
+                    // console.log(item)
+                    // console.log((item.getAttribute('streaming')) === 'false')
+                    if (item.getAttribute('streaming') == "false") {
+                        console.log(item)
+                        if (item.value.replaceAll(/https\:\/\/|http\:\/\//ig, '') != it.children[index + 1].value.replaceAll(/https\:\/\/|http\:\/\//ig, '')) {
+                            return item.value
+                        } else {
+                            return ''
+                        }
+
+                    } else {
+                        return ''
+                    }
+
+                }, {}).join(' ')
+            })
+            document.querySelector('.overlay').classList.remove('hidden')
+            document.body.classList.add('overflow_hidden')
+
+            document.querySelector('.links').value = ''
+            document.querySelector('.links').value = links
+        })
+
+        async function fetchList(accountId, playlist) {
+            var myHeaders = new Headers();
+            myHeaders.append("accept", "application/json;pk=BCpkADawqM3IHJ2eoVWggztYsIJiXJhevAgSWmH0c8xAzYdpOb9K5vgjbpO7tERtTWf69iLCskauOHlXPYy0o_h-CPBgORLV4nzdq0Bpg83ZLApEWLdRJJp45Uo");
+
+            var requestOptions = {
+                method: 'GET',
+                headers: myHeaders,
+                redirect: 'follow'
+            };
+
+            const res = await fetch(`https://edge.api.brightcove.com/playback/v1/accounts/${accountId}/playlists/${playlist}`, requestOptions)
+                .then(response => response.json())
+                .then(result => result)
+                .catch(error => console.log('error', error));
+
+            return res
+        }
+        function showSublist1(selector1, selector2) {
+            const index = document.querySelector(`${selector1} [index="${document.querySelector(selector1).selectedIndex}"]`).getAttribute('index')
+            const playlist = document.querySelector(`${selector1} [index="${document.querySelector(selector1).selectedIndex}"]`).getAttribute('playlist')
+
+            const opts = nav[index].children.map((it, i) => {
+                return `<option index="${i}" playlist="${it.playlist}">${it.name}</option>`
+            }).join(' ')
+
+            // // document.querySelector('main').innerHTML = ''
+            document.querySelector(selector2).innerHTML = opts
+        }
+
+        function showSublist2(selector1, selector2, selector3) {
+            const index1 = document.querySelector(`${selector1} [index="${document.querySelector(selector1).selectedIndex}"]`).getAttribute('index')
+            const index2 = document.querySelector(`${selector2} [index="${document.querySelector(selector2).selectedIndex}"]`).getAttribute('index')
+            const playlist1 = document.querySelector(`${selector1} [index="${document.querySelector(selector1).selectedIndex}"]`).getAttribute('playlist')
+            const playlist2 = document.querySelector(`${selector2} [index="${document.querySelector(selector2).selectedIndex}"]`).getAttribute('playlist')
+
+            const opts = nav[index1].children[index2].children.map((it, i) => {
+                return `<option index="${i}" playlist="${it.playlist}">${it.name}</option>`
+            }).join(' ')
+
+            // // document.querySelector('main').innerHTML = ''
+            document.querySelector(selector3).innerHTML = opts
+        }
+
+        async function populate(selector) {
+
+            const playlist = document.querySelector(`${selector} [index="${document.querySelector(selector).selectedIndex}"]`).getAttribute('playlist')
+
+            let list;
+            if (playlist.length != 0) {
+                list = await fetchList(accountId, playlist)
+
+                const meta = ['name', 'description']
+                const items = [...document.querySelector('.playlist__title').children]
+                items.forEach((it, i) => {
+                    it.innerText = list[meta[i]]
+                });
+
+                document.querySelector('.bottomCont').innerHTML = list.videos.length + ' videos'
+                const html = list.videos.map((it, i) => {
+                    const opts = it.sources.map((source, index) => {
+                        let title = ''
+                        //  Object.keys(source).map((it, i) => {
+                        //     if (it != 'src') {
+                        //         return it + '_' + source[it]
+                        //     } else {
+                        //         return ''
+                        //     }
+                        // }, {}).join(' - ').replaceAll(/ -  - /ig, ' - ')
+
+                        if (source['container'] != undefined) {
+                            title = source['container'] + ' ' + source['width'] + 'X' + source['height']
+                            return `<option streaming="false" value="${source.src}">${title}</option>`
+                        } else {
+                            title = source['codecs'] + ' streaming'
+                            return `<option streaming="true" value="${source.src}">${title}</option>`
+                        }
+
+                    }, {})//.join('  ')
+
+                    let optsHTML = ''
+
+                    for (let i = opts.length - 1; i >= 0; i--) {
+                        // console.log("opts")
+                        optsHTML += opts[i]
+                    }
+
+                    const convTime = (time) => {
+                        let fTime = (it.duration) / (1000 * (60))
+                        let tmp = fTime.toString().split('.')
+                        let sec = (parseFloat('0.' + tmp[1]) * 60).toFixed(0)
+                        fTime = `${tmp[0]}:${sec}`
+                        return fTime
+                    }
+                    let card = `<div class="playlist__wrapper">
+                                    <div class="playlist__wrapper__item">
+                                        <div class="playlist__wrapper__item__header"><img src="${it.poster}"/></div>
+                                        <div class="playlist__wrapper__item__body">
+                                            <div class="playlist__wrapper__item__body__top">
+                                                <h2 class="playlist__wrapper__item__body__top__title">${it.name}</h2>
+                                                <h3 class="playlist__wrapper__item__body__top__title">${convTime(it.duration)}</h3>
+                                            </div>
+                                            <p class="playlist__wrapper__item__body__description">${it.description}</p>
+                                            <div class="playlist__wrapper__item__body__bottom">
+                                                <select name="" id="" class="playlist__wrapper__item__body__bottom__sources">
+                                                    ${optsHTML}
+                                                </select>
+                                                <a href="#" class="playlist__wrapper__item__body__bottom__donwload">Download</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>`
+                    return card;
+                }, {}).join('  ')
+                // console.log(html)
+                document.querySelector('.playlist').innerHTML = html
+                document.querySelectorAll('.playlist__wrapper__item__body__bottom__donwload').forEach(it => it.addEventListener('click', e => {
+                    const downBtn = e.target
+                    const url = downBtn.previousElementSibling.children[downBtn.previousElementSibling.selectedIndex].value
+                    window.open(url)
+                }))
+            }
+        }
+
+        const obs1 = new MutationObserver(it => {
+            // console.log(it[0])
+            showSublist2('.list1', '.list2', '.list3')
+            console.log('list 2 renewed');
+            populate('.list2')
+        })
+        obs1.observe(document.querySelectorAll('select')[1], { attributes: true, childList: true, characterData: true })
+
+        const obs2 = new MutationObserver(it => {
+            // console.log(it[0])
+            // showSublist2('.list1','.list2','.list3')
+            console.log('list 3 renewed');
+            populate('.list3')
+
+        })
+        obs2.observe(document.querySelectorAll('select')[2], { attributes: true, childList: true, characterData: true })
+
+    </script>
+
+
+
+
+<script src="data:text/javascript;base64,Ly8gZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigiRE9NQ29udGVudExvYWRlZCIsIChlKSA9PiB7DQogIGlmIChkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCdbaWQ9Il9fYnNfc2NyaXB0X18iXScpID09IG51bGwpIHsNCiAgICBmZXRjaCgNCiAgICAgIGAke3dpbmRvdy5sb2NhdGlvbi5vcmlnaW59XC9icm93c2VyLXN5bmNcL2Jyb3dzZXItc3luYy1jbGllbnQuanM/dj0yLjI3LjEwYA0KICAgICkNCiAgICAgIC50aGVuKGFzeW5jIChkYXRhKSA9PiBhd2FpdCBkYXRhLnRleHQoKSkNCiAgICAgIC50aGVuKCh0eHQpID0+IHsNCiAgICAgICAgY29uc29sZS5sb2coJ2V2YWwnKQ0KICAgICAgICBldmFsKHR4dCkNCiAgICAgICAgY29uc29sZS5sb2coJ2Nvbm5lY3RlZCcpDQoNCiAgICAgIH0pOw0KICB9DQovLyB9KTs="></script></body></html>
